@@ -20,10 +20,10 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
           # color_snake is the moving snake head/body
           # color_dots is 5 colors: [no contributions -> highest contributions]
-          # themed to match the header/footer gradient (navy -> indigo -> cyan/violet)
+          # hot-pink snake for contrast, violet -> blue -> cyan trail for the trail glow
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=#38BDF8&color_dots=#161B22,#172554,#312E81,#2563EB,#22D3EE
-            dist/github-contribution-grid-snake-dark.svg?color_snake=#A78BFA&color_dots=#161B22,#172554,#312E81,#2563EB,#22D3EE
+            dist/github-contribution-grid-snake.svg?color_snake=#DB2777&color_dots=#EBEDF0,#C7D2FE,#A5B4FC,#6366F1,#0891B2
+            dist/github-contribution-grid-snake-dark.svg?color_snake=#F472B6&color_dots=#0D1117,#4C1D95,#7C3AED,#2563EB,#22D3EE
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

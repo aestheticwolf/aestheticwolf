@@ -31,40 +31,6 @@
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:020617,35:172554,70:312E81,100:06B6D4&height=4" width="100%" alt="divider" />
-
-<!-- ==================== ABOUT ==================== -->
-
-<h2>👨‍💻 About Me</h2>
-<br>
-
-<div align="left">
-
-- 🔭 Currently building full-stack web apps with modern JS frameworks
-- 🌱 Diving deeper into AI / ML and applied deep learning
-- 🤝 Open to collaborating on interesting full-stack or ML projects
-- 💬 Ask me about React, Node.js, or getting started with ML
-- ⚡ Powered by curiosity, caffeine, and clean commits
-
-</div>
-
-<sub>✏️ starter copy — swap these bullets for your own</sub>
-
-<br>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:020617,35:172554,70:312E81,100:06B6D4&height=4" width="100%" alt="divider" />
-
-<!-- ==================== TECH STACK ==================== -->
-
-<h2>🛠️ Tech Stack</h2>
-<br>
-
-<img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,nodejs,express,python,tensorflow,pytorch,mongodb,postgresql,docker,git,aws,figma&theme=dark" alt="Tech Stack" />
-
-<br><br>
-<sub>✏️ swap the <code>i=</code> list for your real stack — <a href="https://skillicons.dev">skillicons.dev</a></sub>
-
-<br>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:020617,35:172554,70:312E81,100:06B6D4&height=4" width="100%" alt="divider" />
 
@@ -80,36 +46,8 @@
   alt="GitHub Contribution, Current Streak and Longest Streak"
 />
 
-<br><br>
-
-<img
-  src="https://github-readme-stats.vercel.app/api?username=aestheticwolf&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&icon_color=A78BFA&text_color=8B949E&ring_color=06B6D4"
-  width="49%"
-  alt="GitHub Stats"
-/>
-<img
-  src="https://github-readme-stats.vercel.app/api/top-langs/?username=aestheticwolf&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&text_color=8B949E&langs_count=8"
-  width="38%"
-  alt="Top Languages"
-/>
-
-<br><br>
-
-<img
-  src="https://github-readme-activity-graph.vercel.app/graph?username=aestheticwolf&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=38BDF8&line=06B6D4&point=A78BFA&area=true&area_color=312E81"
-  width="90%"
-  alt="Contribution Activity Graph"
-/>
-
-<br><br>
-
-<img
-  src="https://github-profile-trophy.vercel.app/?username=aestheticwolf&theme=tokyonight&no-frame=true&no-bg=true&column=4&margin-w=10&margin-h=10"
-  width="90%"
-  alt="GitHub Trophies"
-/>
-
 <br>
+
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:020617,35:172554,70:312E81,100:06B6D4&height=4" width="100%" alt="divider" />
 
@@ -128,7 +66,6 @@
   />
 </picture>
 
-<sub>⚙️ needs a one-time GitHub Action setup — see <code>snake.yml</code></sub>
 
 <br>
 
