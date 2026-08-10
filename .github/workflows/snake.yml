@@ -1,9 +1,11 @@
-name: generate contribution snake
+name: Generate Contribution Snake
 
 on:
   schedule:
-    - cron: "0 7 * * *"   # regenerates daily at 07:00 UTC
-  workflow_dispatch: {}
+    - cron: "0 7 * * *"
+
+  workflow_dispatch:
+
   push:
     branches:
       - main
@@ -12,25 +14,37 @@ jobs:
   generate:
     permissions:
       contents: write
+
     runs-on: ubuntu-latest
+
     steps:
-      - name: generate snake svg
+      # ==========================================
+      # Generate contribution snake
+      # ==========================================
+
+      - name: Generate Snake Animation
         uses: Platane/snk/svg-only@v3
+
         with:
           github_user_name: ${{ github.repository_owner }}
-          # color_snake is the moving snake head/body
-          # color_dots is 5 colors: [no contributions -> highest contributions]
-          # hot-pink snake for contrast, violet -> blue -> cyan trail for the trail glow
+
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=#DB2777&color_dots=#EBEDF0,#C7D2FE,#A5B4FC,#6366F1,#0891B2
-            dist/github-contribution-grid-snake-dark.svg?color_snake=#F472B6&color_dots=#0D1117,#4C1D95,#7C3AED,#2563EB,#22D3EE
+            dist/github-contribution-grid-snake.svg?color_snake=#22D3EE&color_dots=#0B1220,#164E63,#0891B2,#06B6D4,#67E8F9
+            dist/github-contribution-grid-snake-dark.svg?color_snake=#F472B6&color_dots=#0D1117,#312E81,#4C1D95,#7C3AED,#C084FC
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: push svg to output branch
+      # ==========================================
+      # Push generated SVG files to output branch
+      # ==========================================
+
+      - name: Deploy Snake Animation
         uses: crazy-max/ghaction-github-pages@v4
+
         with:
           target_branch: output
           build_dir: dist
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
