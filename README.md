@@ -9,17 +9,11 @@
 />
 
 <!-- Animated tagline -->
+
 <img
   src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=2600&pause=1000&color=38BDF8&center=true&vCenter=true&width=650&height=40&lines=Building+scalable+full-stack+apps+%F0%9F%92%BB;Exploring+AI+%26+Machine+Learning+%F0%9F%A4%96;Turning+coffee+into+code+%E2%98%95;Always+shipping%2C+always+learning+%F0%9F%9A%80"
   alt="Typing SVG"
 />
-
-<br>
-
-<!-- Quick badges -->
-<img src="https://komarev.com/ghpvc/?username=aestheticwolf&label=PROFILE+VIEWS&color=38BDF8&style=for-the-badge&labelColor=020617" alt="Profile Views" />
-&nbsp;
-<img src="https://img.shields.io/github/followers/aestheticwolf?label=FOLLOWERS&style=for-the-badge&color=A78BFA&labelColor=020617" alt="Followers" />
 
 <br><br>
 
@@ -31,14 +25,22 @@
 
 <br>
 
+<img
+  src="https://capsule-render.vercel.app/api?type=rect&color=0:020617,35:172554,70:312E81,100:06B6D4&height=4"
+  width="100%"
+  alt="divider"
+/>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:020617,35:172554,70:312E81,100:06B6D4&height=4" width="100%" alt="divider" />
 
 <!-- ==================== GITHUB STATISTICS ==================== -->
 
-<h2>📊 GitHub Statistics</h2>
-
 <br>
+
+<img
+  src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=25&duration=2200&pause=700&color=38BDF8&center=true&vCenter=true&width=750&height=50&lines=%F0%9F%93%8A+GitHub+Statistics;%E2%9A%A1+Code+%7C+Consistency+%7C+Growth;%F0%9F%9A%80+Building+Every+Day"
+  alt="GitHub Statistics"
+/>
+
 
 <img
   src="https://streak-stats.demolab.com/?user=aestheticwolf&theme=tokyonight&hide_border=true&background=0D1117&ring=38BDF8&fire=F59E0B&currStreakLabel=A78BFA&sideLabels=38BDF8&dates=8B949E"
@@ -48,46 +50,77 @@
 
 <br>
 
+<img
+  src="https://capsule-render.vercel.app/api?type=rect&color=0:020617,35:172554,70:312E81,100:06B6D4&height=4"
+  width="100%"
+  alt="divider"
+/>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:020617,35:172554,70:312E81,100:06B6D4&height=4" width="100%" alt="divider" />
 
 <!-- ==================== CONTRIBUTION SNAKE ==================== -->
 
-<h2>🐍 Contribution Snake</h2>
-<br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aestheticwolf/aestheticwolf/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/aestheticwolf/aestheticwolf/output/github-contribution-grid-snake.svg" />
+
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/aestheticwolf/aestheticwolf/output/github-contribution-grid-snake-dark.svg"
+  />
+
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/aestheticwolf/aestheticwolf/output/github-contribution-grid-snake.svg"
+  />
+
   <img
     src="https://raw.githubusercontent.com/aestheticwolf/aestheticwolf/output/github-contribution-grid-snake-dark.svg"
     width="100%"
     alt="Contribution Snake animation"
   />
+
 </picture>
 
 
-<br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:020617,35:172554,70:312E81,100:06B6D4&height=4" width="100%" alt="divider" />
+<img
+  src="https://capsule-render.vercel.app/api?type=rect&color=0:020617,35:172554,70:312E81,100:06B6D4&height=4"
+  width="100%"
+  alt="divider"
+/>
+
 
 <!-- ==================== CONNECT ==================== -->
 
-<h2>🌐 Connect With Me</h2>
-
 <br>
 
+<img
+  src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=2200&pause=800&color=22D3EE&center=true&vCenter=true&width=700&height=45&lines=%F0%9F%8C%90+Connect+With+Me;%F0%9F%92%AC+Let's+Build+Something+Great"
+  alt="Connect With Me"
+/>
+
+
 <a href="https://github.com/aestheticwolf">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+
+  <img
+    src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"
+    alt="GitHub"
+  />
+
 </a>
 
-&nbsp;&nbsp;
+
 
 <a href="https://www.linkedin.com/in/richarddsouza29/">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+
+  <img
+    src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"
+    alt="LinkedIn"
+  />
+
 </a>
 
 </div>
+
 
 <!-- ==================== FOOTER ==================== -->
 
@@ -99,9 +132,14 @@
   alt="Footer"
 />
 
-<h3>🚀 Build • Learn • Improve</h3>
-
 <br>
+
+<img
+  src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=25&duration=1800&pause=700&color=38BDF8&center=true&vCenter=true&width=750&height=50&lines=%F0%9F%9A%80+Build;%F0%9F%A7%A0+Learn;%E2%9A%A1+Create;%F0%9F%94%A5+Improve;%F0%9F%9A%80+Build+%E2%80%A2+Learn+%E2%80%A2+Improve"
+  alt="Build Learn Improve Animation"
+/>
+
+<br><br>
 
 <img
   src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=13&duration=2400&pause=900&color=A78BFA&center=true&vCenter=true&width=500&height=30&lines=Thanks+for+visiting+my+profile+%E2%9D%A4%EF%B8%8F;See+you+around+%F0%9F%91%8B;Keep+building+%F0%9F%9A%80"
