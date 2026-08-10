@@ -55,7 +55,7 @@
   alt="Snake divider"
 />
 
-<br><br>
+
 
 <picture>
 
