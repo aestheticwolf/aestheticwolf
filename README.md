@@ -36,10 +36,6 @@
 
 <br>
 
-<img
-  src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=25&duration=2200&pause=700&color=38BDF8&center=true&vCenter=true&width=750&height=50&lines=%F0%9F%93%8A+GitHub+Statistics;%E2%9A%A1+Code+%7C+Consistency+%7C+Growth;%F0%9F%9A%80+Building+Every+Day"
-  alt="GitHub Statistics"
-/>
 
 
 <img
@@ -133,13 +129,6 @@
 />
 
 <br>
-
-<img
-  src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=25&duration=1800&pause=700&color=38BDF8&center=true&vCenter=true&width=750&height=50&lines=%F0%9F%9A%80+Build;%F0%9F%A7%A0+Learn;%E2%9A%A1+Create;%F0%9F%94%A5+Improve;%F0%9F%9A%80+Build+%E2%80%A2+Learn+%E2%80%A2+Improve"
-  alt="Build Learn Improve Animation"
-/>
-
-<br><br>
 
 <img
   src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=13&duration=2400&pause=900&color=A78BFA&center=true&vCenter=true&width=500&height=30&lines=Thanks+for+visiting+my+profile+%E2%9D%A4%EF%B8%8F;See+you+around+%F0%9F%91%8B;Keep+building+%F0%9F%9A%80"
