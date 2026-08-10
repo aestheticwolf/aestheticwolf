@@ -29,14 +29,14 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
 
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=#22D3EE&color_dots=#0B1220,#164E63,#0891B2,#06B6D4,#67E8F9
-            dist/github-contribution-grid-snake-dark.svg?color_snake=#F472B6&color_dots=#0D1117,#312E81,#4C1D95,#7C3AED,#C084FC
+            dist/github-contribution-grid-snake.svg?color_snake=#06B6D4&color_dots=#0B1220,#164E63,#0369A1,#0891B2,#22D3EE
+            dist/github-contribution-grid-snake-dark.svg?color_snake=#A78BFA&color_dots=#0D1117,#172554,#312E81,#4C1D95,#7C3AED
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # ==========================================
-      # Push generated SVG files to output branch
+      # Deploy generated SVG files
       # ==========================================
 
       - name: Deploy Snake Animation
