@@ -15,12 +15,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: generate snake svg
-        uses: Platane/snk@v3
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          # color_snake is the moving snake head/body
+          # color_dots is 5 colors: [no contributions -> highest contributions]
+          # themed to match the header/footer gradient (navy -> indigo -> cyan/violet)
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.svg?color_snake=#38BDF8&color_dots=#161B22,#172554,#312E81,#2563EB,#22D3EE
+            dist/github-contribution-grid-snake-dark.svg?color_snake=#A78BFA&color_dots=#161B22,#172554,#312E81,#2563EB,#22D3EE
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: push svg to output branch
         uses: crazy-max/ghaction-github-pages@v4
