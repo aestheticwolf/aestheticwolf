@@ -2,10 +2,13 @@ name: Generate Contribution Snake
 
 on:
   schedule:
-    - cron: "0 7 * * *"
+    # Run automatically every 12 hours (at 00:00 and 12:00 UTC)
+    - cron: "0 */12 * * *"
 
+  # Allows manual triggering of the workflow from the Actions tab
   workflow_dispatch:
 
+  # Runs on pushes to the main branch
   push:
     branches:
       - main
@@ -16,35 +19,35 @@ jobs:
       contents: write
 
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       # ==========================================
-      # Generate contribution snake
+      # 1. Checkout repository
       # ==========================================
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-      - name: Generate Snake Animation
+      # ==========================================
+      # 2. Generate contribution snake SVGs
+      # ==========================================
+      - name: Generate Contribution Snake SVGs
         uses: Platane/snk/svg-only@v3
-
         with:
-          github_user_name: ${{ github.repository_owner }}
-
+          github_user_name: aestheticwolf
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=#22D3EE&color_dots=#0B1220,#164E63,#0EA5E9,#6366F1,#A78BFA
-            dist/github-contribution-grid-snake-dark.svg?color_snake=#F472B6&color_dots=#0D1117,#1E1B4B,#4338CA,#7C3AED,#EC4899
-
+            dist/github-contribution-grid-snake.svg?color_snake=#3B82F6&color_dots=#EBEDF0,#BAE6FD,#38BDF8,#3B82F6,#1D4ED8
+            dist/github-contribution-grid-snake-dark.svg?color_snake=#22D3EE&color_dots=#0E111C,#1E1B4B,#4338CA,#7C3AED,#22D3EE
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # ==========================================
-      # Deploy generated SVG files
+      # 3. Deploy SVGs to the 'output' branch
       # ==========================================
-
-      - name: Deploy Snake Animation
+      - name: Deploy Snake SVGs to Output Branch
         uses: crazy-max/ghaction-github-pages@v4
-
         with:
           target_branch: output
           build_dir: dist
-
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

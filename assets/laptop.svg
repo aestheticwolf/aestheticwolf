@@ -1,0 +1,414 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="100%" height="100%">
+  <defs>
+    <!-- Lighting Gradients -->
+    <radialGradient id="deskGlow" cx="50%" cy="85%" r="60%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.3" />
+      <stop offset="40%" stop-color="#3B82F6" stop-opacity="0.18" />
+      <stop offset="70%" stop-color="#22D3EE" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#08090D" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Metallic Laptop Rim Gradients -->
+    <linearGradient id="chassisBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3A3F58" />
+      <stop offset="25%" stop-color="#1E2235" />
+      <stop offset="50%" stop-color="#4B5578" />
+      <stop offset="75%" stop-color="#151824" />
+      <stop offset="100%" stop-color="#282D42" />
+    </linearGradient>
+
+    <linearGradient id="bezelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141724" />
+      <stop offset="100%" stop-color="#090B12" />
+    </linearGradient>
+
+    <linearGradient id="deckGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#222638" />
+      <stop offset="20%" stop-color="#181B29" />
+      <stop offset="80%" stop-color="#12141F" />
+      <stop offset="100%" stop-color="#0B0D14" />
+    </linearGradient>
+
+    <linearGradient id="deckLipGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1A1E2E" />
+      <stop offset="40%" stop-color="#4B5578" />
+      <stop offset="50%" stop-color="#6366F1" stop-opacity="0.7" />
+      <stop offset="60%" stop-color="#4B5578" />
+      <stop offset="100%" stop-color="#1A1E2E" />
+    </linearGradient>
+
+    <linearGradient id="screenGlare" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.05" />
+      <stop offset="35%" stop-color="#FFFFFF" stop-opacity="0.02" />
+      <stop offset="60%" stop-color="#22D3EE" stop-opacity="0.01" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.1" />
+    </linearGradient>
+
+    <linearGradient id="activeTabGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+
+    <!-- Floating Badge Gradients -->
+    <linearGradient id="glassPillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#161A2B" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0C0E17" stop-opacity="0.95" />
+    </linearGradient>
+
+    <style>
+      @keyframes blinkCursor {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      @keyframes floatPillA {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-7px); }
+      }
+      @keyframes floatPillB {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(6px); }
+      }
+      @keyframes pulseSignal {
+        0%, 100% { opacity: 0.4; }
+        50% { opacity: 0.95; }
+      }
+      @keyframes lineGlow {
+        0%, 100% { stroke-opacity: 0.3; }
+        50% { stroke-opacity: 0.8; }
+      }
+      @keyframes waveScroll {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -40; }
+      }
+
+      .text-code {
+        font-family: "JetBrains Mono", "Fira Code", Monaco, Consolas, "Courier New", monospace;
+        font-size: 11px;
+      }
+      .text-ui {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      }
+      .cursor-blink {
+        animation: blinkCursor 0.85s infinite;
+      }
+      .floating-a {
+        animation: floatPillA 4.5s ease-in-out infinite;
+      }
+      .floating-b {
+        animation: floatPillB 5s ease-in-out infinite;
+      }
+      .signal-ping {
+        animation: pulseSignal 2s infinite ease-in-out;
+      }
+      .wave-anim {
+        animation: waveScroll 2s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Ambient Environment Glow behind Laptop -->
+  <ellipse cx="500" cy="520" rx="460" ry="90" fill="url(#deskGlow)" />
+
+  <!-- 3D FLOATING HUD WIDGETS -->
+  <!-- Left Floating Widget: Tech Core -->
+  <g transform="translate(40, 95)" class="floating-a">
+    <rect width="180" height="64" rx="12" fill="url(#glassPillGrad)" stroke="rgba(139, 92, 246, 0.4)" stroke-width="1.2" filter="drop-shadow(0 8px 16px rgba(0,0,0,0.5))" />
+    <path d="M 0 0 L 180 0" stroke="url(#activeTabGrad)" stroke-width="2" rx="1" />
+    <circle cx="20" cy="24" r="5" fill="#8B5CF6" />
+    <circle cx="20" cy="24" r="9" fill="#8B5CF6" class="signal-ping" />
+    <text x="34" y="27" class="text-code" font-size="10" font-weight="700" fill="#FFFFFF" letter-spacing="1">FULL-STACK ENGINE</text>
+    <text x="20" y="48" class="text-code" font-size="9" fill="#A1A1AA">React 19 • Node • TS 5.9</text>
+  </g>
+
+  <!-- Right Floating Widget: AI Pipeline -->
+  <g transform="translate(775, 75)" class="floating-b">
+    <rect width="185" height="64" rx="12" fill="url(#glassPillGrad)" stroke="rgba(34, 211, 238, 0.4)" stroke-width="1.2" filter="drop-shadow(0 8px 16px rgba(0,0,0,0.5))" />
+    <path d="M 0 0 L 185 0" stroke="url(#activeTabGrad)" stroke-width="2" rx="1" />
+    <circle cx="20" cy="24" r="5" fill="#22D3EE" />
+    <circle cx="20" cy="24" r="9" fill="#22D3EE" class="signal-ping" />
+    <text x="34" y="27" class="text-code" font-size="10" font-weight="700" fill="#22D3EE" letter-spacing="1">GEMINI AI INTEGRATION</text>
+    <text x="20" y="48" class="text-code" font-size="9" fill="#A1A1AA">Latency: 14ms • RAG Active</text>
+  </g>
+
+  <!-- LAPTOP SCREEN ENCLOSURE (UPPER LID) -->
+  <!-- Outer metallic display bezel edge -->
+  <rect x="115" y="35" width="770" height="475" rx="18" fill="url(#bezelGrad)" stroke="url(#chassisBorder)" stroke-width="2" />
+
+  <!-- Inner Display Frame -->
+  <rect x="125" y="45" width="750" height="455" rx="12" fill="#08090D" />
+
+  <!-- WebCam & Ambient Light Sensor Notch -->
+  <circle cx="500" cy="53" r="3.5" fill="#1C1F2E" stroke="#2B3145" stroke-width="0.8" />
+  <circle cx="500" cy="53" r="1.5" fill="#0D111A" />
+  <circle cx="515" cy="53" r="1.2" fill="#22D3EE" opacity="0.6" />
+
+  <!-- ==================== DISPLAY INNER WORKSPACE ==================== -->
+  <g transform="translate(135, 62)">
+    <!-- IDE Workspace Background -->
+    <rect width="730" height="428" rx="8" fill="#0A0C14" />
+
+    <!-- Window Top Header Bar -->
+    <rect width="730" height="34" rx="8" fill="#101320" />
+    <path d="M 0 34 L 730 34" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1" />
+
+    <!-- macOS Traffic Light Window Buttons -->
+    <circle cx="20" cy="17" r="5" fill="#EF4444" />
+    <circle cx="36" cy="17" r="5" fill="#F59E0B" />
+    <circle cx="52" cy="17" r="5" fill="#10B981" />
+
+    <!-- Breadcrumb Path in Window Titlebar -->
+    <text x="225" y="21" class="text-code" font-size="10.5" fill="#94A3B8" letter-spacing="0.8">
+      aestheticwolf <tspan fill="#64748B">/</tspan> workspace <tspan fill="#64748B">/</tspan> src <tspan fill="#64748B">/</tspan> <tspan fill="#E2E8F0" font-weight="700">IntelligenceEngine.tsx</tspan>
+    </text>
+
+    <!-- Top Right Status Mini Indicators -->
+    <g transform="translate(640, 10)">
+      <rect width="75" height="15" rx="4" fill="#181D2E" />
+      <circle cx="9" cy="7.5" r="3" fill="#10B981" />
+      <text x="18" y="11" class="text-code" font-size="8.5" fill="#10B981">LIVE SYNC</text>
+    </g>
+
+    <!-- IDE Tab Strip Bar -->
+    <g transform="translate(0, 34)">
+      <rect width="730" height="28" fill="#0D101C" />
+      <path d="M 0 28 L 730 28" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1" />
+
+      <!-- Active Tab: IntelligenceEngine.tsx -->
+      <rect x="140" y="0" width="165" height="28" fill="#121524" />
+      <path d="M 140 27 L 305 27" stroke="url(#activeTabGrad)" stroke-width="2.5" />
+      <text x="152" y="18" class="text-code" font-size="10" font-weight="700" fill="#67E8F9">⚛ IntelligenceEngine.tsx</text>
+
+      <!-- Inactive Tab 2: NeuralAgent.py -->
+      <rect x="306" y="0" width="135" height="28" fill="#0D101C" />
+      <text x="320" y="18" class="text-code" font-size="10" fill="#64748B">🐍 NeuralAgent.py</text>
+
+      <!-- Inactive Tab 3: schema.prisma -->
+      <rect x="442" y="0" width="125" height="28" fill="#0D101C" />
+      <text x="454" y="18" class="text-code" font-size="10" fill="#64748B">◬ schema.prisma</text>
+    </g>
+
+    <!-- LEFT SIDEBAR: FILE EXPLORER -->
+    <g transform="translate(0, 62)">
+      <rect width="140" height="366" fill="#0D0F19" />
+      <path d="M 140 0 L 140 366" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1" />
+
+      <!-- Explorer Header -->
+      <text x="14" y="20" class="text-code" font-size="9" font-weight="700" fill="#64748B" letter-spacing="1.5">EXPLORER</text>
+
+      <!-- File Tree Items -->
+      <g transform="translate(14, 38)">
+        <text x="0" y="0" class="text-code" font-size="9.5" fill="#94A3B8">▾ src</text>
+        <text x="10" y="18" class="text-code" font-size="9.5" fill="#64748B">▸ api</text>
+        <text x="10" y="34" class="text-code" font-size="9.5" fill="#64748B">▸ components</text>
+        
+        <text x="10" y="52" class="text-code" font-size="9.5" fill="#94A3B8">▾ intelligence</text>
+        <text x="22" y="68" class="text-code" font-size="9.5" fill="#22D3EE">• gemini.ts</text>
+        <text x="22" y="84" class="text-code" font-size="9.5" fill="#A78BFA">• agent.ts</text>
+        
+        <text x="10" y="102" class="text-code" font-size="9.5" fill="#94A3B8">▾ database</text>
+        <text x="22" y="118" class="text-code" font-size="9.5" fill="#38BDF8">• prisma.db</text>
+
+        <text x="10" y="136" class="text-code" font-size="9.5" fill="#F472B6">⚛ App.tsx</text>
+        <text x="10" y="152" class="text-code" font-size="9.5" fill="#F59E0B">⚡ vite.config.ts</text>
+        <text x="10" y="168" class="text-code" font-size="9.5" fill="#64748B">⚙ package.json</text>
+      </g>
+    </g>
+
+    <!-- CENTER CODE EDITOR PANE -->
+    <g transform="translate(140, 62)">
+      <!-- Line Number Gutter -->
+      <rect width="32" height="366" fill="#0A0C14" />
+      <path d="M 32 0 L 32 366" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1" />
+      
+      <g class="text-code" font-size="10.5" fill="#334155" text-anchor="end">
+        <text x="24" y="24">1</text>
+        <text x="24" y="44">2</text>
+        <text x="24" y="64">3</text>
+        <text x="24" y="84">4</text>
+        <text x="24" y="104">5</text>
+        <text x="24" y="124">6</text>
+        <text x="24" y="144">7</text>
+        <text x="24" y="164">8</text>
+        <text x="24" y="184">9</text>
+        <text x="24" y="204">10</text>
+        <text x="24" y="224">11</text>
+        <text x="24" y="244">12</text>
+        <text x="24" y="264">13</text>
+        <text x="24" y="284">14</text>
+        <text x="24" y="304">15</text>
+        <text x="24" y="324">16</text>
+      </g>
+
+      <!-- Active Line Highlight on Line 8 -->
+      <rect x="33" y="150" width="357" height="20" fill="#141829" opacity="0.8" />
+      <path d="M 33 150 L 33 170" stroke="#8B5CF6" stroke-width="2" />
+
+      <!-- Syntax-Highlighted Code -->
+      <g transform="translate(44, 0)" class="text-code" font-size="10.5">
+        <!-- Line 1 -->
+        <text x="0" y="24">
+          <tspan fill="#F43F5E">import</tspan> <tspan fill="#F8FAFC">{ GoogleGemini, RAG }</tspan> <tspan fill="#F43F5E">from</tspan> <tspan fill="#34D399">'@ai/core'</tspan><tspan fill="#F8FAFC">;</tspan>
+        </text>
+
+        <!-- Line 2 -->
+        <text x="0" y="44">
+          <tspan fill="#F43F5E">import</tspan> <tspan fill="#F8FAFC">{ PrismaClient }</tspan> <tspan fill="#F43F5E">from</tspan> <tspan fill="#34D399">'@prisma/client'</tspan><tspan fill="#F8FAFC">;</tspan>
+        </text>
+
+        <!-- Line 3 (Comment) -->
+        <text x="0" y="64" fill="#64748B">
+          // Architect: Richard D'Souza (Full-Stack Engineer)
+        </text>
+
+        <!-- Line 4 -->
+        <text x="0" y="84">
+          <tspan fill="#818CF8">export async function</tspan> <tspan fill="#38BDF8">orchestrateSystem</tspan><tspan fill="#F8FAFC">(req: DevRequest) {</tspan>
+        </text>
+
+        <!-- Line 5 -->
+        <text x="12" y="104">
+          <tspan fill="#F43F5E">const</tspan> <tspan fill="#F8FAFC">ai</tspan> <tspan fill="#F43F5E">=</tspan> <tspan fill="#818CF8">new</tspan> <tspan fill="#38BDF8">GoogleGemini</tspan><tspan fill="#F8FAFC">({</tspan>
+        </text>
+
+        <!-- Line 6 -->
+        <text x="24" y="124">
+          <tspan fill="#E2E8F0">model:</tspan> <tspan fill="#34D399">'gemini-2.5-pro'</tspan><tspan fill="#F8FAFC">,</tspan> <tspan fill="#E2E8F0">temperature:</tspan> <tspan fill="#F59E0B">0.2</tspan>
+        </text>
+
+        <!-- Line 7 -->
+        <text x="12" y="144">
+          <tspan fill="#F8FAFC">});</tspan>
+        </text>
+
+        <!-- Line 8 (Active Line with Cursor) -->
+        <text x="12" y="164">
+          <tspan fill="#F43F5E">const</tspan> <tspan fill="#F8FAFC">pipeline</tspan> <tspan fill="#F43F5E">=</tspan> <tspan fill="#F43F5E">await</tspan> <tspan fill="#F8FAFC">ai.</tspan><tspan fill="#38BDF8">streamInference</tspan><tspan fill="#F8FAFC">(req.data);</tspan>
+        </text>
+        <!-- Blinking Code Cursor -->
+        <line x1="282" y1="152" x2="282" y2="167" stroke="#22D3EE" stroke-width="2" class="cursor-blink" />
+
+        <!-- Line 9 -->
+        <text x="12" y="184">
+          <tspan fill="#818CF8">return</tspan> <tspan fill="#F8FAFC">{</tspan>
+        </text>
+
+        <!-- Line 10 -->
+        <text x="24" y="204">
+          <tspan fill="#E2E8F0">status:</tspan> <tspan fill="#34D399">'READY_TO_DEPLOY'</tspan><tspan fill="#F8FAFC">,</tspan>
+        </text>
+
+        <!-- Line 11 -->
+        <text x="24" y="224">
+          <tspan fill="#E2E8F0">latency:</tspan> <tspan fill="#F59E0B">12</tspan><tspan fill="#F8FAFC">,</tspan> <tspan fill="#E2E8F0">unit:</tspan> <tspan fill="#34D399">'ms'</tspan><tspan fill="#F8FAFC">,</tspan>
+        </text>
+
+        <!-- Line 12 -->
+        <text x="24" y="244">
+          <tspan fill="#E2E8F0">stream:</tspan> <tspan fill="#F8FAFC">pipeline.</tspan><tspan fill="#38BDF8">iterator</tspan><tspan fill="#F8FAFC">()</tspan>
+        </text>
+
+        <!-- Line 13 -->
+        <text x="12" y="264">
+          <tspan fill="#F8FAFC">};</tspan>
+        </text>
+
+        <!-- Line 14 -->
+        <text x="0" y="284">
+          <tspan fill="#F8FAFC">}</tspan>
+        </text>
+
+        <!-- Line 15 (Comment) -->
+        <text x="0" y="304" fill="#64748B">
+          // Sentinel Grid &amp; CRM Synchronization Active
+        </text>
+
+        <!-- Line 16 -->
+        <text x="0" y="324">
+          <tspan fill="#818CF8">export default</tspan> <tspan fill="#38BDF8">orchestrateSystem</tspan><tspan fill="#F8FAFC">;</tspan>
+        </text>
+      </g>
+    </g>
+
+    <!-- RIGHT SPLIT PANE: INTEGRATED TERMINAL & TELEMETRY -->
+    <g transform="translate(530, 62)">
+      <rect width="200" height="366" fill="#0C0E18" />
+      <path d="M 0 0 L 0 366" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1" />
+
+      <!-- Terminal Header -->
+      <rect width="200" height="24" fill="#141829" />
+      <path d="M 0 24 L 200 24" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1" />
+      <text x="10" y="16" class="text-code" font-size="8.5" font-weight="700" fill="#38BDF8">TERMINAL: bash</text>
+
+      <!-- Terminal Commands & Logs -->
+      <g transform="translate(10, 36)" class="text-code" font-size="9">
+        <text x="0" y="0" fill="#A78BFA">$ npm run build</text>
+        <text x="0" y="15" fill="#34D399">✓ 42 modules bundled</text>
+        <text x="0" y="30" fill="#34D399">✓ zero errors • 240ms</text>
+        
+        <text x="0" y="52" fill="#A78BFA">$ node server.js</text>
+        <text x="0" y="67" fill="#22D3EE">⚡ Port 8080 online</text>
+        <text x="0" y="82" fill="#E2E8F0">● DB: SQLite &amp; Atlas</text>
+        <text x="0" y="97" fill="#34D399">● Auth: JWT Verified</text>
+      </g>
+
+      <!-- Sub-panel: Live System Waveform & Diagnostics -->
+      <g transform="translate(0, 160)">
+        <rect width="200" height="206" fill="#0A0C14" />
+        <path d="M 0 0 L 200 0" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1" />
+        
+        <text x="10" y="18" class="text-code" font-size="8.5" font-weight="700" fill="#64748B" letter-spacing="1">SYSTEM TELEMETRY</text>
+
+        <!-- Metric 1: CPU -->
+        <g transform="translate(10, 30)">
+          <text x="0" y="0" class="text-code" font-size="8.5" fill="#94A3B8">CPU LOAD: 18%</text>
+          <rect x="0" y="5" width="180" height="5" rx="2.5" fill="#181E32" />
+          <rect x="0" y="5" width="42" height="5" rx="2.5" fill="#22D3EE" />
+        </g>
+
+        <!-- Metric 2: MEMORY -->
+        <g transform="translate(10, 52)">
+          <text x="0" y="0" class="text-code" font-size="8.5" fill="#94A3B8">RAM USAGE: 4.2GB / 16GB</text>
+          <rect x="0" y="5" width="180" height="5" rx="2.5" fill="#181E32" />
+          <rect x="0" y="5" width="58" height="5" rx="2.5" fill="#8B5CF6" />
+        </g>
+
+        <!-- Oscilloscope Waveform Animation -->
+        <g transform="translate(10, 80)">
+          <rect width="180" height="50" rx="4" fill="#0F1322" stroke="rgba(255, 255, 255, 0.04)" />
+          <!-- Animated Sinusoidal Grid -->
+          <path d="M 0 25 L 180 25" stroke="#1E263E" stroke-width="1" stroke-dasharray="2 2" />
+          <path d="M 5 25 Q 25 5, 45 25 T 85 25 T 125 25 T 165 25 T 180 25" fill="none" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="8 4" class="wave-anim" />
+          <text x="6" y="44" class="text-code" font-size="7.5" fill="#22D3EE">LATENCY: 12ms // 60 FPS</text>
+        </g>
+
+        <!-- Quick Status Pills -->
+        <g transform="translate(10, 142)">
+          <rect width="85" height="20" rx="4" fill="#151A2E" stroke="rgba(139, 92, 246, 0.3)" />
+          <text x="8" y="14" class="text-code" font-size="8" fill="#C4B5FD">RAG ACTIVE</text>
+
+          <rect x="95" y="0" width="85" height="20" rx="4" fill="#151A2E" stroke="rgba(34, 211, 238, 0.3)" />
+          <text x="103" y="14" class="text-code" font-size="8" fill="#67E8F9">REST // SECURE</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Screen Glass Sheen / Anti-Glare Diagonal Reflection -->
+    <path d="M 0 0 L 350 0 L 150 428 L 0 428 Z" fill="url(#screenGlare)" pointer-events="none" />
+  </g>
+
+  <!-- ==================== LAPTOP HINGE & LOWER CHASSIS ==================== -->
+  <!-- Center Hinge Bar -->
+  <rect x="370" y="508" width="260" height="10" rx="3" fill="#141826" stroke="#2B3145" stroke-width="1" />
+
+  <!-- Lower Laptop Deck (Perspective Trapezoid Deck) -->
+  <path d="M 50 516 L 950 516 L 880 546 L 120 546 Z" fill="url(#deckGrad)" stroke="#32384E" stroke-width="1.2" />
+
+  <!-- Front Deck Lip Highlight -->
+  <path d="M 120 546 L 880 546 L 860 552 L 140 552 Z" fill="url(#deckLipGrad)" />
+
+  <!-- Center Thumb Opening Recess -->
+  <rect x="465" y="516" width="70" height="4" rx="2" fill="#0C0E16" stroke="#2B3145" stroke-width="0.5" />
+
+  <!-- Glowing Keyboard Underglow Light Leak between Lid & Deck -->
+  <path d="M 180 516 L 820 516" stroke="url(#activeTabGrad)" stroke-width="2" opacity="0.75" />
+</svg>
