@@ -85,52 +85,21 @@
 <!-- 04. TECHNOLOGY ECOSYSTEM                   -->
 <!-- ========================================== -->
 
-## 🛠️ &nbsp; Technology Ecosystem
-
-A clean architectural overview of core programming languages, frameworks, databases, and development tooling.
+<div align="left">
+  <small><code>STACK ARCHITECTURE &bull; 5 TIERS &bull; 19 CORE TECHNOLOGIES</code></small>
+  <h2>TECHNOLOGY ECOSYSTEM</h2>
+  <p><em>Official technology stack across core languages, client, runtime, databases, and tooling.</em></p>
+</div>
 
 <br/>
 
-<table>
-  <thead>
-    <tr>
-      <th width="30%">Architectural Tier</th>
-      <th width="70%">Technology Stack &amp; Visual Iconography</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Programming Languages</strong></td>
-      <td>
-        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=cs,py,js,cpp&theme=dark" alt="Languages: C#, Python, JavaScript, C++" /></a>
-      </td>
-    </tr>
-    <tr>
-      <td><strong>Frontend Development</strong></td>
-      <td>
-        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=react,expo,html,css&theme=dark" alt="Frontend: React.js, React Native, Expo, HTML5, CSS3" /></a>
-      </td>
-    </tr>
-    <tr>
-      <td><strong>Backend Engineering</strong></td>
-      <td>
-        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=nodejs,express,dotnet&theme=dark" alt="Backend: Node.js, Express.js, ASP.NET, .NET Framework" /></a>
-      </td>
-    </tr>
-    <tr>
-      <td><strong>Databases &amp; Storage</strong></td>
-      <td>
-        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=mysql,mongodb,firebase&theme=dark" alt="Databases: MySQL, MongoDB, Microsoft SQL Server, Firebase Firestore" /></a>
-      </td>
-    </tr>
-    <tr>
-      <td><strong>Tools &amp; Workspaces</strong></td>
-      <td>
-        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=git,github,postman,vscode,visualstudio&theme=dark" alt="Tools: Git, GitHub, Postman, VS Code, Visual Studio, MySQL Workbench" /></a>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div align="center">
+  <img
+    src="./assets/technology-logos.svg"
+    alt="Technology Ecosystem - Richard D'Souza"
+    width="100%"
+  />
+</div>
 
 <br/>
 
