@@ -63,40 +63,21 @@
 <!-- 03. ABOUT & PROFESSIONAL BACKGROUND        -->
 <!-- ========================================== -->
 
-## 👤 &nbsp; About &amp; Professional Background
-
-> I'm a Software Engineer and Full-Stack Developer passionate about building practical software solutions and turning ideas into real-world applications.
->
-> My experience spans web and mobile application development, backend systems, API integration, database management, and AI-powered applications. I enjoy exploring modern technologies, solving engineering challenges, and continuously improving my development skills.
+<div align="left">
+  <small><code>IDENTITY &bull; ACADEMIC FOUNDATION &bull; CAREER TIMELINE</code></small>
+  <h2>ABOUT &amp; PROFESSIONAL BACKGROUND</h2>
+  <p><em>Engineering mindset, academic rigor, and production impact.</em></p>
+</div>
 
 <br/>
 
-<table>
-  <tr>
-    <td width="33%" valign="top">
-      <h4>🎓 &nbsp; Education</h4>
-      <p><strong>M.Sc. Information Technology</strong><br/>
-      <em>Parvatibai Chowgule College of Arts and Science, Goa</em></p>
-      <p><small>Advanced focus on software architecture, distributed databases, robust API modeling, and applied AI systems.</small></p>
-    </td>
-    <td width="34%" valign="top">
-      <h4>💼 &nbsp; Professional Experience</h4>
-      <p><strong>Full-Stack Developer Intern</strong><br/>
-      <em>Infipre IT Services Pvt. Ltd.</em> &bull; <small>Jan 2026 – Jun 2026</small></p>
-      <p><strong>Software Engineer Trainee</strong><br/>
-      <em>Onstro (formerly Teknorix)</em> &bull; <small>Apr 2022 – Sep 2022</small></p>
-    </td>
-    <td width="33%" valign="top">
-      <h4>🎯 &nbsp; Core Focus Areas</h4>
-      <ul>
-        <li><strong>Full-Stack Web</strong> (React, Node, Express)</li>
-        <li><strong>Cross-Platform Mobile</strong> (React Native, Expo)</li>
-        <li><strong>Backend &amp; Database Architecture</strong></li>
-        <li><strong>Applied AI &amp; Intelligent Automation</strong></li>
-      </ul>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img
+    src="./assets/about.svg"
+    alt="About &amp; Professional Background - Richard D'Souza"
+    width="100%"
+  />
+</div>
 
 <br/>
 
