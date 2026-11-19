@@ -1,55 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 88" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 88" width="100%">
   <defs>
-    <linearGradient id="border_GitHub" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.6">
-        <animate attributeName="stop-color" values="#22D3EE;#A78BFA;#22D3EE" dur="6s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="50%" stop-color="#282E44" stop-opacity="0.7" />
-      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0.3" />
+    <linearGradient id="cardBg_github" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#151A29" />
+      <stop offset="100%" stop-color="#0E121E" />
     </linearGradient>
 
-    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#121726" stop-opacity="0.95" />
-      <stop offset="100%" stop-color="#0B0E17" stop-opacity="0.98" />
+    <linearGradient id="borderGrad_github" x1="0%" y1="0%" x2="100%" y2="0%">
+      
+          <stop offset="0%" stop-color="#282E44" />
+          <stop offset="50%" stop-color="#22D3EE" stop-opacity="0.8" />
+          <stop offset="100%" stop-color="#282E44" />
+        
     </linearGradient>
 
-    <filter id="glow_GitHub" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4" />
+    <filter id="iconGlow_github" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
     </filter>
   </defs>
 
   <style><![CDATA[
     .mono { font-family: 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace; }
     .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
-    .card-box:hover {
-      cursor: pointer;
-    }
   ]]></style>
 
   <!-- Card Chassis -->
-  <g filter="url(#glow_GitHub)">
-    <rect x="2" y="2" width="306" height="84" rx="13" fill="url(#cardBg)" stroke="url(#border_GitHub)" stroke-width="1.3" />
-  </g>
+  <rect width="310" height="88" rx="12" fill="url(#cardBg_github)" stroke="url(#borderGrad_github)" stroke-width="1.3" />
 
-  <!-- Icon Circle Badge -->
-  <g transform="translate(18, 18)">
-    <circle cx="24" cy="24" r="23" fill="#161C2C" stroke="#283550" stroke-width="1" />
-    <g transform="translate(12, 12)">
-      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" fill="#FFFFFF"/>
+  <!-- Left Icon Box -->
+  <g transform="translate(16, 18)">
+    <rect width="52" height="52" rx="10" fill="#0D111C" stroke="#222B3F" stroke-width="1" />
+    <g transform="translate(10, 10) scale(1)">
+      
+          <!-- GitHub Octocat Mark -->
+          <path fill="#22D3EE" d="M16 0C7.16 0 0 7.16 0 16c0 7.08 4.58 13.06 10.94 15.18.8.15 1.1-.34 1.1-.76 0-.38-.02-1.62-.02-2.98-4.44.96-5.38-1.88-5.38-1.88-.72-1.84-1.78-2.34-1.78-2.34-1.46-.98.12-.96.12-.96 1.6.12 2.46 1.64 2.46 1.64 1.42 2.44 3.74 1.74 4.66 1.32.14-1.04.56-1.74 1.02-2.14-3.54-.4-7.26-1.78-7.26-7.9 0-1.74.62-3.18 1.64-4.3-.16-.4-.72-2.04.16-4.24 0 0 1.34-.44 4.4 1.64 1.28-.36 2.66-.54 4.02-.54s2.74.18 4.02.54c3.06-2.08 4.4-1.64 4.4-1.64.88 2.2.32 3.84.16 4.24 1.02 1.12 1.64 2.56 1.64 4.3 0 6.14-3.72 7.5-7.28 7.9.58.5 1.08 1.48 1.08 3 0 2.16-.02 3.9-.02 4.44 0 .42.28.92 1.1.76C27.42 29.06 32 23.08 32 16 32 7.16 24.84 0 16 0z" />
+        
     </g>
   </g>
 
-  <!-- Platform Information -->
-  <g transform="translate(76, 26)">
-    <text x="0" y="14" class="sans" font-size="15" font-weight="700" fill="#FFFFFF">GitHub</text>
-    <text x="0" y="32" class="mono" font-size="11" font-weight="600" fill="#22D3EE">@aestheticwolf</text>
-    <text x="0" y="47" class="sans" font-size="9.5" fill="#71717A">Repositories &amp; Codebase</text>
+  <!-- Title & Subtitle -->
+  <g transform="translate(78, 28)">
+    <!-- Metadata Pill -->
+    <rect x="0" y="0" width="138" height="15" rx="4" fill="#16273B" />
+    <text x="6" y="11" class="mono" font-size="8.5" font-weight="700" fill="#22D3EE" letter-spacing="0.5">30+ REPOSITORIES</text>
+
+    <!-- Network / Username -->
+    <text x="0" y="32" class="sans" font-size="14.5" font-weight="700" fill="#FFFFFF">GitHub</text>
+    <text x="0" y="47" class="mono" font-size="10.5" font-weight="500" fill="#8B949E">@aestheticwolf</text>
   </g>
 
-  <!-- External Link Indicator Pill -->
-  <g transform="translate(242, 18)">
-    <rect x="0" y="0" width="50" height="22" rx="11" fill="#141B2B" stroke="#22D3EE" stroke-width="0.8" />
-    <text x="21" y="14" class="sans" font-size="9.5" font-weight="700" fill="#22D3EE">GO</text>
-    <text x="35" y="14" class="sans" font-size="11" font-weight="700" fill="#22D3EE">↗</text>
+  <!-- Right Arrow Indicator -->
+  <g transform="translate(280, 44)">
+    <circle cx="0" cy="0" r="11" fill="#182032" stroke="#2B364E" stroke-width="1" />
+    <path d="M -3 -4 L 2 0 L -3 4" fill="none" stroke="#22D3EE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
   </g>
 </svg>

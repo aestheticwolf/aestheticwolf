@@ -317,54 +317,53 @@
     alt="Let's Build Something Extraordinary - Richard D'Souza"
     width="100%"
   />
+</div>
 
-  <br/>
+<br/>
 
-  <!-- THREE INTERACTIVE SOCIAL CARDS -->
-  <table border="0" cellpadding="0" cellspacing="8" width="100%">
-    <tr>
-      <td width="33.3%" align="center">
-        <a href="https://github.com/aestheticwolf" target="_blank">
-          <img
-            src="./assets/social-github.svg"
-            alt="GitHub Profile - @aestheticwolf"
-            width="100%"
-          />
-        </a>
-      </td>
-      <td width="33.3%" align="center">
-        <a href="https://linkedin.com/in/richarddsouza29" target="_blank">
-          <img
-            src="./assets/social-linkedin.svg"
-            alt="LinkedIn Profile - Richard D'Souza"
-            width="100%"
-          />
-        </a>
-      </td>
-      <td width="33.3%" align="center">
-        <a href="https://richard-portfolio-website-ten.vercel.app" target="_blank">
-          <img
-            src="./assets/social-portfolio.svg"
-            alt="Live Portfolio - Richard D'Souza"
-            width="100%"
-          />
-        </a>
-      </td>
-    </tr>
-  </table>
+<!-- THREE INTERACTIVE SOCIAL CARDS -->
+<table border="0" cellpadding="0" cellspacing="8" width="100%">
+  <tr>
+    <td width="33.3%" align="center">
+      <a href="https://github.com/aestheticwolf" target="_blank">
+        <img
+          src="./assets/social-github.svg"
+          alt="GitHub Profile - @aestheticwolf"
+          width="100%"
+        />
+      </a>
+    </td>
+    <td width="33.3%" align="center">
+      <a href="https://linkedin.com/in/richarddsouza29" target="_blank">
+        <img
+          src="./assets/social-linkedin.svg"
+          alt="LinkedIn Profile - Richard D'Souza"
+          width="100%"
+        />
+      </a>
+    </td>
+    <td width="33.3%" align="center">
+      <a href="https://richard-portfolio-website-ten.vercel.app" target="_blank">
+        <img
+          src="./assets/social-portfolio.svg"
+          alt="Live Portfolio - Richard D'Souza"
+          width="100%"
+        />
+      </a>
+    </td>
+  </tr>
+</table>
 
-  <br/>
+<br/>
 
-  <!-- SIGNATURE FOOTER -->
+<!-- SIGNATURE FOOTER & BACK TO TOP -->
+<div align="center">
   <img
     src="./assets/footer.svg"
     alt="Engineered with Passion &amp; Precision // Richard D'Souza"
     width="100%"
   />
-
-  <br/>
-
-  <!-- BACK TO TOP BUTTON -->
+  <br/><br/>
   <a href="#top">
     <img
       src="./assets/back-to-top.svg"
