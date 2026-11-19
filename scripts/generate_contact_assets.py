@@ -1,12 +1,18 @@
 #!/usr/bin/env python3
 """
-Generates the 2026 Contact Hero, Social Cards, and Signature Footer assets
+Generates the 2026 Contact Hero, Social Cards, Signature Footer, and Back to Top assets
 for Richard D'Souza (aestheticwolf).
-Strict adherence to the 2026 Dark Portfolio Design System:
-- Palette: #08090D (base), #111522 / #151A29 (cards), #282E44 (borders)
-- Accents: Violet (#A78BFA), Electric Blue (#60A5FA), Cyan (#22D3EE), Teal (#34D399)
-- Editorial typography, animated gradients, subtle scanning highlights, zero dead space.
-- Strictly conforming SVG aspect ratios without height="100%" container blowout.
+Strict adherence to the 2026 Dark Portfolio Global Palette:
+- Primary background: #080B14
+- Secondary background: #0D1321
+- Navy: #101B32
+- Card background: #121827
+- Violet: #8B5CF6
+- Electric blue: #3B82F6
+- Cyan: #22D3EE
+- Emerald: #10B981
+- Primary text: #F5F5F7
+- Secondary text: #A1A1AA
 """
 
 import os
@@ -14,36 +20,38 @@ import os
 def create_contact_hero():
     svg = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 135" width="100%">
   <defs>
-    <!-- Background Gradient -->
+    <!-- Background Gradient: Midnight Black #080B14 to #0D1321 -->
     <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#111522" stop-opacity="0.95" />
-      <stop offset="100%" stop-color="#08090D" stop-opacity="0.98" />
+      <stop offset="0%" stop-color="#0D1321" stop-opacity="0.96" />
+      <stop offset="60%" stop-color="#101B32" stop-opacity="0.90" />
+      <stop offset="100%" stop-color="#080B14" stop-opacity="0.98" />
     </linearGradient>
 
-    <!-- Animated Gradient for EXTRAORDINARY -->
+    <!-- Animated Gradient for EXTRAORDINARY: Violet to Cyan -->
     <linearGradient id="extraordinaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#A78BFA">
-        <animate attributeName="stop-color" values="#A78BFA;#60A5FA;#22D3EE;#A78BFA" dur="8s" repeatCount="indefinite" />
+      <stop offset="0%" stop-color="#8B5CF6">
+        <animate attributeName="stop-color" values="#8B5CF6;#3B82F6;#22D3EE;#8B5CF6" dur="8s" repeatCount="indefinite" />
       </stop>
-      <stop offset="50%" stop-color="#60A5FA">
-        <animate attributeName="stop-color" values="#60A5FA;#22D3EE;#A78BFA;#60A5FA" dur="8s" repeatCount="indefinite" />
+      <stop offset="50%" stop-color="#3B82F6">
+        <animate attributeName="stop-color" values="#3B82F6;#22D3EE;#8B5CF6;#3B82F6" dur="8s" repeatCount="indefinite" />
       </stop>
       <stop offset="100%" stop-color="#22D3EE">
-        <animate attributeName="stop-color" values="#22D3EE;#A78BFA;#60A5FA;#22D3EE" dur="8s" repeatCount="indefinite" />
+        <animate attributeName="stop-color" values="#22D3EE;#8B5CF6;#3B82F6;#22D3EE" dur="8s" repeatCount="indefinite" />
       </stop>
     </linearGradient>
 
     <!-- Animated Divider Line with Laser Scan -->
     <linearGradient id="contactLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0" />
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0" />
       <stop offset="30%" stop-color="#8B5CF6" stop-opacity="0.4" />
       <stop offset="50%" stop-color="#22D3EE" stop-opacity="0.9" />
-      <stop offset="70%" stop-color="#60A5FA" stop-opacity="0.4" />
+      <stop offset="70%" stop-color="#3B82F6" stop-opacity="0.4" />
       <stop offset="100%" stop-color="#22D3EE" stop-opacity="0" />
     </linearGradient>
 
     <radialGradient id="cornerGlow" cx="90%" cy="20%" r="60%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.12" />
+      <animate attributeName="cx" values="90%;85%;90%" dur="14s" repeatCount="indefinite" />
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.14" />
       <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0" />
     </radialGradient>
 
@@ -62,13 +70,13 @@ def create_contact_hero():
   ]]></style>
 
   <!-- Container Chassis -->
-  <rect width="1000" height="135" rx="14" fill="url(#heroBg)" stroke="#1F283D" stroke-width="1.2" />
+  <rect width="1000" height="135" rx="14" fill="url(#heroBg)" stroke="#282E44" stroke-width="1.2" />
   <rect width="1000" height="135" rx="14" fill="url(#cornerGlow)" />
 
   <!-- 01. Category Label with Live Pulsing Dot -->
   <g transform="translate(36, 26)">
-    <circle cx="6" cy="6" r="3.5" fill="#34D399" />
-    <circle cx="6" cy="6" r="6.5" fill="none" stroke="#34D399" stroke-width="1.2" opacity="0.6">
+    <circle cx="6" cy="6" r="3.5" fill="#10B981" />
+    <circle cx="6" cy="6" r="6.5" fill="none" stroke="#10B981" stroke-width="1.2" opacity="0.6">
       <animate attributeName="r" values="3.5;8;3.5" dur="2.4s" repeatCount="indefinite" />
       <animate attributeName="opacity" values="0.8;0;0.8" dur="2.4s" repeatCount="indefinite" />
     </circle>
@@ -79,7 +87,7 @@ def create_contact_hero():
 
   <!-- 02. Main Editorial Heading -->
   <g transform="translate(36, 68)">
-    <text x="0" y="0" class="sans" font-size="26" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">
+    <text x="0" y="0" class="sans" font-size="26" font-weight="800" fill="#F5F5F7" letter-spacing="-0.5">
       LET'S BUILD SOMETHING <tspan fill="url(#extraordinaryGrad)" filter="url(#textGlow)">EXTRAORDINARY.</tspan>
     </text>
   </g>
@@ -105,7 +113,7 @@ def create_social_card(network, title, subtitle, icon_type, href):
     """
     if network == "github":
         accent_color = "#22D3EE"
-        tag_bg = "#16273B"
+        tag_bg = "#101B32"
         border_grad_stops = """
           <stop offset="0%" stop-color="#282E44" />
           <stop offset="50%" stop-color="#22D3EE" stop-opacity="0.8" />
@@ -117,38 +125,39 @@ def create_social_card(network, title, subtitle, icon_type, href):
         """
         stat_badge = "30+ REPOSITORIES"
     elif network == "linkedin":
-        accent_color = "#60A5FA"
-        tag_bg = "#182442"
+        accent_color = "#3B82F6"
+        tag_bg = "#101B32"
         border_grad_stops = """
           <stop offset="0%" stop-color="#282E44" />
-          <stop offset="50%" stop-color="#60A5FA" stop-opacity="0.8" />
+          <stop offset="50%" stop-color="#3B82F6" stop-opacity="0.8" />
           <stop offset="100%" stop-color="#282E44" />
         """
         icon_path = """
           <!-- LinkedIn In Mark -->
-          <path fill="#60A5FA" d="M29.6 0H2.4C1.1 0 0 1.1 0 2.4v27.2C0 30.9 1.1 32 2.4 32h27.2c1.3 0 2.4-1.1 2.4-2.4V2.4C32 1.1 30.9 0 29.6 0zM9.5 27.3H4.8V12h4.7v15.3zM7.2 9.9c-1.5 0-2.8-1.2-2.8-2.8 0-1.5 1.2-2.8 2.8-2.8 1.5 0 2.8 1.2 2.8 2.8 0 1.6-1.3 2.8-2.8 2.8zm20.1 17.4h-4.7v-7.4c0-1.8 0-4-2.5-4s-2.8 1.9-2.8 3.9v7.5h-4.7V12h4.5v2.1h.1c.6-1.2 2.2-2.5 4.5-2.5 4.8 0 5.7 3.2 5.7 7.3v8.4z" />
+          <path fill="#3B82F6" d="M29.6 0H2.4C1.1 0 0 1.1 0 2.4v27.2C0 30.9 1.1 32 2.4 32h27.2c1.3 0 2.4-1.1 2.4-2.4V2.4C32 1.1 30.9 0 29.6 0zM9.5 27.3H4.8V12h4.7v15.3zM7.2 9.9c-1.5 0-2.8-1.2-2.8-2.8 0-1.5 1.2-2.8 2.8-2.8 1.5 0 2.8 1.2 2.8 2.8 0 1.6-1.3 2.8-2.8 2.8zm20.1 17.4h-4.7v-7.4c0-1.8 0-4-2.5-4s-2.8 1.9-2.8 3.9v7.5h-4.7V12h4.5v2.1h.1c.6-1.2 2.2-2.5 4.5-2.5 4.8 0 5.7 3.2 5.7 7.3v8.4z" />
         """
         stat_badge = "PROFESSIONAL NETWORK"
     else: # portfolio
-        accent_color = "#34D399"
-        tag_bg = "#142E28"
+        accent_color = "#10B981"
+        tag_bg = "#0F261E"
         border_grad_stops = """
           <stop offset="0%" stop-color="#282E44" />
-          <stop offset="50%" stop-color="#34D399" stop-opacity="0.8" />
+          <stop offset="50%" stop-color="#10B981" stop-opacity="0.8" />
           <stop offset="100%" stop-color="#282E44" />
         """
         icon_path = """
           <!-- Portfolio Globe / Spark Mark -->
-          <circle cx="16" cy="16" r="14" fill="none" stroke="#34D399" stroke-width="2.2" />
-          <path fill="none" stroke="#34D399" stroke-width="1.8" d="M2 16h28M16 2a22 22 0 0 1 0 28M16 2a22 22 0 0 0 0 28" />
+          <circle cx="16" cy="16" r="14" fill="none" stroke="#10B981" stroke-width="2.2" />
+          <path fill="none" stroke="#10B981" stroke-width="1.8" d="M2 16h28M16 2a22 22 0 0 1 0 28M16 2a22 22 0 0 0 0 28" />
         """
         stat_badge = "LIVE PORTFOLIO 2026"
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 88" width="100%">
   <defs>
+    <!-- Card Chassis: #121827 to #0D1321 -->
     <linearGradient id="cardBg_{network}" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#151A29" />
-      <stop offset="100%" stop-color="#0E121E" />
+      <stop offset="0%" stop-color="#121827" />
+      <stop offset="100%" stop-color="#0D1321" />
     </linearGradient>
 
     <linearGradient id="borderGrad_{network}" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -174,7 +183,7 @@ def create_social_card(network, title, subtitle, icon_type, href):
 
   <!-- Left Icon Box -->
   <g transform="translate(16, 18)">
-    <rect width="52" height="52" rx="10" fill="#0D111C" stroke="#222B3F" stroke-width="1" />
+    <rect width="52" height="52" rx="10" fill="#080B14" stroke="#282E44" stroke-width="1" />
     <g transform="translate(10, 10) scale(1)">
       {icon_path}
     </g>
@@ -187,13 +196,13 @@ def create_social_card(network, title, subtitle, icon_type, href):
     <text x="6" y="11" class="mono" font-size="8.5" font-weight="700" fill="{accent_color}" letter-spacing="0.5">{stat_badge}</text>
 
     <!-- Network / Username -->
-    <text x="0" y="32" class="sans" font-size="14.5" font-weight="700" fill="#FFFFFF">{title}</text>
-    <text x="0" y="47" class="mono" font-size="10.5" font-weight="500" fill="#8B949E">{subtitle}</text>
+    <text x="0" y="32" class="sans" font-size="14.5" font-weight="700" fill="#F5F5F7">{title}</text>
+    <text x="0" y="47" class="mono" font-size="10.5" font-weight="500" fill="#A1A1AA">{subtitle}</text>
   </g>
 
   <!-- Right Arrow Indicator -->
   <g transform="translate(280, 44)">
-    <circle cx="0" cy="0" r="11" fill="#182032" stroke="#2B364E" stroke-width="1" />
+    <circle cx="0" cy="0" r="11" fill="#101B32" stroke="#282E44" stroke-width="1" />
     <path d="M -3 -4 L 2 0 L -3 4" fill="none" stroke="{accent_color}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
   </g>
 </svg>
@@ -203,12 +212,13 @@ def create_social_card(network, title, subtitle, icon_type, href):
 
 def create_footer():
     """
-    Renders an ultra-compact, high-tech signature footer.
-    Height reduced to 104px (zero wasted vertical padding).
+    Renders an ultra-compact, high-tech signature footer with midnight black
+    palette and violet-to-cyan gradient accents.
+    Height: 104px (zero wasted vertical space).
     """
     svg = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 104" width="100%">
   <defs>
-    <!-- Top Divider Line Gradient -->
+    <!-- Top Divider Line Gradient: Violet to Cyan -->
     <linearGradient id="ftDivider" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0" />
       <stop offset="25%" stop-color="#8B5CF6" stop-opacity="0.4" />
@@ -217,24 +227,24 @@ def create_footer():
       <stop offset="100%" stop-color="#22D3EE" stop-opacity="0" />
     </linearGradient>
 
-    <!-- Gradient for Name -->
+    <!-- Animated Name Gradient: Violet -> Electric Blue -> Cyan -->
     <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#A78BFA">
-        <animate attributeName="stop-color" values="#A78BFA;#60A5FA;#22D3EE;#A78BFA" dur="9s" repeatCount="indefinite" />
+      <stop offset="0%" stop-color="#8B5CF6">
+        <animate attributeName="stop-color" values="#8B5CF6;#3B82F6;#22D3EE;#8B5CF6" dur="9s" repeatCount="indefinite" />
       </stop>
-      <stop offset="50%" stop-color="#60A5FA">
-        <animate attributeName="stop-color" values="#60A5FA;#22D3EE;#A78BFA;#60A5FA" dur="9s" repeatCount="indefinite" />
+      <stop offset="50%" stop-color="#3B82F6">
+        <animate attributeName="stop-color" values="#3B82F6;#22D3EE;#8B5CF6;#3B82F6" dur="9s" repeatCount="indefinite" />
       </stop>
       <stop offset="100%" stop-color="#22D3EE">
-        <animate attributeName="stop-color" values="#22D3EE;#A78BFA;#60A5FA;#22D3EE" dur="9s" repeatCount="indefinite" />
+        <animate attributeName="stop-color" values="#22D3EE;#8B5CF6;#3B82F6;#22D3EE" dur="9s" repeatCount="indefinite" />
       </stop>
     </linearGradient>
 
-    <!-- Subtle Ambient Footer Floor Glow -->
+    <!-- Subtle Ambient Footer Floor Glow: #080B14 base -->
     <radialGradient id="footerGlow" cx="50%" cy="0%" r="65%">
       <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.08" />
       <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.04" />
-      <stop offset="100%" stop-color="#08090D" stop-opacity="0" />
+      <stop offset="100%" stop-color="#080B14" stop-opacity="0" />
     </radialGradient>
 
     <filter id="emblemGlow" x="-30%" y="-30%" width="160%" height="160%">
@@ -264,13 +274,13 @@ def create_footer():
   <!-- Center Animated Geometric Emblem -->
   <g transform="translate(500, 22)">
     <!-- Rotating Ring -->
-    <circle cx="0" cy="0" r="11" fill="#101524" stroke="#283552" stroke-width="1.2" />
+    <circle cx="0" cy="0" r="11" fill="#101B32" stroke="#282E44" stroke-width="1.2" />
     <circle cx="0" cy="0" r="11" fill="none" stroke="#22D3EE" stroke-width="1.2" stroke-dasharray="7 11" opacity="0.7">
       <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite" />
     </circle>
     <!-- Core Diamond -->
-    <polygon points="0,-5 5,0 0,5 -5,0" fill="#A78BFA" filter="url(#emblemGlow)">
-      <animate attributeName="fill" values="#A78BFA;#22D3EE;#60A5FA;#A78BFA" dur="6s" repeatCount="indefinite" />
+    <polygon points="0,-5 5,0 0,5 -5,0" fill="#8B5CF6" filter="url(#emblemGlow)">
+      <animate attributeName="fill" values="#8B5CF6;#22D3EE;#3B82F6;#8B5CF6" dur="6s" repeatCount="indefinite" />
     </polygon>
   </g>
 
@@ -290,7 +300,7 @@ def create_footer():
 
   <!-- Professional Metadata Line -->
   <g transform="translate(500, 93)" text-anchor="middle">
-    <text y="0" class="mono" font-size="9.5" font-weight="600" fill="#64748B" letter-spacing="1.4">
+    <text y="0" class="mono" font-size="9.5" font-weight="600" fill="#8B949E" letter-spacing="1.4">
       2026 DIGITAL WORKSPACE • GOA, INDIA • @AESTHETICWOLF • ALL SYSTEMS OPERATIONAL
     </text>
   </g>
@@ -304,14 +314,14 @@ def create_back_to_top():
   <defs>
     <linearGradient id="btnBorder" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#282E44" />
-      <stop offset="50%" stop-color="#22D3EE" stop-opacity="0.7" />
+      <stop offset="50%" stop-color="#22D3EE" stop-opacity="0.8" />
       <stop offset="100%" stop-color="#282E44" />
     </linearGradient>
   </defs>
   <style><![CDATA[
     .mono { font-family: 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace; }
   ]]></style>
-  <rect x="1" y="1" width="158" height="30" rx="15" fill="#111522" stroke="url(#btnBorder)" stroke-width="1.2" />
+  <rect x="1" y="1" width="158" height="30" rx="15" fill="#121827" stroke="url(#btnBorder)" stroke-width="1.2" />
   <g transform="translate(80, 20)" text-anchor="middle">
     <text y="0" class="mono" font-size="10" font-weight="700" fill="#22D3EE" letter-spacing="1">▲ BACK TO TOP</text>
   </g>
@@ -351,4 +361,4 @@ if __name__ == "__main__":
         f.write(create_back_to_top())
     print("Generated: assets/back-to-top.svg")
 
-    print("All Contact assets successfully generated and validated!")
+    print("All Contact assets successfully generated and validated with global palette!")

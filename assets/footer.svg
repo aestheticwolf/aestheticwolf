@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 104" width="100%">
   <defs>
-    <!-- Top Divider Line Gradient -->
+    <!-- Top Divider Line Gradient: Violet to Cyan -->
     <linearGradient id="ftDivider" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0" />
       <stop offset="25%" stop-color="#8B5CF6" stop-opacity="0.4" />
@@ -9,24 +9,24 @@
       <stop offset="100%" stop-color="#22D3EE" stop-opacity="0" />
     </linearGradient>
 
-    <!-- Gradient for Name -->
+    <!-- Animated Name Gradient: Violet -> Electric Blue -> Cyan -->
     <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#A78BFA">
-        <animate attributeName="stop-color" values="#A78BFA;#60A5FA;#22D3EE;#A78BFA" dur="9s" repeatCount="indefinite" />
+      <stop offset="0%" stop-color="#8B5CF6">
+        <animate attributeName="stop-color" values="#8B5CF6;#3B82F6;#22D3EE;#8B5CF6" dur="9s" repeatCount="indefinite" />
       </stop>
-      <stop offset="50%" stop-color="#60A5FA">
-        <animate attributeName="stop-color" values="#60A5FA;#22D3EE;#A78BFA;#60A5FA" dur="9s" repeatCount="indefinite" />
+      <stop offset="50%" stop-color="#3B82F6">
+        <animate attributeName="stop-color" values="#3B82F6;#22D3EE;#8B5CF6;#3B82F6" dur="9s" repeatCount="indefinite" />
       </stop>
       <stop offset="100%" stop-color="#22D3EE">
-        <animate attributeName="stop-color" values="#22D3EE;#A78BFA;#60A5FA;#22D3EE" dur="9s" repeatCount="indefinite" />
+        <animate attributeName="stop-color" values="#22D3EE;#8B5CF6;#3B82F6;#22D3EE" dur="9s" repeatCount="indefinite" />
       </stop>
     </linearGradient>
 
-    <!-- Subtle Ambient Footer Floor Glow -->
+    <!-- Subtle Ambient Footer Floor Glow: #080B14 base -->
     <radialGradient id="footerGlow" cx="50%" cy="0%" r="65%">
       <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.08" />
       <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.04" />
-      <stop offset="100%" stop-color="#08090D" stop-opacity="0" />
+      <stop offset="100%" stop-color="#080B14" stop-opacity="0" />
     </radialGradient>
 
     <filter id="emblemGlow" x="-30%" y="-30%" width="160%" height="160%">
@@ -56,13 +56,13 @@
   <!-- Center Animated Geometric Emblem -->
   <g transform="translate(500, 22)">
     <!-- Rotating Ring -->
-    <circle cx="0" cy="0" r="11" fill="#101524" stroke="#283552" stroke-width="1.2" />
+    <circle cx="0" cy="0" r="11" fill="#101B32" stroke="#282E44" stroke-width="1.2" />
     <circle cx="0" cy="0" r="11" fill="none" stroke="#22D3EE" stroke-width="1.2" stroke-dasharray="7 11" opacity="0.7">
       <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite" />
     </circle>
     <!-- Core Diamond -->
-    <polygon points="0,-5 5,0 0,5 -5,0" fill="#A78BFA" filter="url(#emblemGlow)">
-      <animate attributeName="fill" values="#A78BFA;#22D3EE;#60A5FA;#A78BFA" dur="6s" repeatCount="indefinite" />
+    <polygon points="0,-5 5,0 0,5 -5,0" fill="#8B5CF6" filter="url(#emblemGlow)">
+      <animate attributeName="fill" values="#8B5CF6;#22D3EE;#3B82F6;#8B5CF6" dur="6s" repeatCount="indefinite" />
     </polygon>
   </g>
 
@@ -82,7 +82,7 @@
 
   <!-- Professional Metadata Line -->
   <g transform="translate(500, 93)" text-anchor="middle">
-    <text y="0" class="mono" font-size="9.5" font-weight="600" fill="#64748B" letter-spacing="1.4">
+    <text y="0" class="mono" font-size="9.5" font-weight="600" fill="#8B949E" letter-spacing="1.4">
       2026 DIGITAL WORKSPACE • GOA, INDIA • @AESTHETICWOLF • ALL SYSTEMS OPERATIONAL
     </text>
   </g>

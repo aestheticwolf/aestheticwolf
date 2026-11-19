@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360" width="100%">
   <defs>
     <!-- Background Atmospheric Lighting Gradients -->
     <linearGradient id="sp1Bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#111424" />
-      <stop offset="50%" stop-color="#0E101E" />
-      <stop offset="100%" stop-color="#070810" />
+      <stop offset="0%" stop-color="#101B32" />
+      <stop offset="50%" stop-color="#0D1321" />
+      <stop offset="100%" stop-color="#080B14" />
     </linearGradient>
 
     <linearGradient id="sp1Accent" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -16,7 +16,7 @@
     <radialGradient id="sp1Glow" cx="30%" cy="35%" r="60%">
       <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.22" />
       <stop offset="60%" stop-color="#3B82F6" stop-opacity="0.08" />
-      <stop offset="100%" stop-color="#070810" stop-opacity="0" />
+      <stop offset="100%" stop-color="#080B14" stop-opacity="0" />
     </radialGradient>
 
     <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -79,12 +79,12 @@
     <circle cx="120" cy="14.5" r="1.5" fill="#3B82F6" />
 
     <!-- Status Bar -->
-    <text x="16" y="26" class="f-code" font-size="7.5" font-weight="700" fill="#94A3B8">09:41</text>
-    <text x="194" y="26" class="f-code" font-size="7.5" fill="#94A3B8" text-anchor="end">5G 100%</text>
+    <text x="16" y="26" class="f-code" font-size="7.5" font-weight="700" fill="#A1A1AA">09:41</text>
+    <text x="194" y="26" class="f-code" font-size="7.5" fill="#A1A1AA" text-anchor="end">5G 100%</text>
 
     <!-- Header Inside App -->
     <g transform="translate(14, 38)">
-      <text x="0" y="10" class="f-ui" font-size="12" font-weight="800" fill="#FFFFFF">Daily Learning</text>
+      <text x="0" y="10" class="f-ui" font-size="12" font-weight="800" fill="#F5F5F7">Daily Learning</text>
       <rect x="110" y="-1" width="72" height="15" rx="3.5" fill="#1A1F36" stroke="#8B5CF6" stroke-width="0.6" />
       <text x="146" y="10" class="f-code" font-size="7" font-weight="700" fill="#DDD6FE" text-anchor="middle">24D STREAK 🔥</text>
     </g>
@@ -93,7 +93,7 @@
     <g transform="translate(105, 102)">
       <circle cx="0" cy="0" r="32" fill="none" stroke="#1A2035" stroke-width="7" />
       <circle cx="0" cy="0" r="32" fill="none" stroke="url(#ringGrad)" stroke-width="7" stroke-dasharray="150 200" stroke-linecap="round" transform="rotate(-90)" />
-      <text x="0" y="3" class="f-ui" font-size="12" font-weight="900" fill="#FFFFFF" text-anchor="middle">78%</text>
+      <text x="0" y="3" class="f-ui" font-size="12" font-weight="900" fill="#F5F5F7" text-anchor="middle">78%</text>
       <text x="0" y="14" class="f-code" font-size="6.5" fill="#93C5FD" text-anchor="middle">COMPLETE</text>
     </g>
 
@@ -102,8 +102,8 @@
       <rect width="186" height="34" rx="7" fill="#14182B" stroke="#252D48" stroke-width="0.8" />
       <circle cx="16" cy="17" r="5.5" fill="#10B981" />
       <path d="M 13.5 17 L 15.5 19 L 18.5 15" stroke="#FFFFFF" stroke-width="1.2" fill="none" />
-      <text x="28" y="15" class="f-ui" font-size="9" font-weight="700" fill="#F8FAFC">Distributed Systems</text>
-      <text x="28" y="26" class="f-code" font-size="7" fill="#94A3B8">Module 04 • Verified</text>
+      <text x="28" y="15" class="f-ui" font-size="9" font-weight="700" fill="#F5F5F7">Distributed Systems</text>
+      <text x="28" y="26" class="f-code" font-size="7" fill="#A1A1AA">Module 04 • Verified</text>
       <rect x="146" y="8" width="32" height="16" rx="3" fill="#064E3B" />
       <text x="162" y="19" class="f-code" font-size="6.5" font-weight="700" fill="#34D399" text-anchor="middle">DONE</text>
     </g>
@@ -112,8 +112,8 @@
     <g transform="translate(12, 188)">
       <rect width="186" height="34" rx="7" fill="#14182B" stroke="#252D48" stroke-width="0.8" />
       <circle cx="16" cy="17" r="5.5" fill="#60A5FA" />
-      <circle cx="16" cy="17" r="2.5" fill="#FFFFFF" />
-      <text x="28" y="15" class="f-ui" font-size="9" font-weight="700" fill="#F8FAFC">React Native Reanimated</text>
+      <circle cx="16" cy="17" r="2.5" fill="#F5F5F7" />
+      <text x="28" y="15" class="f-ui" font-size="9" font-weight="700" fill="#F5F5F7">React Native Reanimated</text>
       <text x="28" y="26" class="f-code" font-size="7" fill="#60A5FA">Gesture Handler &amp; Hooks</text>
       <rect x="136" y="8" width="42" height="16" rx="3" fill="#1E293B" />
       <text x="157" y="19" class="f-code" font-size="6.5" font-weight="700" fill="#93C5FD" text-anchor="middle">ACTIVE</text>
@@ -123,7 +123,7 @@
     <g transform="translate(12, 228)">
       <rect width="186" height="34" rx="7" fill="#14182B" stroke="#252D48" stroke-width="0.8" />
       <circle cx="16" cy="17" r="5.5" fill="#A78BFA" />
-      <text x="28" y="15" class="f-ui" font-size="9" font-weight="700" fill="#F8FAFC">Firebase Sync Pipeline</text>
+      <text x="28" y="15" class="f-ui" font-size="9" font-weight="700" fill="#F5F5F7">Firebase Sync Pipeline</text>
       <text x="28" y="26" class="f-code" font-size="7" fill="#C4B5FD">Offline persistence queue</text>
       <rect x="140" y="8" width="38" height="16" rx="3" fill="#1E1B4B" />
       <text x="159" y="19" class="f-code" font-size="6.5" font-weight="700" fill="#C4B5FD" text-anchor="middle">QUEUED</text>
@@ -133,9 +133,9 @@
     <g transform="translate(12, 268)">
       <rect width="186" height="16" rx="4" fill="#0C0E1A" />
       <circle cx="36" cy="8" r="2.5" fill="#60A5FA" />
-      <circle cx="76" cy="8" r="2.5" fill="#64748B" />
-      <circle cx="116" cy="8" r="2.5" fill="#64748B" />
-      <circle cx="156" cy="8" r="2.5" fill="#64748B" />
+      <circle cx="76" cy="8" r="2.5" fill="#8B949E" />
+      <circle cx="116" cy="8" r="2.5" fill="#8B949E" />
+      <circle cx="156" cy="8" r="2.5" fill="#8B949E" />
     </g>
   </g>
 
@@ -146,8 +146,8 @@
       <rect width="282" height="66" rx="8" fill="#101424" stroke="#252E46" stroke-width="0.8" />
       <line x1="0" y1="4" x2="0" y2="62" stroke="#60A5FA" stroke-width="3" stroke-linecap="round" />
       <text x="14" y="20" class="f-code" font-size="8" font-weight="700" fill="#60A5FA" letter-spacing="1">REAL-TIME CLOUD HYDRATION</text>
-      <text x="14" y="38" class="f-ui" font-size="11.5" font-weight="800" fill="#FFFFFF">Firebase Firestore Sync</text>
-      <text x="14" y="52" class="f-code" font-size="7.5" fill="#94A3B8">Sub-50ms delta sync with automatic offline fallback</text>
+      <text x="14" y="38" class="f-ui" font-size="11.5" font-weight="800" fill="#F5F5F7">Firebase Firestore Sync</text>
+      <text x="14" y="52" class="f-code" font-size="7.5" fill="#A1A1AA">Sub-50ms delta sync with automatic offline fallback</text>
       <circle cx="266" cy="20" r="3.5" fill="#10B981" />
     </g>
 
@@ -158,12 +158,12 @@
       <text x="12" y="14" class="f-code" font-size="7.5" font-weight="700" fill="#93C5FD">models/GoalCompanion.ts</text>
       
       <g transform="translate(12, 32)" class="f-code" font-size="7.5">
-        <text x="0" y="0"><tspan fill="#F43F5E">interface</tspan> <tspan fill="#38BDF8">LearningGoal</tspan> <tspan fill="#F8FAFC">{</tspan></text>
-        <text x="10" y="14"><tspan fill="#E2E8F0">id:</tspan> <tspan fill="#38BDF8">string</tspan><tspan fill="#F8FAFC">;</tspan></text>
-        <text x="10" y="28"><tspan fill="#E2E8F0">streakDays:</tspan> <tspan fill="#F59E0B">number</tspan><tspan fill="#F8FAFC">;</tspan> <tspan fill="#64748B">// 24 continuous</tspan></text>
-        <text x="10" y="42"><tspan fill="#E2E8F0">persistence:</tspan> <tspan fill="#34D399">'firebase_cloud'</tspan><tspan fill="#F8FAFC">;</tspan></text>
-        <text x="10" y="56"><tspan fill="#E2E8F0">status:</tspan> <tspan fill="#A78BFA">'active_progress'</tspan><tspan fill="#F8FAFC">;</tspan></text>
-        <text x="0" y="70"><tspan fill="#F8FAFC">}</tspan></text>
+        <text x="0" y="0"><tspan fill="#F43F5E">interface</tspan> <tspan fill="#38BDF8">LearningGoal</tspan> <tspan fill="#F5F5F7">{</tspan></text>
+        <text x="10" y="14"><tspan fill="#F5F5F7">id:</tspan> <tspan fill="#38BDF8">string</tspan><tspan fill="#F5F5F7">;</tspan></text>
+        <text x="10" y="28"><tspan fill="#F5F5F7">streakDays:</tspan> <tspan fill="#F59E0B">number</tspan><tspan fill="#F5F5F7">;</tspan> <tspan fill="#8B949E">// 24 continuous</tspan></text>
+        <text x="10" y="42"><tspan fill="#F5F5F7">persistence:</tspan> <tspan fill="#34D399">'firebase_cloud'</tspan><tspan fill="#F5F5F7">;</tspan></text>
+        <text x="10" y="56"><tspan fill="#F5F5F7">status:</tspan> <tspan fill="#A78BFA">'active_progress'</tspan><tspan fill="#F5F5F7">;</tspan></text>
+        <text x="0" y="70"><tspan fill="#F5F5F7">}</tspan></text>
       </g>
     </g>
 
@@ -171,17 +171,17 @@
     <g transform="translate(0, 196)">
       <rect width="282" height="52" rx="8" fill="#101424" stroke="#252E46" stroke-width="0.8" />
       <g transform="translate(12, 14)">
-        <text x="0" y="10" class="f-code" font-size="7" fill="#64748B">FRAME_RATE</text>
+        <text x="0" y="10" class="f-code" font-size="7" fill="#8B949E">FRAME_RATE</text>
         <text x="0" y="26" class="f-ui" font-size="12" font-weight="800" fill="#34D399">60 FPS</text>
       </g>
       <line x1="85" y1="10" x2="85" y2="42" stroke="#1E2438" stroke-width="1" />
       <g transform="translate(97, 14)">
-        <text x="0" y="10" class="f-code" font-size="7" fill="#64748B">CROSS_PLATFORM</text>
+        <text x="0" y="10" class="f-code" font-size="7" fill="#8B949E">CROSS_PLATFORM</text>
         <text x="0" y="26" class="f-ui" font-size="12" font-weight="800" fill="#60A5FA">iOS + Android</text>
       </g>
       <line x1="200" y1="10" x2="200" y2="42" stroke="#1E2438" stroke-width="1" />
       <g transform="translate(212, 14)">
-        <text x="0" y="10" class="f-code" font-size="7" fill="#64748B">SYNC_STATE</text>
+        <text x="0" y="10" class="f-code" font-size="7" fill="#8B949E">SYNC_STATE</text>
         <text x="0" y="26" class="f-ui" font-size="12" font-weight="800" fill="#A78BFA">OPTIMISTIC</text>
       </g>
     </g>

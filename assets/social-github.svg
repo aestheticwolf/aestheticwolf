@@ -1,8 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 88" width="100%">
   <defs>
+    <!-- Card Chassis: #121827 to #0D1321 -->
     <linearGradient id="cardBg_github" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#151A29" />
-      <stop offset="100%" stop-color="#0E121E" />
+      <stop offset="0%" stop-color="#121827" />
+      <stop offset="100%" stop-color="#0D1321" />
     </linearGradient>
 
     <linearGradient id="borderGrad_github" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -32,7 +33,7 @@
 
   <!-- Left Icon Box -->
   <g transform="translate(16, 18)">
-    <rect width="52" height="52" rx="10" fill="#0D111C" stroke="#222B3F" stroke-width="1" />
+    <rect width="52" height="52" rx="10" fill="#080B14" stroke="#282E44" stroke-width="1" />
     <g transform="translate(10, 10) scale(1)">
       
           <!-- GitHub Octocat Mark -->
@@ -44,17 +45,17 @@
   <!-- Title & Subtitle -->
   <g transform="translate(78, 28)">
     <!-- Metadata Pill -->
-    <rect x="0" y="0" width="138" height="15" rx="4" fill="#16273B" />
+    <rect x="0" y="0" width="138" height="15" rx="4" fill="#101B32" />
     <text x="6" y="11" class="mono" font-size="8.5" font-weight="700" fill="#22D3EE" letter-spacing="0.5">30+ REPOSITORIES</text>
 
     <!-- Network / Username -->
-    <text x="0" y="32" class="sans" font-size="14.5" font-weight="700" fill="#FFFFFF">GitHub</text>
-    <text x="0" y="47" class="mono" font-size="10.5" font-weight="500" fill="#8B949E">@aestheticwolf</text>
+    <text x="0" y="32" class="sans" font-size="14.5" font-weight="700" fill="#F5F5F7">GitHub</text>
+    <text x="0" y="47" class="mono" font-size="10.5" font-weight="500" fill="#A1A1AA">@aestheticwolf</text>
   </g>
 
   <!-- Right Arrow Indicator -->
   <g transform="translate(280, 44)">
-    <circle cx="0" cy="0" r="11" fill="#182032" stroke="#2B364E" stroke-width="1" />
+    <circle cx="0" cy="0" r="11" fill="#101B32" stroke="#282E44" stroke-width="1" />
     <path d="M -3 -4 L 2 0 L -3 4" fill="none" stroke="#22D3EE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
   </g>
 </svg>

@@ -33,7 +33,7 @@ def enhance_snake_file(input_path, output_path):
         print(f"Warning: no <style> block found in {input_path}")
         return False
 
-    snk_css = style_m.group(1)
+    snk_css = style_m.group(1).replace("<![CDATA[", "").replace("]]>", "").strip()
 
     # Replace root colors with the 2026 emerald palette
     new_root = (
@@ -109,14 +109,14 @@ def enhance_snake_file(input_path, output_path):
     body_content = re.sub(r'<rect class="u[^"]*"[^>]+/>', rep_u_y, body_content)
 
     # Construct the complete 2026 container SVG
-    new_svg = f"""<svg viewBox="0 0 1000 280" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+    new_svg = f"""<svg viewBox="0 0 1000 280" width="100%" xmlns="http://www.w3.org/2000/svg">
   <desc>Enhanced 2026 Contribution Trajectory for Richard D'Souza (aestheticwolf)</desc>
   <defs>
     <!-- Dark Container Gradients -->
     <linearGradient id="frameBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#101522" stop-opacity="0.98" />
-      <stop offset="50%" stop-color="#0B0E17" stop-opacity="0.98" />
-      <stop offset="100%" stop-color="#08090D" stop-opacity="0.98" />
+      <stop offset="0%" stop-color="#0A181C" stop-opacity="0.98" />
+      <stop offset="50%" stop-color="#091318" stop-opacity="0.98" />
+      <stop offset="100%" stop-color="#080F14" stop-opacity="0.98" />
     </linearGradient>
 
     <!-- Animated Chromatic Border -->
@@ -166,7 +166,7 @@ def enhance_snake_file(input_path, output_path):
   <!-- 01. CONTAINER CHASSIS & AMBIENT GLOWS                          -->
   <!-- ============================================================== -->
   <!-- Outer Backdrop -->
-  <rect width="1000" height="280" rx="16" fill="#08090D" />
+  <rect width="1000" height="280" rx="16" fill="#080F14" />
 
   <!-- Main Glassmorphic Card -->
   <g filter="url(#frameShadow)">

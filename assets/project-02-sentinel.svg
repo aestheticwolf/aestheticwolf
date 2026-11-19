@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360" width="100%">
   <defs>
     <!-- Background Atmospheric Lighting Gradients -->
     <linearGradient id="sg2Bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#111624" />
-      <stop offset="50%" stop-color="#0E121E" />
-      <stop offset="100%" stop-color="#060910" />
+      <stop offset="0%" stop-color="#101B32" />
+      <stop offset="50%" stop-color="#0D1321" />
+      <stop offset="100%" stop-color="#080B14" />
     </linearGradient>
 
     <linearGradient id="sg2Accent" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -16,7 +16,7 @@
     <radialGradient id="sg2RadarGlow" cx="25%" cy="40%" r="55%">
       <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.22" />
       <stop offset="60%" stop-color="#3B82F6" stop-opacity="0.08" />
-      <stop offset="100%" stop-color="#060910" stop-opacity="0" />
+      <stop offset="100%" stop-color="#080B14" stop-opacity="0" />
     </radialGradient>
 
     <pattern id="sg2Grid" width="28" height="28" patternUnits="userSpaceOnUse">
@@ -70,7 +70,7 @@
     <!-- Top Radar Tag -->
     <g transform="translate(14, 16)">
       <circle cx="4" cy="4" r="3" fill="#10B981" />
-      <text x="14" y="7" class="f-code" font-size="8" font-weight="700" fill="#E2E8F0">GPS GEOFENCE ACTIVE</text>
+      <text x="14" y="7" class="f-code" font-size="8" font-weight="700" fill="#F5F5F7">GPS GEOFENCE ACTIVE</text>
       <text x="14" y="19" class="f-code" font-size="6.5" fill="#22D3EE">SOC TELEMETRY STREAM</text>
     </g>
 
@@ -116,7 +116,7 @@
     <!-- Radar Footer Readout -->
     <g transform="translate(12, 230)">
       <rect width="186" height="50" rx="6" fill="#101424" stroke="#1E283E" stroke-width="0.8" />
-      <text x="10" y="16" class="f-code" font-size="7" fill="#64748B">GEOFENCE COORDINATES</text>
+      <text x="10" y="16" class="f-code" font-size="7" fill="#8B949E">GEOFENCE COORDINATES</text>
       <text x="10" y="30" class="f-code" font-size="8.5" font-weight="700" fill="#22D3EE">15.298° N, 74.124° E</text>
       <text x="10" y="42" class="f-code" font-size="7" fill="#10B981">● TAMPER-PROOF GPS LOCK (±2M)</text>
     </g>
@@ -129,8 +129,8 @@
       <rect width="282" height="74" rx="8" fill="#101524" stroke="#222B42" stroke-width="0.8" />
       <line x1="0" y1="4" x2="0" y2="70" stroke="#22D3EE" stroke-width="3" stroke-linecap="round" />
       <text x="14" y="20" class="f-code" font-size="8" font-weight="700" fill="#22D3EE" letter-spacing="1">SELFIE CHECK-IN VERIFICATION</text>
-      <text x="14" y="38" class="f-ui" font-size="11.5" font-weight="800" fill="#FFFFFF">Cloudinary Image Pipeline</text>
-      <text x="14" y="52" class="f-code" font-size="7.5" fill="#94A3B8">Encrypted face match + EXIF coordinate validation</text>
+      <text x="14" y="38" class="f-ui" font-size="11.5" font-weight="800" fill="#F5F5F7">Cloudinary Image Pipeline</text>
+      <text x="14" y="52" class="f-code" font-size="7.5" fill="#A1A1AA">Encrypted face match + EXIF coordinate validation</text>
       <g transform="translate(14, 58)">
         <rect width="90" height="12" rx="2" fill="#0E232B" />
         <text x="4" y="9" class="f-code" font-size="6.5" fill="#22D3EE">ANTI-SPOOF: PASS ✓</text>
@@ -144,13 +144,13 @@
       <text x="12" y="14" class="f-code" font-size="7.5" font-weight="700" fill="#67E8F9">ADMIN COMMAND CONSOLE • LIVE ROSTER</text>
       
       <g transform="translate(14, 30)">
-        <text x="0" y="12" class="f-ui" font-size="10" font-weight="700" fill="#F8FAFC">Shift A Duty Allocation</text>
+        <text x="0" y="12" class="f-ui" font-size="10" font-weight="700" fill="#F5F5F7">Shift A Duty Allocation</text>
         <text x="254" y="12" class="f-code" font-size="8" font-weight="700" fill="#10B981" text-anchor="end">12/12 ACTIVE</text>
         
         <rect x="0" y="22" width="254" height="6" rx="3" fill="#161B2E" />
         <rect x="0" y="22" width="250" height="6" rx="3" fill="#22D3EE" />
 
-        <text x="0" y="44" class="f-ui" font-size="10" font-weight="700" fill="#F8FAFC">On-Time Attendance Metric</text>
+        <text x="0" y="44" class="f-ui" font-size="10" font-weight="700" fill="#F5F5F7">On-Time Attendance Metric</text>
         <text x="254" y="44" class="f-code" font-size="8" font-weight="700" fill="#60A5FA" text-anchor="end">98.4% RATE</text>
         
         <rect x="0" y="52" width="254" height="6" rx="3" fill="#161B2E" />
@@ -162,17 +162,17 @@
     <g transform="translate(0, 196)">
       <rect width="282" height="52" rx="8" fill="#101524" stroke="#222B42" stroke-width="0.8" />
       <g transform="translate(14, 14)">
-        <text x="0" y="10" class="f-code" font-size="7" fill="#64748B">SECURITY_AUTH</text>
+        <text x="0" y="10" class="f-code" font-size="7" fill="#8B949E">SECURITY_AUTH</text>
         <text x="0" y="26" class="f-ui" font-size="11" font-weight="800" fill="#22D3EE">JWT / RBAC</text>
       </g>
       <line x1="88" y1="10" x2="88" y2="42" stroke="#1C2438" stroke-width="1" />
       <g transform="translate(98, 14)">
-        <text x="0" y="10" class="f-code" font-size="7" fill="#64748B">DATABASE</text>
+        <text x="0" y="10" class="f-code" font-size="7" fill="#8B949E">DATABASE</text>
         <text x="0" y="26" class="f-ui" font-size="11" font-weight="800" fill="#34D399">MongoDB Atlas</text>
       </g>
       <line x1="194" y1="10" x2="194" y2="42" stroke="#1C2438" stroke-width="1" />
       <g transform="translate(204, 14)">
-        <text x="0" y="10" class="f-code" font-size="7" fill="#64748B">ROLE_ACCESS</text>
+        <text x="0" y="10" class="f-code" font-size="7" fill="#8B949E">ROLE_ACCESS</text>
         <text x="0" y="26" class="f-ui" font-size="11" font-weight="800" fill="#60A5FA">Admin/Guard</text>
       </g>
     </g>

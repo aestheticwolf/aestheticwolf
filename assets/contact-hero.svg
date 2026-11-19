@@ -1,35 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 135" width="100%">
   <defs>
-    <!-- Background Gradient -->
+    <!-- Background Gradient: Midnight Black #080B14 to #0D1321 -->
     <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#111522" stop-opacity="0.95" />
-      <stop offset="100%" stop-color="#08090D" stop-opacity="0.98" />
+      <stop offset="0%" stop-color="#0D1321" stop-opacity="0.96" />
+      <stop offset="60%" stop-color="#101B32" stop-opacity="0.90" />
+      <stop offset="100%" stop-color="#080B14" stop-opacity="0.98" />
     </linearGradient>
 
-    <!-- Animated Gradient for EXTRAORDINARY -->
+    <!-- Animated Gradient for EXTRAORDINARY: Violet to Cyan -->
     <linearGradient id="extraordinaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#A78BFA">
-        <animate attributeName="stop-color" values="#A78BFA;#60A5FA;#22D3EE;#A78BFA" dur="8s" repeatCount="indefinite" />
+      <stop offset="0%" stop-color="#8B5CF6">
+        <animate attributeName="stop-color" values="#8B5CF6;#3B82F6;#22D3EE;#8B5CF6" dur="8s" repeatCount="indefinite" />
       </stop>
-      <stop offset="50%" stop-color="#60A5FA">
-        <animate attributeName="stop-color" values="#60A5FA;#22D3EE;#A78BFA;#60A5FA" dur="8s" repeatCount="indefinite" />
+      <stop offset="50%" stop-color="#3B82F6">
+        <animate attributeName="stop-color" values="#3B82F6;#22D3EE;#8B5CF6;#3B82F6" dur="8s" repeatCount="indefinite" />
       </stop>
       <stop offset="100%" stop-color="#22D3EE">
-        <animate attributeName="stop-color" values="#22D3EE;#A78BFA;#60A5FA;#22D3EE" dur="8s" repeatCount="indefinite" />
+        <animate attributeName="stop-color" values="#22D3EE;#8B5CF6;#3B82F6;#22D3EE" dur="8s" repeatCount="indefinite" />
       </stop>
     </linearGradient>
 
     <!-- Animated Divider Line with Laser Scan -->
     <linearGradient id="contactLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0" />
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0" />
       <stop offset="30%" stop-color="#8B5CF6" stop-opacity="0.4" />
       <stop offset="50%" stop-color="#22D3EE" stop-opacity="0.9" />
-      <stop offset="70%" stop-color="#60A5FA" stop-opacity="0.4" />
+      <stop offset="70%" stop-color="#3B82F6" stop-opacity="0.4" />
       <stop offset="100%" stop-color="#22D3EE" stop-opacity="0" />
     </linearGradient>
 
     <radialGradient id="cornerGlow" cx="90%" cy="20%" r="60%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.12" />
+      <animate attributeName="cx" values="90%;85%;90%" dur="14s" repeatCount="indefinite" />
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.14" />
       <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0" />
     </radialGradient>
 
@@ -48,13 +50,13 @@
   ]]></style>
 
   <!-- Container Chassis -->
-  <rect width="1000" height="135" rx="14" fill="url(#heroBg)" stroke="#1F283D" stroke-width="1.2" />
+  <rect width="1000" height="135" rx="14" fill="url(#heroBg)" stroke="#282E44" stroke-width="1.2" />
   <rect width="1000" height="135" rx="14" fill="url(#cornerGlow)" />
 
   <!-- 01. Category Label with Live Pulsing Dot -->
   <g transform="translate(36, 26)">
-    <circle cx="6" cy="6" r="3.5" fill="#34D399" />
-    <circle cx="6" cy="6" r="6.5" fill="none" stroke="#34D399" stroke-width="1.2" opacity="0.6">
+    <circle cx="6" cy="6" r="3.5" fill="#10B981" />
+    <circle cx="6" cy="6" r="6.5" fill="none" stroke="#10B981" stroke-width="1.2" opacity="0.6">
       <animate attributeName="r" values="3.5;8;3.5" dur="2.4s" repeatCount="indefinite" />
       <animate attributeName="opacity" values="0.8;0;0.8" dur="2.4s" repeatCount="indefinite" />
     </circle>
@@ -65,7 +67,7 @@
 
   <!-- 02. Main Editorial Heading -->
   <g transform="translate(36, 68)">
-    <text x="0" y="0" class="sans" font-size="26" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">
+    <text x="0" y="0" class="sans" font-size="26" font-weight="800" fill="#F5F5F7" letter-spacing="-0.5">
       LET'S BUILD SOMETHING <tspan fill="url(#extraordinaryGrad)" filter="url(#textGlow)">EXTRAORDINARY.</tspan>
     </text>
   </g>

@@ -1,11 +1,11 @@
-<svg viewBox="0 0 1000 280" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1000 280" width="100%" xmlns="http://www.w3.org/2000/svg">
   <desc>Enhanced 2026 Contribution Trajectory for Richard D'Souza (aestheticwolf)</desc>
   <defs>
     <!-- Dark Container Gradients -->
     <linearGradient id="frameBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#101522" stop-opacity="0.98" />
-      <stop offset="50%" stop-color="#0B0E17" stop-opacity="0.98" />
-      <stop offset="100%" stop-color="#08090D" stop-opacity="0.98" />
+      <stop offset="0%" stop-color="#0A181C" stop-opacity="0.98" />
+      <stop offset="50%" stop-color="#091318" stop-opacity="0.98" />
+      <stop offset="100%" stop-color="#080F14" stop-opacity="0.98" />
     </linearGradient>
 
     <!-- Animated Chromatic Border -->
@@ -83,8 +83,108 @@
     .u.u1 { fill: #059669 !important; }
     .u.u2 { fill: #10B981 !important; }
     .u.u3 { fill: #34D399 !important; filter: drop-shadow(0 0 3px rgba(52, 211, 153, 0.8)); }
+
+    .mono { font-family: 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+
+    /* Snake glow and head refinement */
+    .s {
+      filter: drop-shadow(0 0 5px #22D3EE) drop-shadow(0 0 10px rgba(34, 211, 238, 0.6));
+    }
+    .s.s0 {
+      fill: #FFFFFF !important;
+      stroke: #22D3EE !important;
+      stroke-width: 1.2px;
+    }
+    .s.s1, .s.s2, .s.s3 {
+      fill: #22D3EE !important;
+    }
+
+    /* Peak and high contribution cells subtle glow */
+    .c.c4 {
+      filter: drop-shadow(0 0 3px rgba(52, 211, 153, 0.75));
+    }
+    .c.c3 {
+      filter: drop-shadow(0 0 2px rgba(16, 185, 129, 0.5));
+    }
+
+    /* Velocity progress meter styling */
+    .u {
+      height: 6px !important;
+      rx: 2px;
+      ry: 2px;
+    }
+    .u.u0 { fill: #064E3B !important; }
+    .u.u1 { fill: #059669 !important; }
+    .u.u2 { fill: #10B981 !important; }
+    .u.u3 { fill: #34D399 !important; filter: drop-shadow(0 0 3px rgba(52, 211, 153, 0.8)); }
     
   ]]></style>
+
+  <!-- ============================================================== -->
+  <!-- 01. CONTAINER CHASSIS & AMBIENT GLOWS                          -->
+  <!-- ============================================================== -->
+  <!-- Outer Backdrop -->
+  <rect width="1000" height="280" rx="16" fill="#080F14" />
+
+  <!-- Main Glassmorphic Card -->
+  <g filter="url(#frameShadow)">
+    <rect x="16" y="16" width="968" height="248" rx="14" fill="url(#frameBg)" stroke="url(#frameBorder)" stroke-width="1.2" />
+    <!-- Ambient Radial Overlays -->
+    <rect x="16" y="16" width="968" height="248" rx="14" fill="url(#emeraldAura)" />
+    <rect x="16" y="16" width="968" height="248" rx="14" fill="url(#violetAura)" />
+  </g>
+
+  <!-- Floating Micro-Particles (Futuristic Atmosphere) -->
+  <circle cx="50" cy="70" r="1.5" fill="#10B981" opacity="0.3">
+    <animate attributeName="opacity" values="0.2;0.6;0.2" dur="4s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="950" cy="110" r="1.5" fill="#8B5CF6" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="5s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="920" cy="210" r="1.2" fill="#22D3EE" opacity="0.4">
+    <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.5s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- ============================================================== -->
+  <!-- 02. TOP HUD / TELEMETRY HEADER                                 -->
+  <!-- ============================================================== -->
+  <g transform="translate(36, 28)">
+    <!-- Pulsing Live Indicator -->
+    <circle cx="6" cy="6" r="4" fill="#34D399" />
+    <circle cx="6" cy="6" r="7" fill="none" stroke="#34D399" stroke-width="1.2" opacity="0.6">
+      <animate attributeName="r" values="4;9;4" dur="2.4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.8;0;0.8" dur="2.4s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Header Titles -->
+    <text x="22" y="10" class="mono" font-size="11" font-weight="700" fill="#22D3EE">CONTRIBUTION TRAJECTORY</text>
+    <text x="200" y="10" class="sans" font-size="11" fill="#4B5563">•</text>
+    <text x="214" y="10" class="mono" font-size="10.5" font-weight="600" fill="#A1A1AA">52-WEEK VELOCITY ENGINE</text>
+
+    <!-- Right Header Telemetry Badge -->
+    <g transform="translate(928, 0)">
+      <rect x="-190" y="-3" width="190" height="22" rx="11" fill="#141A29" stroke="#252F47" stroke-width="0.9" />
+      <circle cx="-178" cy="8" r="3" fill="#8B5CF6" />
+      <text x="-168" y="12" class="mono" font-size="9" font-weight="700" fill="#DDD6FE">PLATANE/SNK // ACTIVE</text>
+    </g>
+
+    <!-- Divider Line with Animated Laser Scan -->
+    <rect x="-4" y="22" width="936" height="1" fill="url(#scanLineGrad)" />
+    <rect x="-4" y="22" width="140" height="1" fill="#22D3EE" opacity="0.9">
+      <animate attributeName="x" values="-4;796;-4" dur="9s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="9s" repeatCount="indefinite" />
+    </rect>
+  </g>
+
+  <!-- ============================================================== -->
+  <!-- 03. AUTHENTIC CONTRIBUTION GRID & SNAKE ENGINE                 -->
+  <!-- Centered at x=76, y=66                                         -->
+  <!-- ============================================================== -->
+  <g transform="translate(76, 66)">
+    <!-- Velocity Progress Meter Background Track -->
+    <rect x="0" y="196" width="848" height="6" rx="3" fill="#131926" stroke="#1E273A" stroke-width="0.8" />
+
 
   <!-- ============================================================== -->
   <!-- 01. CONTAINER CHASSIS & AMBIENT GLOWS                          -->
@@ -150,6 +250,41 @@
     <!-- Velocity Progress Meter Background Track -->
     <rect x="0" y="196" width="848" height="6" rx="3" fill="#131926" stroke="#1E273A" stroke-width="0.8" />
 <rect class="c" x="2" y="2" rx="2" ry="2"/><rect class="c" x="2" y="18" rx="2" ry="2"/><rect class="c" x="2" y="34" rx="2" ry="2"/><rect class="c" x="2" y="50" rx="2" ry="2"/><rect class="c" x="2" y="66" rx="2" ry="2"/><rect class="c" x="2" y="82" rx="2" ry="2"/><rect class="c" x="2" y="98" rx="2" ry="2"/><rect class="c" x="18" y="2" rx="2" ry="2"/><rect class="c" x="18" y="18" rx="2" ry="2"/><rect class="c" x="18" y="34" rx="2" ry="2"/><rect class="c" x="18" y="50" rx="2" ry="2"/><rect class="c" x="18" y="66" rx="2" ry="2"/><rect class="c" x="18" y="82" rx="2" ry="2"/><rect class="c" x="18" y="98" rx="2" ry="2"/><rect class="c" x="34" y="2" rx="2" ry="2"/><rect class="c" x="34" y="18" rx="2" ry="2"/><rect class="c" x="34" y="34" rx="2" ry="2"/><rect class="c" x="34" y="50" rx="2" ry="2"/><rect class="c" x="34" y="66" rx="2" ry="2"/><rect class="c" x="34" y="82" rx="2" ry="2"/><rect class="c" x="34" y="98" rx="2" ry="2"/><rect class="c" x="50" y="2" rx="2" ry="2"/><rect class="c" x="50" y="18" rx="2" ry="2"/><rect class="c" x="50" y="34" rx="2" ry="2"/><rect class="c" x="50" y="50" rx="2" ry="2"/><rect class="c" x="50" y="66" rx="2" ry="2"/><rect class="c" x="50" y="82" rx="2" ry="2"/><rect class="c" x="50" y="98" rx="2" ry="2"/><rect class="c" x="66" y="2" rx="2" ry="2"/><rect class="c" x="66" y="18" rx="2" ry="2"/><rect class="c" x="66" y="34" rx="2" ry="2"/><rect class="c" x="66" y="50" rx="2" ry="2"/><rect class="c" x="66" y="66" rx="2" ry="2"/><rect class="c" x="66" y="82" rx="2" ry="2"/><rect class="c" x="66" y="98" rx="2" ry="2"/><rect class="c" x="82" y="2" rx="2" ry="2"/><rect class="c" x="82" y="18" rx="2" ry="2"/><rect class="c" x="82" y="34" rx="2" ry="2"/><rect class="c" x="82" y="50" rx="2" ry="2"/><rect class="c" x="82" y="66" rx="2" ry="2"/><rect class="c" x="82" y="82" rx="2" ry="2"/><rect class="c" x="82" y="98" rx="2" ry="2"/><rect class="c" x="98" y="2" rx="2" ry="2"/><rect class="c" x="98" y="18" rx="2" ry="2"/><rect class="c" x="98" y="34" rx="2" ry="2"/><rect class="c" x="98" y="50" rx="2" ry="2"/><rect class="c" x="98" y="66" rx="2" ry="2"/><rect class="c" x="98" y="82" rx="2" ry="2"/><rect class="c" x="98" y="98" rx="2" ry="2"/><rect class="c" x="114" y="2" rx="2" ry="2"/><rect class="c" x="114" y="18" rx="2" ry="2"/><rect class="c" x="114" y="34" rx="2" ry="2"/><rect class="c" x="114" y="50" rx="2" ry="2"/><rect class="c" x="114" y="66" rx="2" ry="2"/><rect class="c" x="114" y="82" rx="2" ry="2"/><rect class="c" x="114" y="98" rx="2" ry="2"/><rect class="c" x="130" y="2" rx="2" ry="2"/><rect class="c" x="130" y="18" rx="2" ry="2"/><rect class="c" x="130" y="34" rx="2" ry="2"/><rect class="c" x="130" y="50" rx="2" ry="2"/><rect class="c" x="130" y="66" rx="2" ry="2"/><rect class="c" x="130" y="82" rx="2" ry="2"/><rect class="c" x="130" y="98" rx="2" ry="2"/><rect class="c" x="146" y="2" rx="2" ry="2"/><rect class="c" x="146" y="18" rx="2" ry="2"/><rect class="c" x="146" y="34" rx="2" ry="2"/><rect class="c" x="146" y="50" rx="2" ry="2"/><rect class="c" x="146" y="66" rx="2" ry="2"/><rect class="c" x="146" y="82" rx="2" ry="2"/><rect class="c" x="146" y="98" rx="2" ry="2"/><rect class="c" x="162" y="2" rx="2" ry="2"/><rect class="c c0" x="162" y="18" rx="2" ry="2"/><rect class="c c1" x="162" y="34" rx="2" ry="2"/><rect class="c c2" x="162" y="50" rx="2" ry="2"/><rect class="c c3" x="162" y="66" rx="2" ry="2"/><rect class="c c4" x="162" y="82" rx="2" ry="2"/><rect class="c" x="162" y="98" rx="2" ry="2"/><rect class="c c5" x="178" y="2" rx="2" ry="2"/><rect class="c c6" x="178" y="18" rx="2" ry="2"/><rect class="c c7" x="178" y="34" rx="2" ry="2"/><rect class="c c8" x="178" y="50" rx="2" ry="2"/><rect class="c c9" x="178" y="66" rx="2" ry="2"/><rect class="c ca" x="178" y="82" rx="2" ry="2"/><rect class="c cb" x="178" y="98" rx="2" ry="2"/><rect class="c cc" x="194" y="2" rx="2" ry="2"/><rect class="c cd" x="194" y="18" rx="2" ry="2"/><rect class="c ce" x="194" y="34" rx="2" ry="2"/><rect class="c cf" x="194" y="50" rx="2" ry="2"/><rect class="c cg" x="194" y="66" rx="2" ry="2"/><rect class="c ch" x="194" y="82" rx="2" ry="2"/><rect class="c" x="194" y="98" rx="2" ry="2"/><rect class="c" x="210" y="2" rx="2" ry="2"/><rect class="c ci" x="210" y="18" rx="2" ry="2"/><rect class="c cj" x="210" y="34" rx="2" ry="2"/><rect class="c ck" x="210" y="50" rx="2" ry="2"/><rect class="c cl" x="210" y="66" rx="2" ry="2"/><rect class="c cm" x="210" y="82" rx="2" ry="2"/><rect class="c" x="210" y="98" rx="2" ry="2"/><rect class="c cn" x="226" y="2" rx="2" ry="2"/><rect class="c co" x="226" y="18" rx="2" ry="2"/><rect class="c" x="226" y="34" rx="2" ry="2"/><rect class="c" x="226" y="50" rx="2" ry="2"/><rect class="c" x="226" y="66" rx="2" ry="2"/><rect class="c cp" x="226" y="82" rx="2" ry="2"/><rect class="c" x="226" y="98" rx="2" ry="2"/><rect class="c" x="242" y="2" rx="2" ry="2"/><rect class="c" x="242" y="18" rx="2" ry="2"/><rect class="c" x="242" y="34" rx="2" ry="2"/><rect class="c" x="242" y="50" rx="2" ry="2"/><rect class="c" x="242" y="66" rx="2" ry="2"/><rect class="c" x="242" y="82" rx="2" ry="2"/><rect class="c" x="242" y="98" rx="2" ry="2"/><rect class="c" x="258" y="2" rx="2" ry="2"/><rect class="c" x="258" y="18" rx="2" ry="2"/><rect class="c cq" x="258" y="34" rx="2" ry="2"/><rect class="c" x="258" y="50" rx="2" ry="2"/><rect class="c" x="258" y="66" rx="2" ry="2"/><rect class="c cr" x="258" y="82" rx="2" ry="2"/><rect class="c cs" x="258" y="98" rx="2" ry="2"/><rect class="c" x="274" y="2" rx="2" ry="2"/><rect class="c ct" x="274" y="18" rx="2" ry="2"/><rect class="c" x="274" y="34" rx="2" ry="2"/><rect class="c" x="274" y="50" rx="2" ry="2"/><rect class="c" x="274" y="66" rx="2" ry="2"/><rect class="c cu" x="274" y="82" rx="2" ry="2"/><rect class="c" x="274" y="98" rx="2" ry="2"/><rect class="c" x="290" y="2" rx="2" ry="2"/><rect class="c cv" x="290" y="18" rx="2" ry="2"/><rect class="c cw" x="290" y="34" rx="2" ry="2"/><rect class="c cx" x="290" y="50" rx="2" ry="2"/><rect class="c cy" x="290" y="66" rx="2" ry="2"/><rect class="c" x="290" y="82" rx="2" ry="2"/><rect class="c" x="290" y="98" rx="2" ry="2"/><rect class="c cz" x="306" y="2" rx="2" ry="2"/><rect class="c c10" x="306" y="18" rx="2" ry="2"/><rect class="c" x="306" y="34" rx="2" ry="2"/><rect class="c c11" x="306" y="50" rx="2" ry="2"/><rect class="c c12" x="306" y="66" rx="2" ry="2"/><rect class="c" x="306" y="82" rx="2" ry="2"/><rect class="c" x="306" y="98" rx="2" ry="2"/><rect class="c" x="322" y="2" rx="2" ry="2"/><rect class="c c13" x="322" y="18" rx="2" ry="2"/><rect class="c c14" x="322" y="34" rx="2" ry="2"/><rect class="c c15" x="322" y="50" rx="2" ry="2"/><rect class="c c16" x="322" y="66" rx="2" ry="2"/><rect class="c c17" x="322" y="82" rx="2" ry="2"/><rect class="c" x="322" y="98" rx="2" ry="2"/><rect class="c" x="338" y="2" rx="2" ry="2"/><rect class="c" x="338" y="18" rx="2" ry="2"/><rect class="c c18" x="338" y="34" rx="2" ry="2"/><rect class="c c19" x="338" y="50" rx="2" ry="2"/><rect class="c" x="338" y="66" rx="2" ry="2"/><rect class="c" x="338" y="82" rx="2" ry="2"/><rect class="c" x="338" y="98" rx="2" ry="2"/><rect class="c" x="354" y="2" rx="2" ry="2"/><rect class="c" x="354" y="18" rx="2" ry="2"/><rect class="c" x="354" y="34" rx="2" ry="2"/><rect class="c c1a" x="354" y="50" rx="2" ry="2"/><rect class="c c1b" x="354" y="66" rx="2" ry="2"/><rect class="c c1c" x="354" y="82" rx="2" ry="2"/><rect class="c" x="354" y="98" rx="2" ry="2"/><rect class="c c1d" x="370" y="2" rx="2" ry="2"/><rect class="c" x="370" y="18" rx="2" ry="2"/><rect class="c" x="370" y="34" rx="2" ry="2"/><rect class="c c1e" x="370" y="50" rx="2" ry="2"/><rect class="c c1f" x="370" y="66" rx="2" ry="2"/><rect class="c" x="370" y="82" rx="2" ry="2"/><rect class="c" x="370" y="98" rx="2" ry="2"/><rect class="c" x="386" y="2" rx="2" ry="2"/><rect class="c" x="386" y="18" rx="2" ry="2"/><rect class="c c1g" x="386" y="34" rx="2" ry="2"/><rect class="c c1h" x="386" y="50" rx="2" ry="2"/><rect class="c c1i" x="386" y="66" rx="2" ry="2"/><rect class="c c1j" x="386" y="82" rx="2" ry="2"/><rect class="c" x="386" y="98" rx="2" ry="2"/><rect class="c c1k" x="402" y="2" rx="2" ry="2"/><rect class="c c1l" x="402" y="18" rx="2" ry="2"/><rect class="c c1m" x="402" y="34" rx="2" ry="2"/><rect class="c c1n" x="402" y="50" rx="2" ry="2"/><rect class="c" x="402" y="66" rx="2" ry="2"/><rect class="c" x="402" y="82" rx="2" ry="2"/><rect class="c" x="402" y="98" rx="2" ry="2"/><rect class="c" x="418" y="2" rx="2" ry="2"/><rect class="c" x="418" y="18" rx="2" ry="2"/><rect class="c c1o" x="418" y="34" rx="2" ry="2"/><rect class="c" x="418" y="50" rx="2" ry="2"/><rect class="c c1p" x="418" y="66" rx="2" ry="2"/><rect class="c c1q" x="418" y="82" rx="2" ry="2"/><rect class="c" x="418" y="98" rx="2" ry="2"/><rect class="c" x="434" y="2" rx="2" ry="2"/><rect class="c c1r" x="434" y="18" rx="2" ry="2"/><rect class="c c1s" x="434" y="34" rx="2" ry="2"/><rect class="c c1t" x="434" y="50" rx="2" ry="2"/><rect class="c c1u" x="434" y="66" rx="2" ry="2"/><rect class="c c1v" x="434" y="82" rx="2" ry="2"/><rect class="c c1w" x="434" y="98" rx="2" ry="2"/><rect class="c c1x" x="450" y="2" rx="2" ry="2"/><rect class="c c1y" x="450" y="18" rx="2" ry="2"/><rect class="c" x="450" y="34" rx="2" ry="2"/><rect class="c" x="450" y="50" rx="2" ry="2"/><rect class="c" x="450" y="66" rx="2" ry="2"/><rect class="c" x="450" y="82" rx="2" ry="2"/><rect class="c" x="450" y="98" rx="2" ry="2"/><rect class="c" x="466" y="2" rx="2" ry="2"/><rect class="c" x="466" y="18" rx="2" ry="2"/><rect class="c" x="466" y="34" rx="2" ry="2"/><rect class="c" x="466" y="50" rx="2" ry="2"/><rect class="c" x="466" y="66" rx="2" ry="2"/><rect class="c" x="466" y="82" rx="2" ry="2"/><rect class="c" x="466" y="98" rx="2" ry="2"/><rect class="c" x="482" y="2" rx="2" ry="2"/><rect class="c" x="482" y="18" rx="2" ry="2"/><rect class="c" x="482" y="34" rx="2" ry="2"/><rect class="c" x="482" y="50" rx="2" ry="2"/><rect class="c" x="482" y="66" rx="2" ry="2"/><rect class="c" x="482" y="82" rx="2" ry="2"/><rect class="c" x="482" y="98" rx="2" ry="2"/><rect class="c" x="498" y="2" rx="2" ry="2"/><rect class="c c1z" x="498" y="18" rx="2" ry="2"/><rect class="c" x="498" y="34" rx="2" ry="2"/><rect class="c" x="498" y="50" rx="2" ry="2"/><rect class="c" x="498" y="66" rx="2" ry="2"/><rect class="c" x="498" y="82" rx="2" ry="2"/><rect class="c" x="498" y="98" rx="2" ry="2"/><rect class="c" x="514" y="2" rx="2" ry="2"/><rect class="c" x="514" y="18" rx="2" ry="2"/><rect class="c" x="514" y="34" rx="2" ry="2"/><rect class="c" x="514" y="50" rx="2" ry="2"/><rect class="c" x="514" y="66" rx="2" ry="2"/><rect class="c" x="514" y="82" rx="2" ry="2"/><rect class="c" x="514" y="98" rx="2" ry="2"/><rect class="c" x="530" y="2" rx="2" ry="2"/><rect class="c" x="530" y="18" rx="2" ry="2"/><rect class="c" x="530" y="34" rx="2" ry="2"/><rect class="c" x="530" y="50" rx="2" ry="2"/><rect class="c" x="530" y="66" rx="2" ry="2"/><rect class="c" x="530" y="82" rx="2" ry="2"/><rect class="c" x="530" y="98" rx="2" ry="2"/><rect class="c" x="546" y="2" rx="2" ry="2"/><rect class="c" x="546" y="18" rx="2" ry="2"/><rect class="c" x="546" y="34" rx="2" ry="2"/><rect class="c" x="546" y="50" rx="2" ry="2"/><rect class="c" x="546" y="66" rx="2" ry="2"/><rect class="c" x="546" y="82" rx="2" ry="2"/><rect class="c" x="546" y="98" rx="2" ry="2"/><rect class="c" x="562" y="2" rx="2" ry="2"/><rect class="c" x="562" y="18" rx="2" ry="2"/><rect class="c" x="562" y="34" rx="2" ry="2"/><rect class="c" x="562" y="50" rx="2" ry="2"/><rect class="c" x="562" y="66" rx="2" ry="2"/><rect class="c" x="562" y="82" rx="2" ry="2"/><rect class="c" x="562" y="98" rx="2" ry="2"/><rect class="c c20" x="578" y="2" rx="2" ry="2"/><rect class="c" x="578" y="18" rx="2" ry="2"/><rect class="c" x="578" y="34" rx="2" ry="2"/><rect class="c" x="578" y="50" rx="2" ry="2"/><rect class="c" x="578" y="66" rx="2" ry="2"/><rect class="c" x="578" y="82" rx="2" ry="2"/><rect class="c" x="578" y="98" rx="2" ry="2"/><rect class="c" x="594" y="2" rx="2" ry="2"/><rect class="c" x="594" y="18" rx="2" ry="2"/><rect class="c" x="594" y="34" rx="2" ry="2"/><rect class="c" x="594" y="50" rx="2" ry="2"/><rect class="c" x="594" y="66" rx="2" ry="2"/><rect class="c c21" x="594" y="82" rx="2" ry="2"/><rect class="c" x="594" y="98" rx="2" ry="2"/><rect class="c c22" x="610" y="2" rx="2" ry="2"/><rect class="c c23" x="610" y="18" rx="2" ry="2"/><rect class="c" x="610" y="34" rx="2" ry="2"/><rect class="c" x="610" y="50" rx="2" ry="2"/><rect class="c" x="610" y="66" rx="2" ry="2"/><rect class="c" x="610" y="82" rx="2" ry="2"/><rect class="c" x="610" y="98" rx="2" ry="2"/><rect class="c" x="626" y="2" rx="2" ry="2"/><rect class="c" x="626" y="18" rx="2" ry="2"/><rect class="c" x="626" y="34" rx="2" ry="2"/><rect class="c" x="626" y="50" rx="2" ry="2"/><rect class="c" x="626" y="66" rx="2" ry="2"/><rect class="c" x="626" y="82" rx="2" ry="2"/><rect class="c" x="626" y="98" rx="2" ry="2"/><rect class="c" x="642" y="2" rx="2" ry="2"/><rect class="c" x="642" y="18" rx="2" ry="2"/><rect class="c" x="642" y="34" rx="2" ry="2"/><rect class="c" x="642" y="50" rx="2" ry="2"/><rect class="c" x="642" y="66" rx="2" ry="2"/><rect class="c" x="642" y="82" rx="2" ry="2"/><rect class="c" x="642" y="98" rx="2" ry="2"/><rect class="c" x="658" y="2" rx="2" ry="2"/><rect class="c" x="658" y="18" rx="2" ry="2"/><rect class="c" x="658" y="34" rx="2" ry="2"/><rect class="c" x="658" y="50" rx="2" ry="2"/><rect class="c" x="658" y="66" rx="2" ry="2"/><rect class="c" x="658" y="82" rx="2" ry="2"/><rect class="c" x="658" y="98" rx="2" ry="2"/><rect class="c" x="674" y="2" rx="2" ry="2"/><rect class="c" x="674" y="18" rx="2" ry="2"/><rect class="c" x="674" y="34" rx="2" ry="2"/><rect class="c" x="674" y="50" rx="2" ry="2"/><rect class="c" x="674" y="66" rx="2" ry="2"/><rect class="c" x="674" y="82" rx="2" ry="2"/><rect class="c c24" x="674" y="98" rx="2" ry="2"/><rect class="c c25" x="690" y="2" rx="2" ry="2"/><rect class="c" x="690" y="18" rx="2" ry="2"/><rect class="c" x="690" y="34" rx="2" ry="2"/><rect class="c" x="690" y="50" rx="2" ry="2"/><rect class="c" x="690" y="66" rx="2" ry="2"/><rect class="c" x="690" y="82" rx="2" ry="2"/><rect class="c" x="690" y="98" rx="2" ry="2"/><rect class="c" x="706" y="2" rx="2" ry="2"/><rect class="c" x="706" y="18" rx="2" ry="2"/><rect class="c" x="706" y="34" rx="2" ry="2"/><rect class="c" x="706" y="50" rx="2" ry="2"/><rect class="c" x="706" y="66" rx="2" ry="2"/><rect class="c" x="706" y="82" rx="2" ry="2"/><rect class="c" x="706" y="98" rx="2" ry="2"/><rect class="c" x="722" y="2" rx="2" ry="2"/><rect class="c" x="722" y="18" rx="2" ry="2"/><rect class="c" x="722" y="34" rx="2" ry="2"/><rect class="c" x="722" y="50" rx="2" ry="2"/><rect class="c" x="722" y="66" rx="2" ry="2"/><rect class="c" x="722" y="82" rx="2" ry="2"/><rect class="c" x="722" y="98" rx="2" ry="2"/><rect class="c" x="738" y="2" rx="2" ry="2"/><rect class="c" x="738" y="18" rx="2" ry="2"/><rect class="c" x="738" y="34" rx="2" ry="2"/><rect class="c" x="738" y="50" rx="2" ry="2"/><rect class="c" x="738" y="66" rx="2" ry="2"/><rect class="c" x="738" y="82" rx="2" ry="2"/><rect class="c" x="738" y="98" rx="2" ry="2"/><rect class="c" x="754" y="2" rx="2" ry="2"/><rect class="c" x="754" y="18" rx="2" ry="2"/><rect class="c" x="754" y="34" rx="2" ry="2"/><rect class="c" x="754" y="50" rx="2" ry="2"/><rect class="c" x="754" y="66" rx="2" ry="2"/><rect class="c" x="754" y="82" rx="2" ry="2"/><rect class="c" x="754" y="98" rx="2" ry="2"/><rect class="c" x="770" y="2" rx="2" ry="2"/><rect class="c" x="770" y="18" rx="2" ry="2"/><rect class="c" x="770" y="34" rx="2" ry="2"/><rect class="c" x="770" y="50" rx="2" ry="2"/><rect class="c" x="770" y="66" rx="2" ry="2"/><rect class="c" x="770" y="82" rx="2" ry="2"/><rect class="c" x="770" y="98" rx="2" ry="2"/><rect class="c c26" x="786" y="2" rx="2" ry="2"/><rect class="c" x="786" y="18" rx="2" ry="2"/><rect class="c" x="786" y="34" rx="2" ry="2"/><rect class="c" x="786" y="50" rx="2" ry="2"/><rect class="c" x="786" y="66" rx="2" ry="2"/><rect class="c" x="786" y="82" rx="2" ry="2"/><rect class="c" x="786" y="98" rx="2" ry="2"/><rect class="c c27" x="802" y="2" rx="2" ry="2"/><rect class="c c28" x="802" y="18" rx="2" ry="2"/><rect class="c c29" x="802" y="34" rx="2" ry="2"/><rect class="c" x="802" y="50" rx="2" ry="2"/><rect class="c c2a" x="802" y="66" rx="2" ry="2"/><rect class="c c2b" x="802" y="82" rx="2" ry="2"/><rect class="c c2c" x="802" y="98" rx="2" ry="2"/><rect class="c c2d" x="818" y="2" rx="2" ry="2"/><rect class="c" x="818" y="18" rx="2" ry="2"/><rect class="c c2e" x="818" y="34" rx="2" ry="2"/><rect class="c c2f" x="818" y="50" rx="2" ry="2"/><rect class="c c2g" x="818" y="66" rx="2" ry="2"/><rect class="c c2h" x="818" y="82" rx="2" ry="2"/><rect class="c" x="818" y="98" rx="2" ry="2"/><rect class="c" x="834" y="2" rx="2" ry="2"/><rect class="c" x="834" y="18" rx="2" ry="2"/><rect class="c" x="834" y="34" rx="2" ry="2"/><rect class="c" x="834" y="50" rx="2" ry="2"/><rect class="u u0" height="6" width="707.3" x="0.0" y="196"/><rect class="u u1" height="6" width="104.2" x="706.7" y="196"/><rect class="u u2" height="6" width="19.4" x="810.3" y="196"/><rect class="u u3" height="6" width="19.4" x="829.2" y="196"/><rect class="s s0" x="0.8" y="0.8" width="14.4" height="14.4" rx="4.5" ry="4.5"/><rect class="s s1" x="1.8" y="1.8" width="12.3" height="12.3" rx="4.1" ry="4.1"/><rect class="s s2" x="2.6" y="2.6" width="10.8" height="10.8" rx="3.6" ry="3.6"/><rect class="s s3" x="3.0" y="3.0" width="9.9" height="9.9" rx="3.3" ry="3.3"/>
+  </g>
+
+  <!-- ============================================================== -->
+  <!-- 04. BOTTOM HUD: VELOCITY METRICS & 5-TIER LEGEND               -->
+  <!-- ============================================================== -->
+  <g transform="translate(76, 246)">
+    <!-- Left: Progression Status -->
+    <g transform="translate(0, 0)">
+      <circle cx="4" cy="-3.5" r="3" fill="#10B981" />
+      <text x="14" y="0" class="mono" font-size="9.5" font-weight="600" fill="#64748B">HARVEST VELOCITY // 52-WEEK REPOSITORY CADENCE</text>
+    </g>
+
+    <!-- Right: 5-Tier Contribution Intensity Legend -->
+    <g transform="translate(680, 0)">
+      <text x="0" y="0" class="sans" font-size="10" font-weight="500" fill="#8B949E">Less</text>
+
+      <!-- Tier 1: No Contributions -->
+      <rect x="32" y="-9" width="11" height="11" rx="2.5" fill="#161D29" stroke="#252E42" stroke-width="0.8" />
+
+      <!-- Tier 2: Low Activity -->
+      <rect x="48" y="-9" width="11" height="11" rx="2.5" fill="#064E3B" stroke="#0F664F" stroke-width="0.8" />
+
+      <!-- Tier 3: Moderate Activity -->
+      <rect x="64" y="-9" width="11" height="11" rx="2.5" fill="#059669" stroke="#12A87A" stroke-width="0.8" />
+
+      <!-- Tier 4: High Activity -->
+      <rect x="80" y="-9" width="11" height="11" rx="2.5" fill="#10B981" stroke="#25D99F" stroke-width="0.8" />
+
+      <!-- Tier 5: Maximum Peak Activity -->
+      <rect x="96" y="-9" width="11" height="11" rx="2.5" fill="#34D399" stroke="#5EEAD4" stroke-width="0.8" style="filter: drop-shadow(0 0 3px rgba(52, 211, 153, 0.8));" />
+
+      <text x="114" y="0" class="sans" font-size="10" font-weight="500" fill="#8B949E">More</text>
+    </g>
+  </g>
+
   </g>
 
   <!-- ============================================================== -->
