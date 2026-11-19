@@ -182,7 +182,7 @@
   </g>
 
   <!-- ==================== LEFT SIDE: EDITORIAL IDENTITY ==================== -->
-  <g transform="translate(48, 98)">
+  <g transform="translate(48, 108)">
     <!-- Professional Domain Label -->
     <text x="0" y="22" class="f-mono" font-size="12" font-weight="700" fill="#8B5CF6" letter-spacing="3.5">
       // SOFTWARE ENGINEER • FULL-STACK DEVELOPER
@@ -211,33 +211,11 @@
     </g>
 
     <!-- Short Powerful Professional Introduction -->
-    <text x="0" y="178" class="f-sans" font-size="15.5" fill="#A1A1AA" letter-spacing="0.2">
-      Architecting high-performance web applications, mobile platforms and intelligent software solutions.
+    <text x="0" y="192" class="f-sans" font-size="16" fill="#CBD5E1" letter-spacing="0.25">
+      Architecting <tspan fill="#F5F5F7" font-weight="600">high-performance</tspan> web applications, mobile platforms and intelligent software solutions.
     </text>
 
-    <!-- EXACT 3 SMALL INTEGRATED INFORMATION ELEMENTS -->
-    <g transform="translate(0, 222)">
-      <!-- Indicator 1: Full-Stack Developer -->
-      <g transform="translate(0, 0)">
-        <rect width="176" height="32" rx="7" fill="#101424" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1" />
-        <circle cx="16" cy="16" r="3.5" fill="#8B5CF6" />
-        <text x="28" y="20" class="f-mono" font-size="10" font-weight="700" fill="#C4B5FD">Full-Stack Developer</text>
-      </g>
 
-      <!-- Indicator 2: M.Sc. Information Technology -->
-      <g transform="translate(188, 0)">
-        <rect width="210" height="32" rx="7" fill="#101424" stroke="rgba(59, 130, 246, 0.3)" stroke-width="1" />
-        <circle cx="16" cy="16" r="3.5" fill="#3B82F6" />
-        <text x="28" y="20" class="f-mono" font-size="10" font-weight="700" fill="#93C5FD">M.Sc. Information Tech</text>
-      </g>
-
-      <!-- Indicator 3: React • Node • AI -->
-      <g transform="translate(410, 0)">
-        <rect width="168" height="32" rx="7" fill="#101424" stroke="rgba(34, 211, 238, 0.3)" stroke-width="1" />
-        <circle cx="16" cy="16" r="3.5" fill="#22D3EE" />
-        <text x="28" y="20" class="f-mono" font-size="10" font-weight="700" fill="#67E8F9">React • Node • AI</text>
-      </g>
-    </g>
   </g>
 
   <!-- ==================== RIGHT SIDE: 3D CYBERNETIC DEVELOPER COMPOSITION ==================== -->

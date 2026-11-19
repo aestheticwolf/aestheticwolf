@@ -1,44 +1,50 @@
-import re
+import xml.etree.ElementTree as ET
 
-with open("assets/hero.svg", "r", encoding="utf-8") as f:
-    text = f.read()
+def update_hero():
+    with open('assets/hero.svg', 'r', encoding='utf-8') as f:
+        content = f.read()
 
-# 1. Update root tag: remove height="100%"
-text = re.sub(
-    r'<svg\s+xmlns="http://www.w3.org/2000/svg"\s+viewBox="0 0 1000 420"\s+width="100%"\s+height="100%">',
-    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" width="100%">',
-    text
-)
+    # Target the badge group
+    old_badge_group = '''    <!-- EXACT 3 SMALL INTEGRATED INFORMATION ELEMENTS -->
+    <g transform="translate(0, 222)">
+      <!-- Indicator 1: Full-Stack Developer -->
+      <g transform="translate(0, 0)">
+        <rect width="176" height="32" rx="7" fill="#101424" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1" />
+        <circle cx="16" cy="16" r="3.5" fill="#8B5CF6" />
+        <text x="28" y="20" class="f-mono" font-size="10" font-weight="700" fill="#C4B5FD">Full-Stack Developer</text>
+      </g>
 
-# 2. Update background fills from #06070B to #080B14
-text = text.replace('#06070B', '#080B14')
-text = text.replace('stop-color="#06070B"', 'stop-color="#080B14"')
+      <!-- Indicator 2: M.Sc. Information Technology -->
+      <g transform="translate(188, 0)">
+        <rect width="210" height="32" rx="7" fill="#101424" stroke="rgba(59, 130, 246, 0.3)" stroke-width="1" />
+        <circle cx="16" cy="16" r="3.5" fill="#3B82F6" />
+        <text x="28" y="20" class="f-mono" font-size="10" font-weight="700" fill="#93C5FD">M.Sc. Information Tech</text>
+      </g>
 
-# 3. Add slow animated breathing to heroVoidGlow and heroCyanFocal
-void_glow_pattern = r'(<radialGradient id="heroVoidGlow" cx="20%" cy="30%" r="65%">)'
-void_glow_replacement = """<radialGradient id="heroVoidGlow" cx="20%" cy="30%" r="65%">
-      <animate attributeName="cx" values="20%;25%;20%" dur="16s" repeatCount="indefinite" />
-      <animate attributeName="cy" values="30%;26%;30%" dur="16s" repeatCount="indefinite" />"""
-text = re.sub(void_glow_pattern, void_glow_replacement, text)
+      <!-- Indicator 3: React • Node • AI -->
+      <g transform="translate(410, 0)">
+        <rect width="168" height="32" rx="7" fill="#101424" stroke="rgba(34, 211, 238, 0.3)" stroke-width="1" />
+        <circle cx="16" cy="16" r="3.5" fill="#22D3EE" />
+        <text x="28" y="20" class="f-mono" font-size="10" font-weight="700" fill="#67E8F9">React • Node • AI</text>
+      </g>
+    </g>'''
 
-cyan_focal_pattern = r'(<radialGradient id="heroCyanFocal" cx="76%" cy="50%" r="55%">)'
-cyan_focal_replacement = """<radialGradient id="heroCyanFocal" cx="76%" cy="50%" r="55%">
-      <animate attributeName="cx" values="76%;72%;76%" dur="18s" repeatCount="indefinite" />
-      <animate attributeName="cy" values="50%;54%;50%" dur="18s" repeatCount="indefinite" />"""
-text = re.sub(cyan_focal_pattern, cyan_focal_replacement, text)
+    assert old_badge_group in content, "old_badge_group not found in hero.svg"
+    content = content.replace(old_badge_group, '')
 
-# 4. Enhance glass card layers with deep navy and card background
-text = text.replace('stop-color="#1E2338"', 'stop-color="#121827"')
-text = text.replace('stop-color="#0D101C"', 'stop-color="#0D1321"')
-text = text.replace('stop-color="#161B2E"', 'stop-color="#101B32"')
+    # Adjust vertical translation and spacing of the left group
+    content = content.replace('<g transform="translate(48, 98)">', '<g transform="translate(48, 108)">')
+    content = content.replace(
+        '<text x="0" y="178" class="f-sans" font-size="15.5" fill="#A1A1AA" letter-spacing="0.2">\n      Architecting high-performance web applications, mobile platforms and intelligent software solutions.\n    </text>',
+        '<text x="0" y="192" class="f-sans" font-size="16" fill="#CBD5E1" letter-spacing="0.25">\n      Architecting <tspan fill="#F5F5F7" font-weight="600">high-performance</tspan> web applications, mobile platforms and intelligent software solutions.\n    </text>'
+    )
 
-# 5. Ensure text colors match #F5F5F7 and #A1A1AA
-text = text.replace('fill="#FFFFFF"', 'fill="#F5F5F7"')
-text = text.replace('fill="#E2E8F0"', 'fill="#F5F5F7"')
-text = text.replace('fill="#94A3B8"', 'fill="#A1A1AA"')
-text = text.replace('fill="#64748B"', 'fill="#8B949E"')
+    # Validate XML
+    ET.fromstring(content)
 
-with open("assets/hero.svg", "w", encoding="utf-8") as f:
-    f.write(text)
+    with open('assets/hero.svg', 'w', encoding='utf-8') as f:
+        f.write(content)
+    print("hero.svg successfully updated: 3 badges removed, spacing optimized!")
 
-print("hero.svg updated successfully!")
+if __name__ == '__main__':
+    update_hero()
