@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 135" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111522" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#08090D" stop-opacity="0.98" />
+    </linearGradient>
+
+    <!-- Animated Gradient for EXTRAORDINARY -->
+    <linearGradient id="extraordinaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A78BFA">
+        <animate attributeName="stop-color" values="#A78BFA;#60A5FA;#22D3EE;#A78BFA" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#60A5FA">
+        <animate attributeName="stop-color" values="#60A5FA;#22D3EE;#A78BFA;#60A5FA" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#22D3EE">
+        <animate attributeName="stop-color" values="#22D3EE;#A78BFA;#60A5FA;#22D3EE" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Animated Divider Line with Laser Scan -->
+    <linearGradient id="contactLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0" />
+      <stop offset="30%" stop-color="#8B5CF6" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#22D3EE" stop-opacity="0.9" />
+      <stop offset="70%" stop-color="#60A5FA" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0" />
+    </linearGradient>
+
+    <radialGradient id="cornerGlow" cx="90%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="textGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style><![CDATA[
+    .mono { font-family: 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+  ]]></style>
+
+  <!-- Container Chassis -->
+  <rect width="1000" height="135" rx="14" fill="url(#heroBg)" stroke="#1F283D" stroke-width="1.2" />
+  <rect width="1000" height="135" rx="14" fill="url(#cornerGlow)" />
+
+  <!-- 01. Category Label with Live Pulsing Dot -->
+  <g transform="translate(36, 26)">
+    <circle cx="6" cy="6" r="3.5" fill="#34D399" />
+    <circle cx="6" cy="6" r="6.5" fill="none" stroke="#34D399" stroke-width="1.2" opacity="0.6">
+      <animate attributeName="r" values="3.5;8;3.5" dur="2.4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.8;0;0.8" dur="2.4s" repeatCount="indefinite" />
+    </circle>
+    <text x="20" y="10" class="mono" font-size="10.5" font-weight="700" fill="#22D3EE">LET'S CONNECT / GET IN TOUCH</text>
+    <text x="238" y="10" class="sans" font-size="11" fill="#4B5563">•</text>
+    <text x="252" y="10" class="mono" font-size="10" font-weight="600" fill="#A1A1AA">OPEN FOR COLLABORATION &amp; INQUIRIES</text>
+  </g>
+
+  <!-- 02. Main Editorial Heading -->
+  <g transform="translate(36, 68)">
+    <text x="0" y="0" class="sans" font-size="26" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">
+      LET'S BUILD SOMETHING <tspan fill="url(#extraordinaryGrad)" filter="url(#textGlow)">EXTRAORDINARY.</tspan>
+    </text>
+  </g>
+
+  <!-- 03. Supporting Introduction with Highlighted Phrases -->
+  <g transform="translate(36, 96)">
+    <text x="0" y="0" class="sans" font-size="13" fill="#A1A1AA">
+      Have an idea, a project, or an interesting technical challenge? <tspan fill="#22D3EE" font-weight="600">Let's connect</tspan> and build something <tspan fill="#A78BFA" font-weight="600">meaningful together</tspan>.
+    </text>
+  </g>
+
+  <!-- 04. Bottom Divider Line with Animated Laser Scan -->
+  <rect x="24" y="118" width="952" height="1" fill="url(#contactLineGrad)" />
+  <rect x="24" y="118" width="130" height="1" fill="#22D3EE" opacity="0.9">
+    <animate attributeName="x" values="24;822;24" dur="8s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="8s" repeatCount="indefinite" />
+  </rect>
+</svg>

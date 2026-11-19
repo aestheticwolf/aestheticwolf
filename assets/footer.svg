@@ -1,38 +1,88 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 130" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 135" width="100%" height="100%">
   <defs>
-    <linearGradient id="ftLine" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Top Divider Line Gradient -->
+    <linearGradient id="ftDivider" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0" />
-      <stop offset="30%" stop-color="#8B5CF6" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="#3B82F6" stop-opacity="1" />
-      <stop offset="70%" stop-color="#22D3EE" stop-opacity="0.8" />
+      <stop offset="25%" stop-color="#8B5CF6" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#22D3EE" stop-opacity="0.9" />
+      <stop offset="75%" stop-color="#3B82F6" stop-opacity="0.4" />
       <stop offset="100%" stop-color="#22D3EE" stop-opacity="0" />
     </linearGradient>
-    <radialGradient id="ftFloorGlow" cx="50%" cy="0%" r="70%">
-      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.15" />
-      <stop offset="60%" stop-color="#8B5CF6" stop-opacity="0.05" />
+
+    <!-- Gradient for Name -->
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A78BFA">
+        <animate attributeName="stop-color" values="#A78BFA;#60A5FA;#22D3EE;#A78BFA" dur="9s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#60A5FA">
+        <animate attributeName="stop-color" values="#60A5FA;#22D3EE;#A78BFA;#60A5FA" dur="9s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#22D3EE">
+        <animate attributeName="stop-color" values="#22D3EE;#A78BFA;#60A5FA;#22D3EE" dur="9s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Subtle Ambient Footer Floor Glow -->
+    <radialGradient id="footerGlow" cx="50%" cy="0%" r="65%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.08" />
+      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.04" />
       <stop offset="100%" stop-color="#08090D" stop-opacity="0" />
     </radialGradient>
-    <style>
-      .f-mono { font-family: "JetBrains Mono", "Fira Code", monospace; }
-      .f-ui { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-    </style>
+
+    <filter id="emblemGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
   </defs>
 
-  <rect width="1000" height="130" fill="url(#ftFloorGlow)" />
-  <line x1="60" y1="2" x2="940" y2="2" stroke="url(#ftLine)" stroke-width="2" stroke-linecap="round" />
+  <style><![CDATA[
+    .mono { font-family: 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+  ]]></style>
 
-  <!-- Center Monogram Emblem -->
-  <g transform="translate(500, 32)">
-    <circle cx="0" cy="0" r="14" fill="#101322" stroke="#8B5CF6" stroke-width="1.2" />
-    <polygon points="-4,-2 0,-6 4,-2 0,5" fill="#22D3EE" />
+  <!-- Footer Ambient Floor -->
+  <rect width="1000" height="135" fill="url(#footerGlow)" />
+
+  <!-- Top Animated Divider Line -->
+  <rect x="40" y="2" width="920" height="1" fill="url(#ftDivider)" />
+  <rect x="40" y="2" width="160" height="1" fill="#22D3EE" opacity="0.9">
+    <animate attributeName="x" values="40;800;40" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="10s" repeatCount="indefinite" />
+  </rect>
+
+  <!-- Center Animated Geometric Emblem -->
+  <g transform="translate(500, 28)">
+    <!-- Rotating Ring -->
+    <circle cx="0" cy="0" r="14" fill="#101524" stroke="#283552" stroke-width="1.2" />
+    <circle cx="0" cy="0" r="14" fill="none" stroke="#22D3EE" stroke-width="1.2" stroke-dasharray="8 14" opacity="0.7">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite" />
+    </circle>
+    <!-- Core Diamond -->
+    <polygon points="0,-6 6,0 0,6 -6,0" fill="#A78BFA" filter="url(#emblemGlow)">
+      <animate attributeName="fill" values="#A78BFA;#22D3EE;#60A5FA;#A78BFA" dur="6s" repeatCount="indefinite" />
+    </polygon>
   </g>
 
-  <!-- Typography -->
-  <g transform="translate(500, 72)" text-anchor="middle">
-    <text y="0" class="f-ui" font-size="12.5" font-weight="700" fill="#FFFFFF" letter-spacing="3.5">
-      ENGINEERED WITH PASSION &amp; PRECISION // RICHARD D'SOUZA
+  <!-- Signature Statement -->
+  <g transform="translate(500, 62)" text-anchor="middle">
+    <text y="0" class="mono" font-size="11" font-weight="700" fill="#A1A1AA" letter-spacing="3.5">
+      ENGINEERED WITH PASSION &amp; PRECISION
     </text>
-    <text y="22" class="f-mono" font-size="10" fill="#64748B" letter-spacing="1.5">
+  </g>
+
+  <!-- Name in Animated Gradient -->
+  <g transform="translate(500, 94)" text-anchor="middle">
+    <text y="0" class="sans" font-size="24" font-weight="800" fill="url(#nameGrad)" letter-spacing="2">
+      RICHARD D'SOUZA
+    </text>
+  </g>
+
+  <!-- Professional Metadata Line -->
+  <g transform="translate(500, 118)" text-anchor="middle">
+    <text y="0" class="mono" font-size="10" font-weight="600" fill="#64748B" letter-spacing="1.5">
       2026 DIGITAL WORKSPACE • GOA, INDIA • @AESTHETICWOLF • ALL SYSTEMS OPERATIONAL
     </text>
   </g>

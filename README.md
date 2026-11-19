@@ -1,3 +1,6 @@
+<a name="top" id="top"></a>
+<a name="richard-dsouza" id="richard-dsouza"></a>
+
 <div align="center">
 
 <!-- ========================================== -->
@@ -21,15 +24,15 @@
   </a>
   &nbsp;
   <a href="https://github.com/aestheticwolf" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-aestheticwolf-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+    <img src="https://img.shields.io/badge/GitHub-aestheticwolf-111522?style=for-the-badge&logo=github&logoColor=22D3EE" alt="GitHub" />
   </a>
   &nbsp;
   <a href="https://linkedin.com/in/richarddsouza29" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-richarddsouza29-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LinkedIn-richarddsouza29-111522?style=for-the-badge&logo=linkedin&logoColor=60A5FA" alt="LinkedIn" />
   </a>
   &nbsp;
   <a href="https://richard-portfolio-website-ten.vercel.app" target="_blank">
-    <img src="https://img.shields.io/badge/Live%20Portfolio-richard--portfolio-10B981?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Portfolio" />
+    <img src="https://img.shields.io/badge/Live%20Portfolio-richard--portfolio-111522?style=for-the-badge&logo=vercel&logoColor=10B981" alt="Live Portfolio" />
   </a>
 </p>
 
@@ -42,9 +45,9 @@
 <!-- ========================================== -->
 
 <div align="left">
-  <small><code>WORKSPACE &bull; RUNTIME ENVIRONMENT</code></small>
+  <small><code>WORKSPACE &bull; RUNTIME ENVIRONMENT &bull; DEV TELEMETRY</code></small>
   <h2>DEVELOPER WORKSPACE</h2>
-  <p><em>Inside my engineering environment.</em></p>
+  <p><em>"A high-performance engineering environment tailored for speed, precision, and modern full-stack workflows."</em></p>
 </div>
 
 <br/>
@@ -66,7 +69,7 @@
 <div align="left">
   <small><code>IDENTITY &bull; ACADEMIC FOUNDATION &bull; CAREER TIMELINE</code></small>
   <h2>ABOUT &amp; PROFESSIONAL BACKGROUND</h2>
-  <p><em>Engineering mindset, academic rigor, and production impact.</em></p>
+  <p><em>"Merging academic computer science rigor with production full-stack engineering."</em></p>
 </div>
 
 <br/>
@@ -86,9 +89,9 @@
 <!-- ========================================== -->
 
 <div align="left">
-  <small><code>STACK ARCHITECTURE &bull; 5 TIERS &bull; 19 CORE TECHNOLOGIES</code></small>
+  <small><code>STACK ARCHITECTURE &bull; 5 TIERS &bull; 19 PRODUCTION TECHNOLOGIES</code></small>
   <h2>TECHNOLOGY ECOSYSTEM</h2>
-  <p><em>Official technology stack across core languages, client, runtime, databases, and tooling.</em></p>
+  <p><em>"Official production technology stack across core languages, frontend, backend, databases, and tooling."</em></p>
 </div>
 
 <br/>
@@ -110,7 +113,7 @@
 <div align="left">
   <small><code>SELECTED WORK / 2026 &bull; FEATURED PRODUCTION REPOSITORIES</code></small>
   <h2>SELECTED PROJECTS</h2>
-  <p><em>"Engineering ideas into practical digital experiences."</em></p>
+  <p><em>"Engineering ideas into robust, user-centric, and scalable digital realities."</em></p>
 </div>
 
 <br/>
@@ -126,7 +129,7 @@
     <td width="52%" valign="middle">
       <small><code>CROSS-PLATFORM MOBILE &bull; LEARNING SYSTEM</code></small>
       <h3>01 &bull; SkillPath</h3>
-      <p>A cross-platform learning companion designed to help users manage learning goals, track progress, organize tasks, and synchronize their data through Firebase.</p>
+      <p>A cross-platform mobile companion engineered with <code>React Native</code> and <code>Expo</code> to manage structured learning goals, track active streaks, and synchronize user state via <code>Firebase</code>.</p>
       <p>
         <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native" />
         <img src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white" alt="Expo" />
@@ -140,7 +143,7 @@
       </ul>
       <p>
         <a href="https://github.com/aestheticwolf/SkillCompanionApp" target="_blank">
-          <img src="https://img.shields.io/badge/VIEW_REPOSITORY-111522?style=for-the-badge&logo=github&logoColor=white" alt="View Repository" />
+          <img src="https://img.shields.io/badge/EXPLORE_REPOSITORY-111522?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Explore Repository" />
         </a>
       </p>
     </td>
@@ -155,7 +158,7 @@
     <td width="52%" valign="middle">
       <small><code>WORKFORCE OPERATIONS &bull; FULL-STACK SECURITY</code></small>
       <h3>02 &bull; Sentinel Grid</h3>
-      <p>A security guard management system designed to streamline workforce operations through GPS attendance, selfie verification, duty management, and administrative dashboards.</p>
+      <p>A workforce management platform engineered with <code>React.js</code>, <code>Node.js</code>, and <code>MongoDB</code> to streamline on-site security deployments via geofenced GPS verification and biometric check-ins.</p>
       <p>
         <img src="https://img.shields.io/badge/React.js-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React.js" />
         <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
@@ -171,7 +174,7 @@
       </ul>
       <p>
         <a href="https://github.com/aestheticwolf/security-guard-tracking-system" target="_blank">
-          <img src="https://img.shields.io/badge/VIEW_REPOSITORY-111522?style=for-the-badge&logo=github&logoColor=white" alt="View Repository" />
+          <img src="https://img.shields.io/badge/EXPLORE_REPOSITORY-111522?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Explore Repository" />
         </a>
       </p>
     </td>
@@ -196,7 +199,7 @@
     <td width="52%" valign="middle">
       <small><code>MOBILE E-COMMERCE &bull; FINTECH INTEGRATION</code></small>
       <h3>03 &bull; Art by Heaven</h3>
-      <p>An e-commerce application featuring product discovery, shopping cart management, cloud-powered data synchronization, and payment integration.</p>
+      <p>A mobile e-commerce platform built with <code>Flutter</code> and <code>Cloud Firestore</code> delivering smooth art catalog exploration, cart management, and secure payments via <code>Razorpay</code>.</p>
       <p>
         <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
         <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
@@ -211,7 +214,7 @@
       </ul>
       <p>
         <a href="https://github.com/aestheticwolf/art-of" target="_blank">
-          <img src="https://img.shields.io/badge/VIEW_REPOSITORY-111522?style=for-the-badge&logo=github&logoColor=white" alt="View Repository" />
+          <img src="https://img.shields.io/badge/EXPLORE_REPOSITORY-111522?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Explore Repository" />
         </a>
       </p>
     </td>
@@ -226,8 +229,8 @@
 
 <div align="left">
   <small><code>GITHUB ACTIVITY / ANALYTICS &bull; LIVE REPOSITORY TELEMETRY</code></small>
-  <h2>GitHub Analytics</h2>
-  <p><em>"An overview of my development activity, repositories and contribution history."</em></p>
+  <h2>GITHUB ANALYTICS</h2>
+  <p><em>"An overview of my development activity, repositories, and contribution history."</em></p>
 </div>
 
 <br/>
@@ -277,7 +280,7 @@
 
 <div align="left">
   <small><code>GITHUB ACTIVITY / CONTRIBUTION HISTORY &bull; 52-WEEK HEATMAP</code></small>
-  <h2>Contribution Trajectory</h2>
+  <h2>CONTRIBUTION TRAJECTORY</h2>
   <p><em>"Every contribution represents another step in my development journey."</em></p>
 </div>
 
@@ -307,39 +310,67 @@
 <!-- 08. CONTACT & SIGNATURE FOOTER             -->
 <!-- ========================================== -->
 
-## 🌐 &nbsp; Connect With Me
-
-Whether you want to discuss full-stack engineering, mobile development, or applied AI systems — let's build something extraordinary together.
-
-<br/>
-
 <div align="center">
-  <p>
-    <a href="https://github.com/aestheticwolf" target="_blank">
-      <img src="https://img.shields.io/badge/GitHub-aestheticwolf-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-    </a>
-    &nbsp;&nbsp;
-    <a href="https://linkedin.com/in/richarddsouza29" target="_blank">
-      <img src="https://img.shields.io/badge/LinkedIn-richarddsouza29-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-    </a>
-    &nbsp;&nbsp;
-    <a href="https://richard-portfolio-website-ten.vercel.app" target="_blank">
-      <img src="https://img.shields.io/badge/Live%20Portfolio-richard--portfolio-10B981?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Portfolio" />
-    </a>
-  </p>
-
-  <br/>
-
-  <!-- Signature Footer SVG -->
+  <!-- CONTACT HERO BANNER -->
   <img
-    src="./assets/footer.svg"
-    alt="Engineered by Richard D'Souza"
+    src="./assets/contact-hero.svg"
+    alt="Let's Build Something Extraordinary - Richard D'Souza"
     width="100%"
   />
 
-  <br/><br/>
+  <br/>
 
-  <a href="#richard-dsouza">
-    <img src="https://img.shields.io/badge/Back_To_Top-08090D?style=flat-square&logo=eclipsercp&logoColor=22D3EE" alt="Back to Top" />
+  <!-- THREE INTERACTIVE SOCIAL CARDS -->
+  <table border="0" cellpadding="0" cellspacing="8" width="100%">
+    <tr>
+      <td width="33.3%" align="center">
+        <a href="https://github.com/aestheticwolf" target="_blank">
+          <img
+            src="./assets/social-github.svg"
+            alt="GitHub Profile - @aestheticwolf"
+            width="100%"
+          />
+        </a>
+      </td>
+      <td width="33.3%" align="center">
+        <a href="https://linkedin.com/in/richarddsouza29" target="_blank">
+          <img
+            src="./assets/social-linkedin.svg"
+            alt="LinkedIn Profile - Richard D'Souza"
+            width="100%"
+          />
+        </a>
+      </td>
+      <td width="33.3%" align="center">
+        <a href="https://richard-portfolio-website-ten.vercel.app" target="_blank">
+          <img
+            src="./assets/social-portfolio.svg"
+            alt="Live Portfolio - Richard D'Souza"
+            width="100%"
+          />
+        </a>
+      </td>
+    </tr>
+  </table>
+
+  <br/>
+
+  <!-- SIGNATURE FOOTER -->
+  <img
+    src="./assets/footer.svg"
+    alt="Engineered with Passion &amp; Precision // Richard D'Souza"
+    width="100%"
+  />
+
+  <br/>
+
+  <!-- BACK TO TOP BUTTON -->
+  <a href="#top">
+    <img
+      src="./assets/back-to-top.svg"
+      alt="Back to Top"
+      width="160"
+      height="32"
+    />
   </a>
 </div>
