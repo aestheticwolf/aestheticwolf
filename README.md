@@ -272,12 +272,14 @@
 <br/>
 
 <!-- ========================================== -->
-<!-- 07. CONTRIBUTION SNAKE                     -->
+<!-- 07. CONTRIBUTION TRAJECTORY                -->
 <!-- ========================================== -->
 
-## 🐍 &nbsp; Contribution Trajectory
-
-Automated contribution snake animation generated via Platane/snk every 12 hours.
+<div align="left">
+  <small><code>GITHUB ACTIVITY / CONTRIBUTION HISTORY &bull; 52-WEEK HEATMAP</code></small>
+  <h2>Contribution Trajectory</h2>
+  <p><em>"Every contribution represents another step in my development journey."</em></p>
+</div>
 
 <br/>
 
@@ -285,15 +287,15 @@ Automated contribution snake animation generated via Platane/snk every 12 hours.
   <picture>
     <source
       media="(prefers-color-scheme: dark)"
-      srcset="https://raw.githubusercontent.com/aestheticwolf/aestheticwolf/output/github-contribution-grid-snake-dark.svg"
+      srcset="./assets/github-contribution-grid-snake-dark.svg"
     />
     <source
       media="(prefers-color-scheme: light)"
       srcset="https://raw.githubusercontent.com/aestheticwolf/aestheticwolf/output/github-contribution-grid-snake.svg"
     />
     <img
-      src="https://raw.githubusercontent.com/aestheticwolf/aestheticwolf/output/github-contribution-grid-snake-dark.svg"
-      alt="GitHub Contribution Snake"
+      src="./assets/github-contribution-grid-snake-dark.svg"
+      alt="GitHub Contribution Trajectory Snake - Richard D'Souza"
       width="100%"
     />
   </picture>

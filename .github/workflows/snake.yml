@@ -8,10 +8,13 @@ on:
   # Allows manual triggering of the workflow from the Actions tab
   workflow_dispatch:
 
-  # Runs on pushes to the main branch
+  # Runs on pushes to the main branch affecting snake configuration
   push:
     branches:
       - main
+    paths:
+      - '.github/workflows/snake.yml'
+      - 'scripts/enhance_snake_svg.py'
 
 jobs:
   generate:
@@ -37,12 +40,34 @@ jobs:
           github_user_name: aestheticwolf
           outputs: |
             dist/github-contribution-grid-snake.svg?color_snake=#3B82F6&color_dots=#EBEDF0,#BAE6FD,#38BDF8,#3B82F6,#1D4ED8
-            dist/github-contribution-grid-snake-dark.svg?color_snake=#22D3EE&color_dots=#0E111C,#1E1B4B,#4338CA,#7C3AED,#22D3EE
+            dist/github-contribution-grid-snake-dark.svg?color_snake=#22D3EE&color_dots=#161D29,#064E3B,#059669,#10B981,#34D399
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # ==========================================
-      # 3. Deploy SVGs to the 'output' branch
+      # 3. Enhance Snake SVGs into 2026 Dark Frame
+      # ==========================================
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Enhance Snake SVGs
+        run: |
+          python scripts/enhance_snake_svg.py --dist
+
+      # ==========================================
+      # 4. Commit Enhanced Asset to main
+      # ==========================================
+      - name: Commit Enhanced Asset to main
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add assets/github-contribution-grid-snake-dark.svg
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(snake): auto-refresh 2026 contribution trajectory" && git push origin main)
+
+      # ==========================================
+      # 5. Deploy SVGs to the 'output' branch
       # ==========================================
       - name: Deploy Snake SVGs to Output Branch
         uses: crazy-max/ghaction-github-pages@v4
