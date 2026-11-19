@@ -1,81 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 160" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 130" width="100%" height="100%">
   <defs>
-    <!-- Gradients -->
-    <linearGradient id="footerLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="ftLine" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0" />
-      <stop offset="25%" stop-color="#8B5CF6" stop-opacity="0.8" />
+      <stop offset="30%" stop-color="#8B5CF6" stop-opacity="0.8" />
       <stop offset="50%" stop-color="#3B82F6" stop-opacity="1" />
-      <stop offset="75%" stop-color="#22D3EE" stop-opacity="0.8" />
+      <stop offset="70%" stop-color="#22D3EE" stop-opacity="0.8" />
       <stop offset="100%" stop-color="#22D3EE" stop-opacity="0" />
     </linearGradient>
-
-    <radialGradient id="footerGlow" cx="50%" cy="0%" r="70%">
-      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.2" />
-      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.08" />
+    <radialGradient id="ftFloorGlow" cx="50%" cy="0%" r="70%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.15" />
+      <stop offset="60%" stop-color="#8B5CF6" stop-opacity="0.05" />
       <stop offset="100%" stop-color="#08090D" stop-opacity="0" />
     </radialGradient>
-
-    <linearGradient id="footerTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FFFFFF" />
-      <stop offset="100%" stop-color="#CBD5E1" />
-    </linearGradient>
-
     <style>
-      @keyframes orbitPulse {
-        0%, 100% { transform: scale(1); opacity: 0.5; }
-        50% { transform: scale(1.15); opacity: 0.9; }
-      }
-      @keyframes runeRotate {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-      }
-      .footer-mono {
-        font-family: "JetBrains Mono", "Fira Code", Monaco, Consolas, monospace;
-      }
-      .footer-ui {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      }
-      .orbit {
-        animation: orbitPulse 3s infinite ease-in-out;
-        transform-origin: center;
-      }
+      .f-mono { font-family: "JetBrains Mono", "Fira Code", monospace; }
+      .f-ui { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
     </style>
   </defs>
 
-  <!-- Ambient Floor Glow -->
-  <rect width="1000" height="160" fill="url(#footerGlow)" />
+  <rect width="1000" height="130" fill="url(#ftFloorGlow)" />
+  <line x1="60" y1="2" x2="940" y2="2" stroke="url(#ftLine)" stroke-width="2" stroke-linecap="round" />
 
-  <!-- Top Accent Glowing Divider -->
-  <line x1="50" y1="2" x2="950" y2="2" stroke="url(#footerLineGrad)" stroke-width="2.5" stroke-linecap="round" />
-
-  <!-- Center Decorative Technical Emblem -->
-  <g transform="translate(500, 36)">
-    <!-- Outer Orbit Ring -->
-    <circle cx="0" cy="0" r="16" fill="none" stroke="#22D3EE" stroke-width="1" stroke-dasharray="3 3" opacity="0.6" class="orbit" />
-    <!-- Inner Core Badge -->
-    <circle cx="0" cy="0" r="11" fill="#121524" stroke="#8B5CF6" stroke-width="1.2" />
-    <!-- Tech Rune Shape -->
-    <path d="M -4 -2 L 0 -6 L 4 -2 L 0 5 Z" fill="#22D3EE" />
+  <!-- Center Monogram Emblem -->
+  <g transform="translate(500, 32)">
+    <circle cx="0" cy="0" r="14" fill="#101322" stroke="#8B5CF6" stroke-width="1.2" />
+    <polygon points="-4,-2 0,-6 4,-2 0,5" fill="#22D3EE" />
   </g>
 
-  <!-- Footer Main Sign-Off Typography -->
-  <g transform="translate(500, 78)" text-anchor="middle">
-    <text y="0" class="footer-ui" font-size="13" font-weight="700" fill="url(#footerTextGrad)" letter-spacing="3.5">
+  <!-- Typography -->
+  <g transform="translate(500, 72)" text-anchor="middle">
+    <text y="0" class="f-ui" font-size="12.5" font-weight="700" fill="#FFFFFF" letter-spacing="3.5">
       ENGINEERED WITH PASSION &amp; PRECISION // RICHARD D'SOUZA
     </text>
-    <text y="24" class="footer-mono" font-size="10.5" fill="#A1A1AA" letter-spacing="1.5">
-      2026 DIGITAL WORKSPACE • SCALABLE ARCHITECTURES • CONTINUOUS INNOVATION
+    <text y="22" class="f-mono" font-size="10" fill="#64748B" letter-spacing="1.5">
+      2026 DIGITAL WORKSPACE • GOA, INDIA • @AESTHETICWOLF • ALL SYSTEMS OPERATIONAL
     </text>
-  </g>
-
-  <!-- Bottom Technical Meta Tags -->
-  <g transform="translate(500, 134)" text-anchor="middle" class="footer-mono" font-size="9" fill="#64748B" letter-spacing="1.5">
-    <text>GOA, INDIA (15.2993° N, 74.1240° E) • GITHUB @AESTHETICWOLF • ALL SYSTEMS VERIFIED</text>
-  </g>
-
-  <!-- Subtle corner crosshairs -->
-  <g stroke="#3B82F6" stroke-opacity="0.3" stroke-width="1">
-    <path d="M 60 140 L 70 140 M 65 135 L 65 145" />
-    <path d="M 940 140 L 930 140 M 935 135 L 935 145" />
   </g>
 </svg>

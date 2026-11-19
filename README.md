@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- ========================================== -->
-<!-- 01. HERO SECTION: SIGNATURE INTRODUCTION   -->
+<!-- 01. PREMIUM HERO SECTION                   -->
 <!-- ========================================== -->
 
 <a href="https://github.com/aestheticwolf">
@@ -14,18 +14,18 @@
 
 <br/><br/>
 
-<!-- Interactive Telemetry & Social Badges -->
+<!-- Editorial Action Bar & Telemetry -->
 <p align="center">
   <a href="https://komarev.com/ghpvc/?username=aestheticwolf">
     <img src="https://komarev.com/ghpvc/?username=aestheticwolf&label=PROFILE+VIEWS&color=8B5CF6&style=for-the-badge&logo=eye&logoColor=white" alt="Profile Views" />
   </a>
   &nbsp;
-  <a href="https://linkedin.com/in/richarddsouza29" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-richarddsouza29-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  <a href="https://github.com/aestheticwolf" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-aestheticwolf-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
   &nbsp;
-  <a href="https://github.com/aestheticwolf" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-aestheticwolf-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile" />
+  <a href="https://linkedin.com/in/richarddsouza29" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-richarddsouza29-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   &nbsp;
   <a href="https://richard-portfolio-website-ten.vercel.app" target="_blank">
@@ -33,82 +33,64 @@
   </a>
 </p>
 
-<img src="./assets/divider.svg" width="100%" alt="Divider" />
-
 </div>
 
 <br/>
 
 <!-- ========================================== -->
-<!-- 02. CINEMATIC DEVELOPER WORKSTATION        -->
+<!-- 02. SIGNATURE LAPTOP WORKSPACE             -->
 <!-- ========================================== -->
 
+## 💻 &nbsp; Signature Developer Workspace
+
+> High-precision development workstation combining active React &amp; TypeScript engineering pipelines, Google Gemini AI orchestration, and an integrated real-time CLI terminal session.
+
+<br/>
+
 <div align="center">
-  <h3>💻 &nbsp; Cinematic Developer Workstation</h3>
-  <p><em>High-precision digital workspace featuring syntax-highlighted execution pipelines, active AI telemetry, and modern IDE workflows.</em></p>
-  <br/>
   <img
     src="./assets/laptop.svg"
     alt="Cinematic Developer Workstation - Richard D'Souza"
     width="100%"
   />
-  <br/><br/>
-  <img src="./assets/divider.svg" width="100%" alt="Divider" />
 </div>
 
 <br/>
 
 <!-- ========================================== -->
-<!-- 03. ABOUT ME: MODERN PROFILE CARDS         -->
+<!-- 03. ABOUT & PROFESSIONAL BACKGROUND        -->
 <!-- ========================================== -->
 
-## 👤 &nbsp; About Me
+## 👤 &nbsp; About &amp; Professional Background
 
 > I'm a Software Engineer and Full-Stack Developer passionate about building practical software solutions and turning ideas into real-world applications.
 >
-> My experience spans web and mobile application development, backend systems, API integration, database management, and AI-powered applications.
->
-> I enjoy exploring modern technologies, solving engineering challenges, and continuously improving my development skills.
+> My experience spans web and mobile application development, backend systems, API integration, database management, and AI-powered applications. I enjoy exploring modern technologies, solving engineering challenges, and continuously improving my development skills.
 
 <br/>
 
 <table>
   <tr>
-    <td width="50%" valign="top">
-      <h4>🎓 &nbsp; Education &amp; Foundation</h4>
-      <ul>
-        <li><strong>M.Sc. Information Technology</strong></li>
-        <li><em>Parvatibai Chowgule College of Arts and Science, Goa</em></li>
-        <li>Focused on enterprise software engineering, relational &amp; distributed database architectures, advanced API modeling, and applied AI systems.</li>
-      </ul>
+    <td width="33%" valign="top">
+      <h4>🎓 &nbsp; Education</h4>
+      <p><strong>M.Sc. Information Technology</strong><br/>
+      <em>Parvatibai Chowgule College of Arts and Science, Goa</em></p>
+      <p><small>Advanced focus on software architecture, distributed databases, robust API modeling, and applied AI systems.</small></p>
     </td>
-    <td width="50%" valign="top">
+    <td width="34%" valign="top">
       <h4>💼 &nbsp; Professional Experience</h4>
-      <ul>
-        <li><strong>Full-Stack Developer Intern</strong> — <em>Infipre IT Services Pvt. Ltd.</em><br/>
-        <small>🗓️ January 2026 – June 2026</small><br/>
-        Building end-to-end full-stack web and mobile systems, robust API workflows, and scalable database integrations.</li>
-        <li><strong>Software Engineer Trainee</strong> — <em>Onstro (formerly Teknorix)</em><br/>
-        <small>🗓️ April 2022 – September 2022</small><br/>
-        Engineered web applications, component libraries, and backend service integrations in an agile environment.</li>
-      </ul>
+      <p><strong>Full-Stack Developer Intern</strong><br/>
+      <em>Infipre IT Services Pvt. Ltd.</em> &bull; <small>Jan 2026 – Jun 2026</small></p>
+      <p><strong>Software Engineer Trainee</strong><br/>
+      <em>Onstro (formerly Teknorix)</em> &bull; <small>Apr 2022 – Sep 2022</small></p>
     </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h4>🚀 &nbsp; Core Competencies</h4>
+    <td width="33%" valign="top">
+      <h4>🎯 &nbsp; Core Focus Areas</h4>
       <ul>
-        <li><strong>Full-Stack Web:</strong> Responsive frontend architecture, state synchronization, RESTful services, and micro-interactions.</li>
-        <li><strong>Cross-Platform Mobile:</strong> High-performance iOS &amp; Android development with React Native &amp; Expo.</li>
-        <li><strong>Backend &amp; Security:</strong> Scalable server design, JWT authorization, session defense, and ORM pipelines.</li>
-      </ul>
-    </td>
-    <td width="50%" valign="top">
-      <h4>🧠 &nbsp; Engineering Philosophy</h4>
-      <ul>
-        <li><strong>Code Craftsmanship:</strong> Clean, maintainable, type-safe architecture following SOLID &amp; OOP principles.</li>
-        <li><strong>Applied AI:</strong> Integrating LLMs (Google Gemini, Ollama), OCR, and speech transcription into practical automation tools.</li>
-        <li><strong>Continuous Iteration:</strong> Obsessed with low latency, rock-solid stability, and intuitive user experiences.</li>
+        <li><strong>Full-Stack Web</strong> (React, Node, Express)</li>
+        <li><strong>Cross-Platform Mobile</strong> (React Native, Expo)</li>
+        <li><strong>Backend &amp; Database Architecture</strong></li>
+        <li><strong>Applied AI &amp; Intelligent Automation</strong></li>
       </ul>
     </td>
   </tr>
@@ -116,90 +98,52 @@
 
 <br/>
 
-<div align="center">
-  <img src="./assets/divider.svg" width="100%" alt="Divider" />
-</div>
-
-<br/>
-
 <!-- ========================================== -->
-<!-- 04. INTERACTIVE DEVELOPER TERMINAL         -->
-<!-- ========================================== -->
-
-<div align="center">
-  <h3>🖥️ &nbsp; Interactive Developer Terminal</h3>
-  <p><em>Direct command-line interface runtime inspection detailing environment telemetry, core roles, and technology ecosystem.</em></p>
-  <br/>
-  <img
-    src="./assets/terminal.svg"
-    alt="Interactive Developer Terminal"
-    width="100%"
-  />
-  <br/><br/>
-  <img src="./assets/divider.svg" width="100%" alt="Divider" />
-</div>
-
-<br/>
-
-<!-- ========================================== -->
-<!-- 05. TECH STACK ECOSYSTEM                   -->
+<!-- 04. TECHNOLOGY ECOSYSTEM                   -->
 <!-- ========================================== -->
 
 ## 🛠️ &nbsp; Technology Ecosystem
 
-Organized by architectural tiers, featuring modern programming languages, full-stack frameworks, databases, and development tooling.
+A clean architectural overview of core programming languages, frameworks, databases, and development tooling.
 
 <br/>
 
 <table>
   <thead>
     <tr>
-      <th width="28%">Architectural Domain</th>
-      <th width="42%">Technologies &amp; Frameworks</th>
-      <th width="30%">Visual Iconography</th>
+      <th width="30%">Architectural Tier</th>
+      <th width="70%">Technology Stack &amp; Visual Iconography</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><strong>Programming Languages</strong></td>
-      <td><code>C#</code> &bull; <code>Python</code> &bull; <code>JavaScript</code> &bull; <code>C++</code></td>
       <td>
-        <img src="https://skillicons.dev/icons?i=cs,py,js,cpp&theme=dark" alt="Languages" />
+        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=cs,py,js,cpp&theme=dark" alt="Languages: C#, Python, JavaScript, C++" /></a>
       </td>
     </tr>
     <tr>
       <td><strong>Frontend Development</strong></td>
-      <td><code>React.js</code> &bull; <code>React Native</code> &bull; <code>Expo</code> &bull; <code>HTML5</code> &bull; <code>CSS3</code></td>
       <td>
-        <img src="https://skillicons.dev/icons?i=react,expo,html,css&theme=dark" alt="Frontend" />
+        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=react,expo,html,css&theme=dark" alt="Frontend: React.js, React Native, Expo, HTML5, CSS3" /></a>
       </td>
     </tr>
     <tr>
       <td><strong>Backend Engineering</strong></td>
-      <td><code>Node.js</code> &bull; <code>Express.js</code> &bull; <code>ASP.NET</code> &bull; <code>.NET Framework</code></td>
       <td>
-        <img src="https://skillicons.dev/icons?i=nodejs,express,dotnet&theme=dark" alt="Backend" />
+        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=nodejs,express,dotnet&theme=dark" alt="Backend: Node.js, Express.js, ASP.NET, .NET Framework" /></a>
       </td>
     </tr>
     <tr>
       <td><strong>Databases &amp; Storage</strong></td>
-      <td><code>MySQL</code> &bull; <code>MongoDB</code> &bull; <code>Microsoft SQL Server</code> &bull; <code>Firebase Firestore</code></td>
       <td>
-        <img src="https://skillicons.dev/icons?i=mysql,mongodb,firebase&theme=dark" alt="Databases" />
+        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=mysql,mongodb,firebase&theme=dark" alt="Databases: MySQL, MongoDB, Microsoft SQL Server, Firebase Firestore" /></a>
       </td>
     </tr>
     <tr>
       <td><strong>Tools &amp; Workspaces</strong></td>
-      <td><code>Git</code> &bull; <code>GitHub</code> &bull; <code>Postman</code> &bull; <code>VS Code</code> &bull; <code>Visual Studio</code> &bull; <code>MySQL Workbench</code></td>
       <td>
-        <img src="https://skillicons.dev/icons?i=git,github,postman,vscode,visualstudio&theme=dark" alt="Tools" />
-      </td>
-    </tr>
-    <tr>
-      <td><strong>Core Concepts &amp; Architecture</strong></td>
-      <td><code>REST APIs</code> &bull; <code>Object-Oriented Programming (OOP)</code> &bull; <code>Authentication &amp; Authorization</code> &bull; <code>Database Design</code></td>
-      <td>
-        <img src="https://img.shields.io/badge/Architecture-REST%20%7C%20OOP%20%7C%20Auth-8B5CF6?style=flat-square&logo=gitbook&logoColor=white" alt="Core Concepts" />
+        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=git,github,postman,vscode,visualstudio&theme=dark" alt="Tools: Git, GitHub, Postman, VS Code, Visual Studio, MySQL Workbench" /></a>
       </td>
     </tr>
   </tbody>
@@ -207,188 +151,201 @@ Organized by architectural tiers, featuring modern programming languages, full-s
 
 <br/>
 
-<div align="center">
-  <img src="./assets/divider.svg" width="100%" alt="Divider" />
-</div>
+<!-- ========================================== -->
+<!-- 05. SELECTED PROJECTS SHOWCASE             -->
+<!-- ========================================== -->
+
+## 🚀 &nbsp; Selected Projects
+
+An alternating editorial showcase of production applications, distributed backend services, mobile platforms, and AI systems.
 
 <br/>
 
-<!-- ========================================== -->
-<!-- 06. FEATURED PROJECTS: SHOWCASE            -->
-<!-- ========================================== -->
-
-## 🚀 &nbsp; Featured Engineering Projects
-
-A curated showcase of production applications, distributed backend services, mobile platforms, and AI systems.
-
-<br/>
-
+<!-- PROJECT 01: CRM SYSTEM INTEGRATION (Visual Left, Content Right) -->
 <table>
-  <!-- Project 01 -->
   <tr>
-    <td width="100%">
-      <div align="left">
-        <span align="right" style="float: right;"><code>WEB APPLICATION &bull; AI AUTOMATION</code></span>
-        <h3>01 &bull; CRM System Integration</h3>
-        <p>A comprehensive customer relationship management platform engineered with modern full-stack technologies, providing real-time synchronization, communications logging, and AI-driven intelligence summaries.</p>
-        <p>
-          <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
-          <img src="https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white" alt="Express" />
-          <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-          <img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white" alt="Prisma" />
-          <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite" />
-          <img src="https://img.shields.io/badge/Google%20Gemini-8E75B2?style=flat-square&logo=google&logoColor=white" alt="Google Gemini" />
-        </p>
-        <ul>
-          <li><strong>Customer &amp; Order Management:</strong> Centralized client database with order pipelines and communication histories.</li>
-          <li><strong>AI Customer Summaries:</strong> Automated generation of executive client profiles and sentiment analysis via Google Gemini.</li>
-          <li><strong>Mock Synchronization:</strong> Bi-directional order and catalog sync mocking WooCommerce endpoints.</li>
-          <li><strong>Security:</strong> Complete JWT-based authentication guards, hashed credentials, and role-protected routes.</li>
-        </ul>
-        <p>
-          <a href="https://github.com/aestheticwolf/crm-system-integration" target="_blank">
-            <img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="View on GitHub" />
-          </a>
-        </p>
-      </div>
+    <td width="46%" align="center" valign="middle">
+      <a href="https://github.com/aestheticwolf/crm-system-integration" target="_blank">
+        <img src="./assets/project-01-crm.svg" width="100%" alt="CRM System Integration" />
+      </a>
     </td>
-  </tr>
-
-  <!-- Project 02 -->
-  <tr>
-    <td width="100%">
-      <div align="left">
-        <span align="right" style="float: right;"><code>CROSS-PLATFORM MOBILE &bull; PRODUCTIVITY</code></span>
-        <h3>02 &bull; SkillPath</h3>
-        <p>A cross-platform learning companion designed for aspiring developers and students to organize curriculum milestones, track modular learning tasks, and sustain consistent daily learning habits.</p>
-        <p>
-          <img src="https://img.shields.io/badge/React%20Native-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React Native" />
-          <img src="https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white" alt="Expo" />
-          <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-          <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black" alt="Firebase" />
-        </p>
-        <ul>
-          <li><strong>Habit &amp; Goal Engineering:</strong> Break down complex study curricula into structured, actionable weekly tasks.</li>
-          <li><strong>Cloud Synchronization:</strong> Instant multi-device state persistence powered by Firebase backend services.</li>
-          <li><strong>Progress Analytics:</strong> Dynamic velocity tracking, task completion rates, and streak monitoring.</li>
-          <li><strong>Push Notifications:</strong> Proactive task reminders and daily motivational touchpoints.</li>
-        </ul>
-        <p>
-          <a href="https://github.com/aestheticwolf/SkillCompanionApp" target="_blank">
-            <img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="View on GitHub" />
-          </a>
-        </p>
-      </div>
-    </td>
-  </tr>
-
-  <!-- Project 03 -->
-  <tr>
-    <td width="100%">
-      <div align="left">
-        <span align="right" style="float: right;"><code>ENTERPRISE SECURITY &bull; FULL-STACK</code></span>
-        <h3>03 &bull; Sentinel Grid</h3>
-        <p>An enterprise-grade security guard tracking and duty verification system built to eliminate ghost shifts and ensure accountability across decentralized deployment sites.</p>
-        <p>
-          <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
-          <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" alt="Node.js" />
-          <img src="https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white" alt="Express" />
-          <img src="https://img.shields.io/badge/MongoDB%20Atlas-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
-          <img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" alt="JWT" />
-          <img src="https://img.shields.io/badge/Cloudinary-3448C5?style=flat-square&logo=cloudinary&logoColor=white" alt="Cloudinary" />
-        </p>
-        <ul>
-          <li><strong>GPS Attendance Tracking:</strong> Real-time geofenced coordinates verification at designated security checkpoints.</li>
-          <li><strong>Selfie Verification:</strong> Secure on-site facial capture uploaded through Cloudinary media pipelines.</li>
-          <li><strong>Duty Site Management:</strong> Multi-site roster scheduling, shift assignments, and incident logging.</li>
-          <li><strong>Administrative Command Console:</strong> Role-based access control (RBAC) with real-time audit dashboards.</li>
-        </ul>
-        <p>
-          <a href="https://github.com/aestheticwolf/security-guard-tracking-system" target="_blank">
-            <img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="View on GitHub" />
-          </a>
-        </p>
-      </div>
-    </td>
-  </tr>
-
-  <!-- Project 04 -->
-  <tr>
-    <td width="100%">
-      <div align="left">
-        <span align="right" style="float: right;"><code>MOBILE COMMERCE &bull; FINTECH</code></span>
-        <h3>04 &bull; Art by Heaven</h3>
-        <p>A native mobile e-commerce application crafted for handcrafted art, bespoke home décor, and gifting products with real-time stock sync and seamless payment gateways.</p>
-        <p>
-          <img src="https://img.shields.io/badge/React%20Native-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React Native" />
-          <img src="https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white" alt="Expo" />
-          <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-          <img src="https://img.shields.io/badge/Firestore-FFCA28?style=flat-square&logo=firebase&logoColor=black" alt="Firestore" />
-          <img src="https://img.shields.io/badge/Razorpay-0C2340?style=flat-square&logo=razorpay&logoColor=3395FF" alt="Razorpay" />
-        </p>
-        <ul>
-          <li><strong>Real-time Product Catalog:</strong> Dynamic category navigation and item showcases hydrated via Cloud Firestore.</li>
-          <li><strong>Full Cart Management:</strong> In-app cart calculation, quantity modification, and persistent visitor state.</li>
-          <li><strong>Razorpay Integration:</strong> End-to-end encrypted checkout supporting UPI, cards, and net banking.</li>
-          <li><strong>Adaptive UI:</strong> Fluid transitions, dark and light theme parity, and optimized image caching.</li>
-        </ul>
-        <p>
-          <a href="https://github.com/aestheticwolf/art-of" target="_blank">
-            <img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="View on GitHub" />
-          </a>
-        </p>
-      </div>
-    </td>
-  </tr>
-
-  <!-- Project 05 -->
-  <tr>
-    <td width="100%">
-      <div align="left">
-        <span align="right" style="float: right;"><code>INTELLIGENT PIPELINE &bull; MULTI-MODAL AI</code></span>
-        <h3>05 &bull; HackerRank Orchestrate</h3>
-        <p>An intelligent notification processing and audit pipeline engineered during the 24-hour HackerRank Orchestrate hackathon, combining local LLM reasoning, OCR, and audio transcription.</p>
-        <p>
-          <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-          <img src="https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white" alt="Ollama" />
-          <img src="https://img.shields.io/badge/EasyOCR-43853D?style=flat-square&logo=python&logoColor=white" alt="EasyOCR" />
-          <img src="https://img.shields.io/badge/Faster%20Whisper-00A67E?style=flat-square&logo=openai&logoColor=white" alt="Whisper" />
-        </p>
-        <ul>
-          <li><strong>Multi-Modal Ingestion:</strong> Ingests WhatsApp notification captures, text messages, receipts, and audio notes.</li>
-          <li><strong>Optical &amp; Audio Processing:</strong> High-accuracy text extraction using EasyOCR and audio transcription with Faster Whisper.</li>
-          <li><strong>Intelligent Classification:</strong> Contextual intent resolution, financial policy verification, and automated routing via local LLMs.</li>
-          <li><strong>Automated Evidence Auditing:</strong> Structured report generation and validation checks against rigorous policy rubrics.</li>
-        </ul>
-        <p>
-          <a href="https://github.com/aestheticwolf/hackerrank-orchestrate-october26" target="_blank">
-            <img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="View on GitHub" />
-          </a>
-          &nbsp;
-          <a href="https://github.com/aestheticwolf/hackerrank-orchestrate-september26" target="_blank">
-            <img src="https://img.shields.io/badge/View_Sept_Edition-181717?style=for-the-badge&logo=github&logoColor=white" alt="View Sept Edition" />
-          </a>
-        </p>
-      </div>
+    <td width="54%" valign="middle">
+      <small><code>WEB APPLICATION &bull; AI AUTOMATION</code></small>
+      <h3>01 &bull; CRM System Integration</h3>
+      <p>A customer management platform engineered with modern full-stack technologies, providing real-time synchronization, communications logging, and AI-driven intelligence summaries.</p>
+      <p>
+        <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
+        <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express" />
+        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white" alt="Prisma" />
+        <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite" />
+        <img src="https://img.shields.io/badge/Gemini_AI-8E75B2?style=flat-square&logo=google&logoColor=white" alt="Gemini" />
+      </p>
+      <ul>
+        <li><strong>AI Summaries:</strong> Automated client profiles &amp; sentiment analysis via Google Gemini.</li>
+        <li><strong>Order Pipelines:</strong> Centralized client database with order tracking &amp; communication history.</li>
+        <li><strong>WooCommerce Sync:</strong> Mock endpoint synchronization with JWT route protection.</li>
+      </ul>
+      <p>
+        <a href="https://github.com/aestheticwolf/crm-system-integration" target="_blank">
+          <img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="View Repository" />
+        </a>
+      </p>
     </td>
   </tr>
 </table>
 
 <br/>
 
-<div align="center">
-  <img src="./assets/divider.svg" width="100%" alt="Divider" />
-</div>
+<!-- PROJECT 02: SKILLPATH (Content Left, Visual Right) -->
+<table>
+  <tr>
+    <td width="54%" valign="middle">
+      <small><code>CROSS-PLATFORM MOBILE &bull; PRODUCTIVITY</code></small>
+      <h3>02 &bull; SkillPath</h3>
+      <p>A cross-platform learning companion designed for aspiring engineers to break down learning goals into manageable tasks, track progress analytics, and sustain daily habits.</p>
+      <p>
+        <img src="https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React Native" />
+        <img src="https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white" alt="Expo" />
+        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black" alt="Firebase" />
+      </p>
+      <ul>
+        <li><strong>Goal Tracking:</strong> Modular milestone decomposition with dynamic streak tracking.</li>
+        <li><strong>Cloud Synchronization:</strong> Instant cross-device state persistence powered by Firebase.</li>
+        <li><strong>Proactive Reminders:</strong> Push notification workflows keeping learners engaged.</li>
+      </ul>
+      <p>
+        <a href="https://github.com/aestheticwolf/SkillCompanionApp" target="_blank">
+          <img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="View Repository" />
+        </a>
+      </p>
+    </td>
+    <td width="46%" align="center" valign="middle">
+      <a href="https://github.com/aestheticwolf/SkillCompanionApp" target="_blank">
+        <img src="./assets/project-02-skillpath.svg" width="100%" alt="SkillPath Companion App" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+<!-- PROJECT 03: SENTINEL GRID (Visual Left, Content Right) -->
+<table>
+  <tr>
+    <td width="46%" align="center" valign="middle">
+      <a href="https://github.com/aestheticwolf/security-guard-tracking-system" target="_blank">
+        <img src="./assets/project-03-sentinel.svg" width="100%" alt="Sentinel Grid" />
+      </a>
+    </td>
+    <td width="54%" valign="middle">
+      <small><code>ENTERPRISE SECURITY &bull; FULL-STACK</code></small>
+      <h3>03 &bull; Sentinel Grid</h3>
+      <p>An enterprise-grade security guard tracking and duty verification system built to eliminate ghost shifts and ensure operational transparency across decentralized duty locations.</p>
+      <p>
+        <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
+        <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" alt="Node.js" />
+        <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express" />
+        <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
+        <img src="https://img.shields.io/badge/Cloudinary-3448C5?style=flat-square&logo=cloudinary&logoColor=white" alt="Cloudinary" />
+      </p>
+      <ul>
+        <li><strong>GPS Geofenced Tracking:</strong> Real-time coordinates verification at designated security checkpoints.</li>
+        <li><strong>Selfie Verification:</strong> Tamper-resistant on-site photo check-ins via Cloudinary pipelines.</li>
+        <li><strong>Admin Command Center:</strong> Multi-site roster scheduling with JWT-based role separation.</li>
+      </ul>
+      <p>
+        <a href="https://github.com/aestheticwolf/security-guard-tracking-system" target="_blank">
+          <img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="View Repository" />
+        </a>
+      </p>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+<!-- PROJECT 04: ART BY HEAVEN (Content Left, Visual Right) -->
+<table>
+  <tr>
+    <td width="54%" valign="middle">
+      <small><code>MOBILE COMMERCE &bull; FINTECH</code></small>
+      <h3>04 &bull; Art by Heaven</h3>
+      <p>A native mobile e-commerce application crafted for handcrafted art, décor, and gifting products, offering fluid catalog browsing and friction-free payment checkouts.</p>
+      <p>
+        <img src="https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React Native" />
+        <img src="https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white" alt="Expo" />
+        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/Firestore-FFCA28?style=flat-square&logo=firebase&logoColor=black" alt="Firestore" />
+        <img src="https://img.shields.io/badge/Razorpay-0C2340?style=flat-square&logo=razorpay&logoColor=3395FF" alt="Razorpay" />
+      </p>
+      <ul>
+        <li><strong>Real-time Catalog:</strong> Live inventory hydration and category filtering via Cloud Firestore.</li>
+        <li><strong>Cart Management:</strong> In-app subtotal calculation, quantity controls, and client persistence.</li>
+        <li><strong>Razorpay Integration:</strong> End-to-end encrypted checkout supporting UPI and cards.</li>
+      </ul>
+      <p>
+        <a href="https://github.com/aestheticwolf/art-of" target="_blank">
+          <img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="View Repository" />
+        </a>
+      </p>
+    </td>
+    <td width="46%" align="center" valign="middle">
+      <a href="https://github.com/aestheticwolf/art-of" target="_blank">
+        <img src="./assets/project-04-artbyheaven.svg" width="100%" alt="Art by Heaven Mobile Store" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+<!-- PROJECT 05: HACKERRANK ORCHESTRATE (Visual Left, Content Right) -->
+<table>
+  <tr>
+    <td width="46%" align="center" valign="middle">
+      <a href="https://github.com/aestheticwolf/hackerrank-orchestrate-october26" target="_blank">
+        <img src="./assets/project-05-orchestrate.svg" width="100%" alt="HackerRank Orchestrate" />
+      </a>
+    </td>
+    <td width="54%" valign="middle">
+      <small><code>INTELLIGENT PIPELINE &bull; MULTI-MODAL AI</code></small>
+      <h3>05 &bull; HackerRank Orchestrate</h3>
+      <p>An autonomous notification processing and deletion auditing pipeline engineered during the 24-hour HackerRank hackathon, correlating evidence across multi-modal data streams.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+        <img src="https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white" alt="Ollama" />
+        <img src="https://img.shields.io/badge/EasyOCR-43853D?style=flat-square&logo=python&logoColor=white" alt="EasyOCR" />
+        <img src="https://img.shields.io/badge/Faster_Whisper-00A67E?style=flat-square&logo=openai&logoColor=white" alt="Whisper" />
+      </p>
+      <ul>
+        <li><strong>Multi-Modal Extraction:</strong> EasyOCR text extraction and Faster Whisper voice transcription.</li>
+        <li><strong>Intelligent Classification:</strong> Contextual intent resolution and notification routing via local LLMs.</li>
+        <li><strong>Evidence Audit Engine:</strong> Automated policy checks detecting ghost data across databases &amp; logs.</li>
+      </ul>
+      <p>
+        <a href="https://github.com/aestheticwolf/hackerrank-orchestrate-october26" target="_blank">
+          <img src="https://img.shields.io/badge/View_Oct_Edition-181717?style=for-the-badge&logo=github&logoColor=white" alt="Oct Edition" />
+        </a>
+        &nbsp;
+        <a href="https://github.com/aestheticwolf/hackerrank-orchestrate-september26" target="_blank">
+          <img src="https://img.shields.io/badge/View_Sept_Edition-181717?style=for-the-badge&logo=github&logoColor=white" alt="Sept Edition" />
+        </a>
+      </p>
+    </td>
+  </tr>
+</table>
 
 <br/>
 
 <!-- ========================================== -->
-<!-- 07. GITHUB ANALYTICS DASHBOARD             -->
+<!-- 06. GITHUB ANALYTICS DASHBOARD             -->
 <!-- ========================================== -->
 
 ## 📊 &nbsp; GitHub Analytics Dashboard
 
-Real-time telemetry and contribution metrics extracted directly from GitHub activity.
+A unified dark dashboard displaying repository performance, language distribution, and commit trajectory.
 
 <br/>
 
@@ -399,7 +356,7 @@ Real-time telemetry and contribution metrics extracted directly from GitHub acti
         <a href="https://github.com/aestheticwolf">
           <img
             src="https://github-readme-stats.vercel.app/api?username=aestheticwolf&show_icons=true&theme=tokyonight&bg_color=08090D&title_color=8B5CF6&text_color=F5F5F7&icon_color=22D3EE&border_color=1E2337&border_radius=12&rank_icon=github"
-            alt="Richard's GitHub Stats"
+            alt="GitHub Statistics"
             width="100%"
           />
         </a>
@@ -425,20 +382,17 @@ Real-time telemetry and contribution metrics extracted directly from GitHub acti
       width="100%"
     />
   </a>
-
-  <br/><br/>
-  <img src="./assets/divider.svg" width="100%" alt="Divider" />
 </div>
 
 <br/>
 
 <!-- ========================================== -->
-<!-- 08. ANIMATED CONTRIBUTION SNAKE            -->
+<!-- 07. CONTRIBUTION SNAKE                     -->
 <!-- ========================================== -->
 
-## 🐍 &nbsp; Contribution Trajectory &amp; Activity Stream
+## 🐍 &nbsp; Contribution Trajectory
 
-Automated graph visualization rendered via `Platane/snk` on every 12-hour cycle.
+Automated contribution snake animation generated via Platane/snk every 12 hours.
 
 <br/>
 
@@ -454,50 +408,42 @@ Automated graph visualization rendered via `Platane/snk` on every 12-hour cycle.
     />
     <img
       src="https://raw.githubusercontent.com/aestheticwolf/aestheticwolf/output/github-contribution-grid-snake-dark.svg"
-      alt="GitHub Contribution Snake Animation"
+      alt="GitHub Contribution Snake"
       width="100%"
     />
   </picture>
-
-  <br/><br/>
-  <img src="./assets/divider.svg" width="100%" alt="Divider" />
 </div>
 
 <br/>
 
 <!-- ========================================== -->
-<!-- 09. CONNECT WITH ME                        -->
+<!-- 08. CONTACT & SIGNATURE FOOTER             -->
 <!-- ========================================== -->
 
 ## 🌐 &nbsp; Connect With Me
 
-Whether you want to discuss full-stack opportunities, modern software architecture, mobile engineering, or cutting-edge AI integrations — let's build something extraordinary together.
+Whether you want to discuss full-stack engineering, mobile development, or applied AI systems — let's build something extraordinary together.
 
 <br/>
 
 <div align="center">
-  <a href="https://github.com/aestheticwolf" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-aestheticwolf-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://linkedin.com/in/richarddsouza29" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-richarddsouza29-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://richard-portfolio-website-ten.vercel.app" target="_blank">
-    <img src="https://img.shields.io/badge/Live_Portfolio-richard--portfolio-10B981?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
-  </a>
+  <p>
+    <a href="https://github.com/aestheticwolf" target="_blank">
+      <img src="https://img.shields.io/badge/GitHub-aestheticwolf-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+    </a>
+    &nbsp;&nbsp;
+    <a href="https://linkedin.com/in/richarddsouza29" target="_blank">
+      <img src="https://img.shields.io/badge/LinkedIn-richarddsouza29-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    </a>
+    &nbsp;&nbsp;
+    <a href="https://richard-portfolio-website-ten.vercel.app" target="_blank">
+      <img src="https://img.shields.io/badge/Live%20Portfolio-richard--portfolio-10B981?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Portfolio" />
+    </a>
+  </p>
 
-  <br/><br/>
-</div>
+  <br/>
 
-<br/>
-
-<!-- ========================================== -->
-<!-- 10. SIGNATURE FOOTER                       -->
-<!-- ========================================== -->
-
-<div align="center">
+  <!-- Signature Footer SVG -->
   <img
     src="./assets/footer.svg"
     alt="Engineered by Richard D'Souza"
@@ -506,10 +452,7 @@ Whether you want to discuss full-stack opportunities, modern software architectu
 
   <br/><br/>
 
-  <a href="#-hero-section-signature-introduction">
+  <a href="#richard-dsouza">
     <img src="https://img.shields.io/badge/Back_To_Top-08090D?style=flat-square&logo=eclipsercp&logoColor=22D3EE" alt="Back to Top" />
   </a>
-  
-  <br/><br/>
-  <sub>&copy; 2026 Richard D'Souza &bull; Built with pure SVG, GitHub Actions, and modern engineering standards.</sub>
 </div>

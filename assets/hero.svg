@@ -1,235 +1,236 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380" width="100%" height="100%">
   <defs>
     <!-- Background Gradients -->
-    <radialGradient id="bgGlowViolet" cx="20%" cy="30%" r="60%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.22" />
+    <radialGradient id="hGlowViolet" cx="15%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.18" />
       <stop offset="100%" stop-color="#08090D" stop-opacity="0" />
     </radialGradient>
-    <radialGradient id="bgGlowBlue" cx="80%" cy="20%" r="55%">
-      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.18" />
+    <radialGradient id="hGlowBlue" cx="85%" cy="75%" r="60%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.14" />
       <stop offset="100%" stop-color="#08090D" stop-opacity="0" />
     </radialGradient>
-    <radialGradient id="bgGlowCyan" cx="50%" cy="90%" r="50%">
-      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.14" />
+    <radialGradient id="hCompassGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.25" />
+      <stop offset="60%" stop-color="#8B5CF6" stop-opacity="0.12" />
       <stop offset="100%" stop-color="#08090D" stop-opacity="0" />
     </radialGradient>
 
     <!-- Linear Gradients -->
-    <linearGradient id="primaryTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="hTitleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#FFFFFF" />
-      <stop offset="50%" stop-color="#F5F5F7" />
+      <stop offset="60%" stop-color="#F1F5F9" />
       <stop offset="100%" stop-color="#C4B5FD" />
     </linearGradient>
 
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#8B5CF6" />
-      <stop offset="50%" stop-color="#3B82F6" />
-      <stop offset="100%" stop-color="#22D3EE" />
-    </linearGradient>
-
-    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.6" />
+    <linearGradient id="hBorderLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.7" />
       <stop offset="35%" stop-color="#3B82F6" stop-opacity="0.8" />
-      <stop offset="70%" stop-color="#22D3EE" stop-opacity="0.6" />
+      <stop offset="70%" stop-color="#22D3EE" stop-opacity="0.7" />
       <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.2" />
     </linearGradient>
 
-    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#121522" stop-opacity="0.85" />
-      <stop offset="100%" stop-color="#0A0C13" stop-opacity="0.95" />
+    <linearGradient id="hGlassCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141828" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#0C0E18" stop-opacity="0.9" />
     </linearGradient>
 
     <!-- Grid Pattern -->
-    <pattern id="cyberGrid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#22D3EE" stroke-width="0.5" stroke-opacity="0.07" />
-    </pattern>
-
-    <!-- Dot Pattern -->
-    <pattern id="dotMatrix" width="20" height="20" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="0.9" fill="#8B5CF6" fill-opacity="0.12" />
+    <pattern id="hSubtleGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#22D3EE" stroke-width="0.5" stroke-opacity="0.05" />
     </pattern>
 
     <style>
-      @keyframes blink {
+      @keyframes blinkCursor {
         0%, 100% { opacity: 1; }
         50% { opacity: 0; }
       }
-      @keyframes pulseGlow {
-        0%, 100% { opacity: 0.3; transform: scale(1); }
-        50% { opacity: 0.7; transform: scale(1.08); }
+      @keyframes pulseLive {
+        0%, 100% { opacity: 0.4; transform: scale(1); }
+        50% { opacity: 0.9; transform: scale(1.15); }
       }
-      @keyframes scanline {
-        0% { transform: translateY(-360px); }
-        100% { transform: translateY(360px); }
+      @keyframes ringRotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
       }
-      @keyframes floatSlow {
+      @keyframes ringRotateRev {
+        0% { transform: rotate(360deg); }
+        100% { transform: rotate(0deg); }
+      }
+      @keyframes floatCard {
         0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-4px); }
+        50% { transform: translateY(-5px); }
       }
 
       /* 5-Phase Rotating Typing Animation (15s cycle: 3s each) */
       @keyframes type1 {
         0%, 18% { opacity: 1; transform: translateY(0px); }
-        20%, 100% { opacity: 0; transform: translateY(-4px); }
+        20%, 100% { opacity: 0; transform: translateY(-3px); }
       }
       @keyframes type2 {
-        0%, 19% { opacity: 0; transform: translateY(4px); }
+        0%, 19% { opacity: 0; transform: translateY(3px); }
         21%, 38% { opacity: 1; transform: translateY(0px); }
-        40%, 100% { opacity: 0; transform: translateY(-4px); }
+        40%, 100% { opacity: 0; transform: translateY(-3px); }
       }
       @keyframes type3 {
-        0%, 39% { opacity: 0; transform: translateY(4px); }
+        0%, 39% { opacity: 0; transform: translateY(3px); }
         41%, 58% { opacity: 1; transform: translateY(0px); }
-        60%, 100% { opacity: 0; transform: translateY(-4px); }
+        60%, 100% { opacity: 0; transform: translateY(-3px); }
       }
       @keyframes type4 {
-        0%, 59% { opacity: 0; transform: translateY(4px); }
+        0%, 59% { opacity: 0; transform: translateY(3px); }
         61%, 78% { opacity: 1; transform: translateY(0px); }
-        80%, 100% { opacity: 0; transform: translateY(-4px); }
+        80%, 100% { opacity: 0; transform: translateY(-3px); }
       }
       @keyframes type5 {
-        0%, 79% { opacity: 0; transform: translateY(4px); }
+        0%, 79% { opacity: 0; transform: translateY(3px); }
         81%, 98% { opacity: 1; transform: translateY(0px); }
-        100% { opacity: 0; transform: translateY(-4px); }
+        100% { opacity: 0; transform: translateY(-3px); }
       }
 
-      .text-title {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        font-weight: 900;
-        letter-spacing: 5px;
+      .f-sans {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       }
-      .text-mono {
-        font-family: "JetBrains Mono", "Fira Code", Menlo, Monaco, Consolas, "Courier New", monospace;
+      .f-mono {
+        font-family: "JetBrains Mono", "Fira Code", Monaco, Consolas, monospace;
       }
-      .cursor-blink {
-        animation: blink 0.9s infinite;
+      .cursor-b {
+        animation: blinkCursor 0.85s infinite;
       }
-      .status-pulse {
-        animation: pulseGlow 3s infinite ease-in-out;
+      .pulse-dot {
+        animation: pulseLive 2.5s infinite ease-in-out;
+        transform-origin: center;
       }
-      .float-badge {
-        animation: floatSlow 4s infinite ease-in-out;
+      .ring-slow {
+        animation: ringRotate 24s linear infinite;
+        transform-origin: center;
+      }
+      .ring-slow-rev {
+        animation: ringRotateRev 30s linear infinite;
+        transform-origin: center;
+      }
+      .hud-float {
+        animation: floatCard 4s ease-in-out infinite;
       }
 
-      .t-phrase-1 { animation: type1 15s infinite; }
-      .t-phrase-2 { animation: type2 15s infinite; }
-      .t-phrase-3 { animation: type3 15s infinite; }
-      .t-phrase-4 { animation: type4 15s infinite; }
-      .t-phrase-5 { animation: type5 15s infinite; }
+      .tp-1 { animation: type1 15s infinite; }
+      .tp-2 { animation: type2 15s infinite; }
+      .tp-3 { animation: type3 15s infinite; }
+      .tp-4 { animation: type4 15s infinite; }
+      .tp-5 { animation: type5 15s infinite; }
     </style>
   </defs>
 
-  <!-- Base Canvas -->
-  <rect width="1000" height="360" rx="16" fill="#08090D" />
+  <!-- Canvas Background -->
+  <rect width="1000" height="380" rx="16" fill="#08090D" />
+  <rect width="1000" height="380" rx="16" fill="url(#hGlowViolet)" />
+  <rect width="1000" height="380" rx="16" fill="url(#hGlowBlue)" />
+  <rect x="1" y="1" width="998" height="378" rx="15" fill="url(#hSubtleGrid)" />
 
-  <!-- Ambient Glows -->
-  <rect width="1000" height="360" rx="16" fill="url(#bgGlowViolet)" />
-  <rect width="1000" height="360" rx="16" fill="url(#bgGlowBlue)" />
-  <rect width="1000" height="360" rx="16" fill="url(#bgGlowCyan)" />
+  <!-- Architecture Outer Rim -->
+  <rect x="1" y="1" width="998" height="378" rx="15" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" />
+  <!-- Neon Edge Highlight -->
+  <path d="M 40 1 L 960 1" stroke="url(#hBorderLine)" stroke-width="2.5" stroke-linecap="round" />
 
-  <!-- Grid & Matrix Patterns -->
-  <rect x="1" y="1" width="998" height="358" rx="15" fill="url(#cyberGrid)" />
-  <rect x="1" y="1" width="998" height="358" rx="15" fill="url(#dotMatrix)" />
+  <!-- Top System Header Bar -->
+  <g transform="translate(45, 34)">
+    <!-- Status Radar Pill -->
+    <rect width="252" height="24" rx="12" fill="#121524" stroke="rgba(34, 211, 238, 0.25)" stroke-width="1" />
+    <circle cx="14" cy="12" r="4.5" fill="#22D3EE" />
+    <circle cx="14" cy="12" r="7.5" fill="#22D3EE" class="pulse-dot" />
+    <text x="28" y="16" class="f-mono" font-size="9.5" font-weight="700" fill="#22D3EE" letter-spacing="1.5">SYS: ONLINE // 2026 EDITION</text>
 
-  <!-- Outer Architectural Border -->
-  <rect x="1" y="1" width="998" height="358" rx="15" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" />
-  <!-- Neon Edge Accent on Top -->
-  <path d="M 30 1 L 970 1" stroke="url(#borderGrad)" stroke-width="2.5" stroke-linecap="round" />
-
-  <!-- Cybernetic Crosshairs & Technical Corner Markings -->
-  <g stroke="#22D3EE" stroke-opacity="0.3" stroke-width="1">
-    <path d="M 20 25 L 30 25 M 25 20 L 25 30" />
-    <path d="M 980 25 L 970 25 M 975 20 L 975 30" />
-    <path d="M 20 335 L 30 335 M 25 330 L 25 340" />
-    <path d="M 980 335 L 970 335 M 975 330 L 975 340" />
+    <!-- Geographic Coordinates & Telemetry -->
+    <text x="910" y="16" class="f-mono" font-size="10" fill="#64748B" text-anchor="end" letter-spacing="1">GOA, INDIA (15.29° N, 74.12° E) • @AESTHETICWOLF</text>
   </g>
 
-  <!-- Top System Telemetry Bar -->
-  <g transform="translate(45, 36)">
-    <!-- Status Badge -->
-    <rect width="260" height="26" rx="13" fill="#121522" stroke="rgba(34, 211, 238, 0.3)" stroke-width="1" />
-    <!-- Glowing Status Indicator Dot -->
-    <circle cx="16" cy="13" r="5" fill="#22D3EE" />
-    <circle cx="16" cy="13" r="8" fill="#22D3EE" class="status-pulse" />
-    <text x="32" y="17" class="text-mono" font-size="10.5" font-weight="700" fill="#22D3EE" letter-spacing="1.5">SYS: ONLINE // 2026 EDITION</text>
-
-    <!-- Version & Protocol Meta -->
-    <text x="280" y="17" class="text-mono" font-size="10.5" fill="#A1A1AA" letter-spacing="1">ID: AESTHETICWOLF // v4.2.0</text>
-  </g>
-
-  <!-- Main Hero Content -->
-  <g transform="translate(45, 105)">
-    <!-- Supertitle -->
-    <text x="2" y="18" class="text-mono" font-size="13" font-weight="700" fill="#8B5CF6" letter-spacing="3.5">INITIALIZING DIGITAL WORKSPACE // 01</text>
+  <!-- LEFT COLUMN: MAIN EDITORIAL IDENTITY -->
+  <g transform="translate(45, 96)">
+    <!-- Label -->
+    <text x="0" y="20" class="f-mono" font-size="12" font-weight="700" fill="#8B5CF6" letter-spacing="3.5">
+      // SOFTWARE ENGINEER &amp; FULL-STACK DEVELOPER
+    </text>
 
     <!-- Primary Developer Name -->
-    <text x="0" y="68" class="text-title" font-size="52" fill="url(#primaryTextGrad)">RICHARD D'SOUZA</text>
+    <text x="0" y="74" class="f-sans" font-size="52" font-weight="900" fill="url(#hTitleGrad)" letter-spacing="5">
+      RICHARD D'SOUZA
+    </text>
 
-    <!-- Dynamic Animated Typing Showcase Container -->
-    <g transform="translate(0, 96)">
-      <!-- Terminal prompt symbol -->
-      <rect x="0" y="0" width="30" height="30" rx="6" fill="#121522" stroke="rgba(139, 92, 246, 0.4)" stroke-width="1" />
-      <text x="10" y="20" class="text-mono" font-size="16" font-weight="800" fill="#22D3EE">&gt;</text>
+    <!-- Dynamic Typing Engine Container -->
+    <g transform="translate(0, 106)">
+      <rect width="28" height="28" rx="6" fill="#121524" stroke="rgba(139, 92, 246, 0.4)" stroke-width="1" />
+      <text x="9" y="19" class="f-mono" font-size="16" font-weight="800" fill="#22D3EE">&gt;</text>
 
-      <!-- Label Box -->
-      <g transform="translate(42, 0)">
-        <text x="0" y="21" class="text-mono t-phrase-1" font-size="19" font-weight="700" fill="#38BDF8">Software Engineer</text>
-        <text x="0" y="21" class="text-mono t-phrase-2" font-size="19" font-weight="700" fill="#818CF8">Full-Stack Developer</text>
-        <text x="0" y="21" class="text-mono t-phrase-3" font-size="19" font-weight="700" fill="#22D3EE">React &amp; React Native Developer</text>
-        <text x="0" y="21" class="text-mono t-phrase-4" font-size="19" font-weight="700" fill="#A78BFA">Backend Developer</text>
-        <text x="0" y="21" class="text-mono t-phrase-5" font-size="19" font-weight="700" fill="#67E8F9">AI Application Developer</text>
+      <g transform="translate(38, 0)">
+        <text x="0" y="20" class="f-mono tp-1" font-size="19" font-weight="700" fill="#38BDF8">Software Engineer</text>
+        <text x="0" y="20" class="f-mono tp-2" font-size="19" font-weight="700" fill="#818CF8">Full-Stack Developer</text>
+        <text x="0" y="20" class="f-mono tp-3" font-size="19" font-weight="700" fill="#22D3EE">React &amp; React Native Developer</text>
+        <text x="0" y="20" class="f-mono tp-4" font-size="19" font-weight="700" fill="#A78BFA">Backend Developer</text>
+        <text x="0" y="20" class="f-mono tp-5" font-size="19" font-weight="700" fill="#67E8F9">AI Application Developer</text>
 
         <!-- Blinking Terminal Cursor -->
-        <line x1="330" y1="4" x2="330" y2="24" stroke="#22D3EE" stroke-width="2.5" class="cursor-blink" />
+        <line x1="330" y1="3" x2="330" y2="23" stroke="#22D3EE" stroke-width="2.5" class="cursor-b" />
       </g>
     </g>
 
-    <!-- Bio Subtitle Line -->
-    <text x="2" y="156" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" fill="#A1A1AA" letter-spacing="0.4">
-      Engineering high-performance web applications, mobile architectures &amp; intelligent AI systems.
+    <!-- Concise Editorial Manifesto -->
+    <text x="0" y="168" class="f-sans" font-size="15" fill="#A1A1AA" letter-spacing="0.3">
+      Architecting high-performance web applications, mobile platforms &amp; applied intelligence systems.
     </text>
-  </g>
 
-  <!-- Right Floating Metric Hub -->
-  <g transform="translate(685, 80)" class="float-badge">
-    <!-- Outer Card Background -->
-    <rect width="270" height="225" rx="14" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.09)" stroke-width="1.2" />
-    
-    <!-- Header of Metric Hub -->
-    <path d="M 0 0 L 270 0" stroke="url(#accentGrad)" stroke-width="2" stroke-linecap="round" />
-    <rect x="18" y="18" width="8" height="8" rx="2" fill="#8B5CF6" />
-    <text x="34" y="26" class="text-mono" font-size="11" font-weight="700" fill="#F5F5F7" letter-spacing="1.5">METRICS &amp; TELEMETRY</text>
+    <!-- Quick Glass Telemetry Pills -->
+    <g transform="translate(0, 204)">
+      <!-- Pill 1: Alum -->
+      <rect width="180" height="30" rx="6" fill="#121524" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+      <circle cx="14" cy="15" r="3.5" fill="#8B5CF6" />
+      <text x="26" y="19" class="f-mono" font-size="10" font-weight="600" fill="#C4B5FD">Infipre &amp; Onstro Alum</text>
 
-    <!-- Metric 1: Location -->
-    <g transform="translate(18, 48)">
-      <rect width="234" height="42" rx="8" fill="#0D0F18" stroke="rgba(255,255,255,0.05)" />
-      <text x="14" y="19" class="text-mono" font-size="9" fill="#A1A1AA" letter-spacing="1">LOCATION</text>
-      <text x="14" y="34" class="text-mono" font-size="12" font-weight="700" fill="#22D3EE">Goa, India (IST)</text>
-      <circle cx="215" cy="21" r="4" fill="#22D3EE" opacity="0.8" />
-    </g>
+      <!-- Pill 2: Education -->
+      <g transform="translate(192, 0)">
+        <rect width="200" height="30" rx="6" fill="#121524" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+        <circle cx="14" cy="15" r="3.5" fill="#3B82F6" />
+        <text x="26" y="19" class="f-mono" font-size="10" font-weight="600" fill="#93C5FD">M.Sc. Information Tech</text>
+      </g>
 
-    <!-- Metric 2: Education -->
-    <g transform="translate(18, 98)">
-      <rect width="234" height="42" rx="8" fill="#0D0F18" stroke="rgba(255,255,255,0.05)" />
-      <text x="14" y="19" class="text-mono" font-size="9" fill="#A1A1AA" letter-spacing="1">EDUCATION</text>
-      <text x="14" y="34" class="text-mono" font-size="12" font-weight="700" fill="#A78BFA">M.Sc. Information Tech</text>
-      <circle cx="215" cy="21" r="4" fill="#8B5CF6" opacity="0.8" />
-    </g>
-
-    <!-- Metric 3: Focus Core -->
-    <g transform="translate(18, 148)">
-      <rect width="234" height="46" rx="8" fill="#0D0F18" stroke="rgba(255,255,255,0.05)" />
-      <text x="14" y="19" class="text-mono" font-size="9" fill="#A1A1AA" letter-spacing="1">PRIMARY FOCUS</text>
-      <text x="14" y="36" class="text-mono" font-size="11.5" font-weight="700" fill="#38BDF8">Full-Stack • Mobile • AI</text>
-      <circle cx="215" cy="23" r="4" fill="#3B82F6" opacity="0.8" />
+      <!-- Pill 3: Flagship -->
+      <g transform="translate(404, 0)">
+        <rect width="170" height="30" rx="6" fill="#121524" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+        <circle cx="14" cy="15" r="3.5" fill="#22D3EE" />
+        <text x="26" y="19" class="f-mono" font-size="10" font-weight="600" fill="#67E8F9">React • Node • AI</text>
+      </g>
     </g>
   </g>
 
-  <!-- Bottom Accent Status Line -->
-  <g transform="translate(45, 335)">
-    <circle cx="4" cy="4" r="3" fill="#8B5CF6" />
-    <text x="16" y="8" class="text-mono" font-size="10" fill="#A1A1AA" letter-spacing="1">PARVATIBAI CHOWGULE COLLEGE OF ARTS &amp; SCIENCE</text>
-    <path d="M 370 4 L 620 4" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3 3" />
-    <text x="635" y="8" class="text-mono" font-size="10" fill="#22D3EE" letter-spacing="1.5">⚡ READY TO DEPLOY</text>
+  <!-- RIGHT COLUMN: 3D CYBERNETIC WORKSPACE EMBLEM -->
+  <g transform="translate(790, 205)" class="hud-float">
+    <!-- Ambient Radial Core -->
+    <circle cx="0" cy="0" r="110" fill="url(#hCompassGlow)" />
+
+    <!-- Outer Tech Orbit Ring -->
+    <g class="ring-slow">
+      <circle cx="0" cy="0" r="82" fill="none" stroke="#8B5CF6" stroke-width="1.2" stroke-dasharray="10 14" opacity="0.6" />
+      <circle cx="82" cy="0" r="3" fill="#8B5CF6" />
+      <circle cx="-82" cy="0" r="3" fill="#8B5CF6" />
+    </g>
+
+    <!-- Inner Reversed Tech Orbit Ring -->
+    <g class="ring-slow-rev">
+      <circle cx="0" cy="0" r="62" fill="none" stroke="#22D3EE" stroke-width="1.2" stroke-dasharray="6 8" opacity="0.75" />
+      <circle cx="0" cy="62" r="3" fill="#22D3EE" />
+      <circle cx="0" cy="-62" r="3" fill="#22D3EE" />
+    </g>
+
+    <!-- Central Polyhedral Core -->
+    <polygon points="0,-36 32,-14 32,22 0,44 -32,22 -32,-14" fill="#101322" stroke="#3B82F6" stroke-width="1.8" />
+    <polygon points="0,-22 20,-8 20,14 0,26 -20,14 -20,-8" fill="#151A2C" stroke="#22D3EE" stroke-width="1.2" />
+
+    <!-- Core Rune Monogram -->
+    <text x="0" y="6" class="f-mono" font-size="16" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">RD</text>
+
+    <!-- Mini Telemetry Pill Floating Below Core -->
+    <g transform="translate(-65, 78)">
+      <rect width="130" height="24" rx="12" fill="url(#hGlassCard)" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+      <circle cx="14" cy="12" r="3.5" fill="#10B981" />
+      <text x="24" y="16" class="f-mono" font-size="9" font-weight="700" fill="#E2E8F0" letter-spacing="1">STATUS: READY</text>
+    </g>
   </g>
 </svg>
