@@ -198,15 +198,19 @@
 
   <!-- TOP STATUS BAR -->
   <g transform="translate(48, 38)">
-    <rect width="210" height="24" rx="12" fill="#101322" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1" />
+    <rect width="186" height="24" rx="12" fill="#101322" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1" />
     <circle cx="12" cy="12" r="4" fill="#10B981" />
     <circle cx="12" cy="12" r="7" fill="#10B981" class="pulse-beacon" />
     <text x="24" y="15.5" class="f-mono" font-size="9" font-weight="700" fill="#F5F5F7" letter-spacing="1.2">SYSTEM ACTIVE // 2026</text>
 
-    <!-- Geographic & Identity Coordinates -->
-    <text x="904" y="16" class="f-mono" font-size="9.5" fill="#8B949E" text-anchor="end" letter-spacing="1">
-      GOA, IN • 15.29°N 74.12°E • GITHUB: @AESTHETICWOLF
-    </text>
+    <!-- Geographic & Identity Coordinates (Safe placement with 94px clearance from portrait) -->
+    <g transform="translate(198, 0)">
+      <rect width="300" height="24" rx="6" fill="#101424" fill-opacity="0.6" stroke="rgba(34, 211, 238, 0.2)" stroke-width="0.8" />
+      <circle cx="12" cy="12" r="3" fill="#22D3EE" opacity="0.8" />
+      <text x="22" y="15.5" class="f-mono" font-size="9" fill="#94A3B8" letter-spacing="0.8">
+        GOA, IN • 15.29°N 74.12°E • GITHUB: @AESTHETICWOLF
+      </text>
+    </g>
   </g>
 
   <!-- ==================== LEFT SIDE: EDITORIAL IDENTITY ==================== -->
@@ -309,7 +313,7 @@
     </g>
 
     <!-- Mini System Tag Top Right -->
-    <g transform="translate(242, 6)">
+    <g transform="translate(252, 6)">
       <rect width="102" height="18" rx="4" fill="#101424" fill-opacity="0.88" stroke="rgba(139, 92, 246, 0.4)" stroke-width="0.8" />
       <text x="51" y="12.5" class="f-mono" font-size="7.5" font-weight="700" fill="#C4B5FD" text-anchor="middle">RD // PORTFOLIO</text>
     </g>
