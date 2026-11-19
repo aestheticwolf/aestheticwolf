@@ -38,19 +38,21 @@
 <br/>
 
 <!-- ========================================== -->
-<!-- 02. SIGNATURE LAPTOP WORKSPACE             -->
+<!-- 02. DEVELOPER WORKSPACE                    -->
 <!-- ========================================== -->
 
-## 💻 &nbsp; Signature Developer Workspace
-
-> High-precision development workstation combining active React &amp; TypeScript engineering pipelines, Google Gemini AI orchestration, and an integrated real-time CLI terminal session.
+<div align="left">
+  <small><code>WORKSPACE &bull; RUNTIME ENVIRONMENT</code></small>
+  <h2>DEVELOPER WORKSPACE</h2>
+  <p><em>Inside my engineering environment.</em></p>
+</div>
 
 <br/>
 
 <div align="center">
   <img
     src="./assets/laptop.svg"
-    alt="Cinematic Developer Workstation - Richard D'Souza"
+    alt="Cinematic 3D Developer Workstation - Richard D'Souza"
     width="100%"
   />
 </div>
