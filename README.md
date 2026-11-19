@@ -8,11 +8,15 @@
 <!-- ========================================== -->
 
 <a href="https://github.com/aestheticwolf">
-  <img
-    src="./assets/hero.svg"
-    alt="Richard D'Souza - Software Engineer &amp; Full-Stack Developer"
-    width="100%"
-  />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/hero.gif" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/hero.gif" />
+    <img
+      src="./assets/hero.gif"
+      alt="Richard D'Souza - Software Engineer &amp; Full-Stack Developer"
+      width="100%"
+    />
+  </picture>
 </a>
 
 <br/><br/>
