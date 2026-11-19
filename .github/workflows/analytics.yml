@@ -1,0 +1,41 @@
+name: Update GitHub Analytics Telemetry
+
+on:
+  schedule:
+    # Run automatically every 12 hours (at 00:00 and 12:00 UTC)
+    - cron: "0 */12 * * *"
+
+  # Allows manual triggering from the Actions tab
+  workflow_dispatch:
+
+  # Runs when changes are made to the telemetry generation script
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/generate_analytics_svg.py'
+
+jobs:
+  refresh-analytics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Refresh Analytics SVG
+        run: python scripts/generate_analytics_svg.py
+
+      - name: Commit Analytics Changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add assets/github-analytics.svg
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(telemetry): auto-refresh live streak metrics" && git push)

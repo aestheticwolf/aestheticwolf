@@ -224,29 +224,32 @@
 <!-- 06. GITHUB ANALYTICS DASHBOARD             -->
 <!-- ========================================== -->
 
-## 📊 &nbsp; GitHub Analytics Dashboard
-
-A unified dark dashboard displaying repository performance, language distribution, and commit trajectory.
+<div align="left">
+  <small><code>GITHUB ACTIVITY / ANALYTICS &bull; LIVE REPOSITORY TELEMETRY</code></small>
+  <h2>GitHub Analytics</h2>
+  <p><em>"An overview of my development activity, repositories and contribution history."</em></p>
+</div>
 
 <br/>
 
 <div align="center">
-  <table border="0">
+  <!-- ROW 1: GITHUB STATS & MOST USED LANGUAGES -->
+  <table border="0" cellpadding="0" cellspacing="8" width="100%">
     <tr>
-      <td width="50%" align="center">
+      <td width="50%" align="center" valign="top">
         <a href="https://github.com/aestheticwolf">
           <img
-            src="https://github-readme-stats.vercel.app/api?username=aestheticwolf&show_icons=true&theme=tokyonight&bg_color=08090D&title_color=8B5CF6&text_color=F5F5F7&icon_color=22D3EE&border_color=1E2337&border_radius=12&rank_icon=github"
-            alt="GitHub Statistics"
+            src="https://github-readme-stats.vercel.app/api?username=aestheticwolf&show_icons=true&theme=tokyonight&bg_color=111522&title_color=A78BFA&text_color=F5F5F7&icon_color=22D3EE&border_color=282E44&border_radius=14&rank_icon=github"
+            alt="GitHub Statistics - Richard D'Souza"
             width="100%"
           />
         </a>
       </td>
-      <td width="50%" align="center">
+      <td width="50%" align="center" valign="top">
         <a href="https://github.com/aestheticwolf">
           <img
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=aestheticwolf&layout=compact&theme=tokyonight&bg_color=08090D&title_color=8B5CF6&text_color=F5F5F7&border_color=1E2337&border_radius=12"
-            alt="Most Used Languages"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=aestheticwolf&layout=compact&card_width=467&theme=tokyonight&bg_color=111522&title_color=22D3EE&text_color=F5F5F7&border_color=282E44&border_radius=14"
+            alt="Most Used Languages - Richard D'Souza"
             width="100%"
           />
         </a>
@@ -256,10 +259,11 @@ A unified dark dashboard displaying repository performance, language distributio
 
   <br/>
 
+  <!-- ROW 2: CONTRIBUTION STREAK SHOWCASE (Total Contributions | Current Streak | Longest Streak) -->
   <a href="https://github.com/aestheticwolf">
     <img
-      src="https://streak-stats.demolab.com/?user=aestheticwolf&theme=tokyonight&background=08090D&border=1E2337&stroke=8B5CF6&ring=22D3EE&fire=8B5CF6&currStreakNum=F5F5F7&sideNums=F5F5F7&currStreakLabel=22D3EE&sideLabels=A1A1AA&dates=A1A1AA"
-      alt="GitHub Streak Statistics"
+      src="./assets/github-analytics.svg"
+      alt="Contribution Streak &amp; Activity Telemetry - Richard D'Souza"
       width="100%"
     />
   </a>
