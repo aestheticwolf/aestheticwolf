@@ -2,55 +2,55 @@
   <defs>
     <!-- Studio Ambient Lighting & Shadows -->
     <radialGradient id="deskUnderglow" cx="50%" cy="85%" r="65%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.32" />
-      <stop offset="35%" stop-color="#3B82F6" stop-opacity="0.18" />
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.35" />
+      <stop offset="35%" stop-color="#3B82F6" stop-opacity="0.20" />
       <stop offset="70%" stop-color="#22D3EE" stop-opacity="0.06" />
       <stop offset="100%" stop-color="#06070B" stop-opacity="0" />
     </radialGradient>
 
     <radialGradient id="screenAmbientGlow" cx="50%" cy="40%" r="55%">
-      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.14" />
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.16" />
       <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.08" />
       <stop offset="100%" stop-color="#06070B" stop-opacity="0" />
     </radialGradient>
 
     <!-- Metallic Unibody Gradients -->
     <linearGradient id="chassisMetalRim" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4B5375" />
-      <stop offset="25%" stop-color="#24283D" />
-      <stop offset="50%" stop-color="#5A648C" />
-      <stop offset="75%" stop-color="#1B1E2E" />
-      <stop offset="100%" stop-color="#353B54" />
+      <stop offset="0%" stop-color="#5B638A" />
+      <stop offset="25%" stop-color="#282C44" />
+      <stop offset="50%" stop-color="#6A75A4" />
+      <stop offset="75%" stop-color="#1E2235" />
+      <stop offset="100%" stop-color="#3D4461" />
     </linearGradient>
 
     <linearGradient id="deckMetalSurface" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#1E2338" />
-      <stop offset="20%" stop-color="#161A2B" />
+      <stop offset="0%" stop-color="#20253B" />
+      <stop offset="20%" stop-color="#161A2C" />
       <stop offset="80%" stop-color="#101322" />
       <stop offset="100%" stop-color="#0A0C16" />
     </linearGradient>
 
     <linearGradient id="deckFrontLip" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#1D2235" />
-      <stop offset="40%" stop-color="#4F597D" />
-      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.8" />
-      <stop offset="60%" stop-color="#4F597D" />
+      <stop offset="40%" stop-color="#556087" />
+      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.85" />
+      <stop offset="60%" stop-color="#556087" />
       <stop offset="100%" stop-color="#1D2235" />
     </linearGradient>
 
-    <linearGradient id="keycapGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#181C2E" />
-      <stop offset="100%" stop-color="#0D101C" />
+    <linearGradient id="keycapTop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22283E" />
+      <stop offset="100%" stop-color="#121524" />
     </linearGradient>
 
     <linearGradient id="keycapActive" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#222842" />
-      <stop offset="100%" stop-color="#141829" />
+      <stop offset="0%" stop-color="#2A3250" />
+      <stop offset="100%" stop-color="#181D30" />
     </linearGradient>
 
     <linearGradient id="trackpadGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#15192B" />
-      <stop offset="100%" stop-color="#0E111E" />
+      <stop offset="0%" stop-color="#181C2E" />
+      <stop offset="100%" stop-color="#0F1220" />
     </linearGradient>
 
     <linearGradient id="tabActiveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -64,15 +64,19 @@
       <stop offset="100%" stop-color="#000000" stop-opacity="0.1" />
     </linearGradient>
 
+    <!-- Speaker Grille Micro-perforation Pattern -->
+    <pattern id="speakerGrille" width="4" height="4" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.75" fill="#0A0C14" />
+    </pattern>
+
     <!-- Studio Floor Perspective Lines -->
     <pattern id="studioGridFloor" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#3B82F6" stroke-width="0.5" stroke-opacity="0.04" />
     </pattern>
 
-    <!-- Soft Drop Shadow Filter -->
-    <filter id="chassisShadow" x="-10%" y="-10%" width="120%" height="130%">
-      <feGaussianBlur stdDeviation="12" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    <!-- Glass Drop Shadow Filter for Floating HUD Panels -->
+    <filter id="hudShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.7" />
     </filter>
 
     <style>
@@ -93,11 +97,7 @@
         50% { opacity: 0.25; }
         100% { transform: translateY(380px); opacity: 0; }
       }
-      @keyframes pulseGlowRing {
-        0%, 100% { opacity: 0.5; transform: scale(1); }
-        50% { opacity: 0.9; transform: scale(1.05); }
-      }
-      @keyframes lightBeamSweep {
+      @keyframes beamPulse {
         0%, 100% { opacity: 0.2; }
         50% { opacity: 0.5; }
       }
@@ -121,7 +121,7 @@
         animation: scanScreen 7s ease-in-out infinite;
       }
       .beam-pulse {
-        animation: lightBeamSweep 6s infinite ease-in-out;
+        animation: beamPulse 6s infinite ease-in-out;
       }
     </style>
   </defs>
@@ -145,25 +145,6 @@
 
   <!-- ==================== 3D WORKSTATION GROUP (HOVER ANIMATED) ==================== -->
   <g class="workstation-hover">
-
-    <!-- FLOATING 3D ENVIRONMENT HUD CHIPS -->
-    <!-- Left Floating HUD: Runtime Stack -->
-    <g transform="translate(42, 130)">
-      <rect width="186" height="54" rx="10" fill="#121628" stroke="rgba(139, 92, 246, 0.4)" stroke-width="1.2" />
-      <path d="M 0 0 L 186 0" stroke="url(#tabActiveGrad)" stroke-width="2" />
-      <circle cx="18" cy="22" r="4.5" fill="#8B5CF6" />
-      <text x="32" y="25" class="f-mono" font-size="9.5" font-weight="700" fill="#FFFFFF" letter-spacing="1">REACT 19 • TS 5.9</text>
-      <text x="18" y="42" class="f-mono" font-size="8.5" fill="#A1A1AA">Vite 8 • Node.js • Tailwind v4</text>
-    </g>
-
-    <!-- Right Floating HUD: Applied AI Engine -->
-    <g transform="translate(872, 110)">
-      <rect width="186" height="54" rx="10" fill="#121628" stroke="rgba(34, 211, 238, 0.4)" stroke-width="1.2" />
-      <path d="M 0 0 L 186 0" stroke="url(#tabActiveGrad)" stroke-width="2" />
-      <circle cx="18" cy="22" r="4.5" fill="#22D3EE" />
-      <text x="32" y="25" class="f-mono" font-size="9.5" font-weight="700" fill="#22D3EE" letter-spacing="1">GOOGLE GEMINI 2.5</text>
-      <text x="18" y="42" class="f-mono" font-size="8.5" fill="#A1A1AA">RAG Pipeline • 12ms Latency</text>
-    </g>
 
     <!-- ==================== PART A: OPEN SCREEN LID (IN THREE-QUARTER ELEVATION) ==================== -->
     <g transform="translate(170, 36)">
@@ -404,6 +385,10 @@
     <!-- Deck Main Chassis Plate -->
     <polygon points="120,422 980,422 1020,600 80,600" fill="url(#deckMetalSurface)" stroke="url(#chassisMetalRim)" stroke-width="2" />
 
+    <!-- Left & Right Speaker Grilles (Perforations) -->
+    <polygon points="135,434 190,434 165,528 105,528" fill="url(#speakerGrille)" opacity="0.6" />
+    <polygon points="910,434 965,434 995,528 935,528" fill="url(#speakerGrille)" opacity="0.6" />
+
     <!-- Front Chamfered Deck Lip & Beveled Edge -->
     <polygon points="80,600 1020,600 1000,618 100,618" fill="url(#deckFrontLip)" />
 
@@ -416,121 +401,204 @@
     <!-- ==================== INDIVIDUAL MODELLED KEYCAPS IN PERSPECTIVE ==================== -->
     <g transform="translate(0, 0)">
       <!-- ROW 1: Function Row (Esc, F1 - F12, TouchID) -->
-      <g transform="translate(216, 436)">
+      <g transform="translate(216, 436)" class="f-mono" font-size="5" fill="#94A3B8">
         <!-- Esc -->
-        <rect x="0" y="0" width="40" height="10" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
+        <rect x="0" y="0" width="40" height="10" rx="2" fill="url(#keycapTop)" stroke="#2B3250" stroke-width="0.6" />
+        <text x="6" y="7">esc</text>
         <!-- F1 to F12 -->
-        <rect x="46" y="0" width="34" height="10" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="85" y="0" width="34" height="10" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="124" y="0" width="34" height="10" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="163" y="0" width="34" height="10" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="202" y="0" width="34" height="10" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="241" y="0" width="34" height="10" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="280" y="0" width="34" height="10" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="319" y="0" width="34" height="10" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="358" y="0" width="34" height="10" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="397" y="0" width="34" height="10" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="436" y="0" width="34" height="10" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="475" y="0" width="34" height="10" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="514" y="0" width="34" height="10" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="553" y="0" width="34" height="10" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="592" y="0" width="34" height="10" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <!-- Power / Touch ID -->
-        <rect x="631" y="0" width="34" height="10" rx="2" fill="#1A2035" stroke="#3B82F6" stroke-width="0.7" />
+        <rect x="46" y="0" width="34" height="10" rx="2" fill="url(#keycapTop)" stroke="#2B3250" stroke-width="0.6" />
+        <text x="56" y="7">F1</text>
+        <rect x="85" y="0" width="34" height="10" rx="2" fill="url(#keycapTop)" stroke="#2B3250" stroke-width="0.6" />
+        <text x="95" y="7">F2</text>
+        <rect x="124" y="0" width="34" height="10" rx="2" fill="url(#keycapTop)" stroke="#2B3250" stroke-width="0.6" />
+        <text x="134" y="7">F3</text>
+        <rect x="163" y="0" width="34" height="10" rx="2" fill="url(#keycapTop)" stroke="#2B3250" stroke-width="0.6" />
+        <text x="173" y="7">F4</text>
+        <rect x="202" y="0" width="34" height="10" rx="2" fill="url(#keycapTop)" stroke="#2B3250" stroke-width="0.6" />
+        <text x="212" y="7">F5</text>
+        <rect x="241" y="0" width="34" height="10" rx="2" fill="url(#keycapTop)" stroke="#2B3250" stroke-width="0.6" />
+        <text x="251" y="7">F6</text>
+        <rect x="280" y="0" width="34" height="10" rx="2" fill="url(#keycapTop)" stroke="#2B3250" stroke-width="0.6" />
+        <text x="290" y="7">F7</text>
+        <rect x="319" y="0" width="34" height="10" rx="2" fill="url(#keycapTop)" stroke="#2B3250" stroke-width="0.6" />
+        <text x="329" y="7">F8</text>
+        <rect x="358" y="0" width="34" height="10" rx="2" fill="url(#keycapTop)" stroke="#2B3250" stroke-width="0.6" />
+        <text x="368" y="7">F9</text>
+        <rect x="397" y="0" width="34" height="10" rx="2" fill="url(#keycapTop)" stroke="#2B3250" stroke-width="0.6" />
+        <text x="405" y="7">F10</text>
+        <rect x="436" y="0" width="34" height="10" rx="2" fill="url(#keycapTop)" stroke="#2B3250" stroke-width="0.6" />
+        <text x="444" y="7">F11</text>
+        <rect x="475" y="0" width="34" height="10" rx="2" fill="url(#keycapTop)" stroke="#2B3250" stroke-width="0.6" />
+        <text x="483" y="7">F12</text>
+        <!-- Power / Touch ID with glowing blue accent ring -->
+        <rect x="631" y="0" width="34" height="10" rx="2" fill="#1A2035" stroke="#3B82F6" stroke-width="0.8" />
+        <circle cx="648" cy="5" r="2.5" fill="#22D3EE" opacity="0.8" />
       </g>
 
       <!-- ROW 2: Number Row (` 1 2 3 4 5 6 7 8 9 0 - = Delete) -->
-      <g transform="translate(212, 451)">
-        <rect x="0" y="0" width="40" height="13" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="44" y="0" width="38" height="13" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="86" y="0" width="38" height="13" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="128" y="0" width="38" height="13" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="170" y="0" width="38" height="13" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="212" y="0" width="38" height="13" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="254" y="0" width="38" height="13" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="296" y="0" width="38" height="13" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="338" y="0" width="38" height="13" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="380" y="0" width="38" height="13" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="422" y="0" width="38" height="13" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="464" y="0" width="38" height="13" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="506" y="0" width="38" height="13" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="548" y="0" width="38" height="13" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <!-- Backspace / Delete -->
-        <rect x="590" y="0" width="85" height="13" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
+      <g transform="translate(212, 451)" class="f-mono" font-size="6" fill="#A1A1AA">
+        <rect x="0" y="0" width="40" height="13" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="6" y="9">~</text>
+        <rect x="44" y="0" width="38" height="13" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="50" y="9">1</text>
+        <rect x="86" y="0" width="38" height="13" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="92" y="9">2</text>
+        <rect x="128" y="0" width="38" height="13" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="134" y="9">3</text>
+        <rect x="170" y="0" width="38" height="13" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="176" y="9">4</text>
+        <rect x="212" y="0" width="38" height="13" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="218" y="9">5</text>
+        <rect x="254" y="0" width="38" height="13" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="260" y="9">6</text>
+        <rect x="296" y="0" width="38" height="13" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="302" y="9">7</text>
+        <rect x="338" y="0" width="38" height="13" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="344" y="9">8</text>
+        <rect x="380" y="0" width="38" height="13" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="386" y="9">9</text>
+        <rect x="422" y="0" width="38" height="13" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="428" y="9">0</text>
+        <rect x="464" y="0" width="38" height="13" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="470" y="9">-</text>
+        <rect x="506" y="0" width="38" height="13" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="512" y="9">=</text>
+        <!-- Delete -->
+        <rect x="548" y="0" width="127" height="13" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="556" y="9">delete</text>
       </g>
 
       <!-- ROW 3: QWERTY Row (Tab Q W E R T Y U I O P [ ] \) -->
-      <g transform="translate(208, 469)">
+      <g transform="translate(208, 469)" class="f-mono" font-size="6.5" fill="#CBD5E1">
         <!-- Tab -->
-        <rect x="0" y="0" width="60" height="14" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
+        <rect x="0" y="0" width="60" height="14" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="8" y="10" fill="#94A3B8">tab</text>
         <!-- Keys -->
-        <rect x="64" y="0" width="38" height="14" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="106" y="0" width="38" height="14" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="148" y="0" width="38" height="14" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="190" y="0" width="38" height="14" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="232" y="0" width="38" height="14" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="274" y="0" width="38" height="14" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="316" y="0" width="38" height="14" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="358" y="0" width="38" height="14" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="400" y="0" width="38" height="14" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="442" y="0" width="38" height="14" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="484" y="0" width="38" height="14" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="526" y="0" width="38" height="14" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="568" y="0" width="38" height="14" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="610" y="0" width="73" height="14" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
+        <rect x="64" y="0" width="38" height="14" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="70" y="10">Q</text>
+        <rect x="106" y="0" width="38" height="14" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="112" y="10">W</text>
+        <rect x="148" y="0" width="38" height="14" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="154" y="10">E</text>
+        <rect x="190" y="0" width="38" height="14" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="196" y="10">R</text>
+        <rect x="232" y="0" width="38" height="14" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="238" y="10">T</text>
+        <rect x="274" y="0" width="38" height="14" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="280" y="10">Y</text>
+        <rect x="316" y="0" width="38" height="14" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="322" y="10">U</text>
+        <rect x="358" y="0" width="38" height="14" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="364" y="10">I</text>
+        <rect x="400" y="0" width="38" height="14" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="406" y="10">O</text>
+        <rect x="442" y="0" width="38" height="14" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="448" y="10">P</text>
+        <rect x="484" y="0" width="38" height="14" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="490" y="10">[</text>
+        <rect x="526" y="0" width="38" height="14" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="532" y="10">]</text>
+        <rect x="568" y="0" width="115" height="14" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="576" y="10">\</text>
       </g>
 
       <!-- ROW 4: Home Row (Caps A S D F G H J K L ; ' Enter) -->
-      <g transform="translate(204, 488)">
+      <g transform="translate(204, 488)" class="f-mono" font-size="6.5" fill="#CBD5E1">
         <!-- Caps Lock -->
-        <rect x="0" y="0" width="70" height="14" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
+        <rect x="0" y="0" width="70" height="14" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="8" y="10" fill="#94A3B8">caps</text>
         <!-- Keys -->
-        <rect x="74" y="0" width="40" height="14" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="118" y="0" width="40" height="14" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="162" y="0" width="40" height="14" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="206" y="0" width="40" height="14" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="250" y="0" width="40" height="14" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="294" y="0" width="40" height="14" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="338" y="0" width="40" height="14" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="382" y="0" width="40" height="14" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="426" y="0" width="40" height="14" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="470" y="0" width="40" height="14" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="514" y="0" width="40" height="14" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <!-- Return / Enter -->
-        <rect x="558" y="0" width="132" height="14" rx="2" fill="url(#keycapActive)" stroke="#3B82F6" stroke-width="0.7" />
+        <rect x="74" y="0" width="40" height="14" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="80" y="10">A</text>
+        <rect x="118" y="0" width="40" height="14" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="124" y="10">S</text>
+        <rect x="162" y="0" width="40" height="14" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="168" y="10">D</text>
+        <rect x="206" y="0" width="40" height="14" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="212" y="10">F</text>
+        <rect x="250" y="0" width="40" height="14" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="256" y="10">G</text>
+        <rect x="294" y="0" width="40" height="14" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="300" y="10">H</text>
+        <rect x="338" y="0" width="40" height="14" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="344" y="10">J</text>
+        <rect x="382" y="0" width="40" height="14" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="388" y="10">K</text>
+        <rect x="426" y="0" width="40" height="14" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="432" y="10">L</text>
+        <rect x="470" y="0" width="40" height="14" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="476" y="10">;</text>
+        <!-- Return / Enter with subtle Electric Blue Rim -->
+        <rect x="514" y="0" width="176" height="14" rx="2" fill="url(#keycapActive)" stroke="#3B82F6" stroke-width="0.8" />
+        <text x="526" y="10" fill="#38BDF8" font-weight="700">return ↵</text>
       </g>
 
       <!-- ROW 5: Bottom Modifier Row & Wide Spacebar -->
-      <g transform="translate(196, 507)">
+      <g transform="translate(196, 507)" class="f-mono" font-size="6" fill="#94A3B8">
         <!-- Left Modifiers -->
-        <rect x="0" y="0" width="50" height="16" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="54" y="0" width="44" height="16" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="102" y="0" width="48" height="16" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="154" y="0" width="56" height="16" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
+        <rect x="0" y="0" width="50" height="16" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="6" y="10">fn</text>
+        <rect x="54" y="0" width="44" height="16" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="60" y="10">control</text>
+        <rect x="102" y="0" width="48" height="16" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="108" y="10">option</text>
+        <rect x="154" y="0" width="56" height="16" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="160" y="10">command ⌘</text>
 
-        <!-- WIDE CENTERED SPACEBAR IN 3D PERSPECTIVE -->
-        <rect x="214" y="0" width="270" height="16" rx="3" fill="url(#keycapActive)" stroke="#818CF8" stroke-width="0.8" />
-        <!-- Spacebar Accent Glow -->
-        <line x1="230" y1="14" x2="468" y2="14" stroke="#8B5CF6" stroke-width="1.5" opacity="0.6" />
+        <!-- WIDE CENTERED SPACEBAR IN 3D PERSPECTIVE WITH UNDERGLOW LEAK -->
+        <rect x="214" y="0" width="270" height="16" rx="3" fill="url(#keycapActive)" stroke="#818CF8" stroke-width="0.9" />
+        <line x1="230" y1="14" x2="468" y2="14" stroke="#8B5CF6" stroke-width="1.5" opacity="0.75" />
 
         <!-- Right Modifiers & Arrow Cluster -->
-        <rect x="488" y="0" width="56" height="16" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="548" y="0" width="48" height="16" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="600" y="0" width="36" height="16" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
-        <rect x="640" y="0" width="62" height="16" rx="2" fill="url(#keycapGrad)" stroke="#222840" stroke-width="0.5" />
+        <rect x="488" y="0" width="56" height="16" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="494" y="10">command ⌘</text>
+        <rect x="548" y="0" width="48" height="16" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="554" y="10">option</text>
+        <!-- Arrow keys -->
+        <rect x="600" y="0" width="32" height="16" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="606" y="10">◀</text>
+        <rect x="636" y="0" width="32" height="16" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="642" y="10">▶</text>
+        <rect x="672" y="0" width="30" height="16" rx="2" fill="url(#keycapTop)" stroke="#282F4A" stroke-width="0.6" />
+        <text x="678" y="10">▲</text>
       </g>
     </g>
 
-    <!-- ==================== PART D: VISIBLE TRACKPAD ==================== -->
+    <!-- ==================== PART D: VISIBLE PROMINENT TRACKPAD ==================== -->
     <g transform="translate(425, 538)">
       <!-- Trackpad Well & Metallic Beveled Border -->
-      <rect width="250" height="54" rx="8" fill="url(#trackpadGrad)" stroke="rgba(255,255,255,0.14)" stroke-width="1.2" />
-      <!-- Subtle Center Click Bar Divider & Glass Reflection -->
-      <line x1="125" y1="46" x2="125" y2="52" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
-      <path d="M 10 5 L 80 5 L 30 50 L 5 50 Z" fill="#FFFFFF" opacity="0.025" />
+      <rect width="250" height="54" rx="8" fill="url(#trackpadGrad)" stroke="rgba(255,255,255,0.18)" stroke-width="1.2" />
+      <!-- Trackpad Subtle Click Divider & Glass Reflection -->
+      <line x1="125" y1="46" x2="125" y2="52" stroke="rgba(255,255,255,0.25)" stroke-width="1" />
+      <path d="M 10 5 L 80 5 L 30 50 L 5 50 Z" fill="#FFFFFF" opacity="0.03" />
     </g>
 
     <!-- Ambient Keyboard Backlight Glow between Deck & Screen -->
-    <path d="M 230 422 L 870 422" stroke="url(#tabActiveGrad)" stroke-width="2.5" opacity="0.8" />
+    <path d="M 230 422 L 870 422" stroke="url(#tabActiveGrad)" stroke-width="2.5" opacity="0.85" />
+
+    <!-- ==================== PART E: FLOATING 3D GLASS HUD PANELS (RENDERED IN FRONT) ==================== -->
+    <!-- Left Floating HUD: Runtime Stack -->
+    <g transform="translate(18, 140)" filter="url(#hudShadow)">
+      <rect width="170" height="54" rx="10" fill="#121628" fill-opacity="0.92" stroke="rgba(139, 92, 246, 0.55)" stroke-width="1.2" />
+      <path d="M 0 0 L 170 0" stroke="url(#tabActiveGrad)" stroke-width="2.5" rx="1" />
+      <circle cx="16" cy="22" r="4" fill="#8B5CF6" />
+      <text x="28" y="25" class="f-mono" font-size="9" font-weight="700" fill="#FFFFFF" letter-spacing="0.8">REACT 19 • TS 5.9</text>
+      <text x="16" y="42" class="f-mono" font-size="8" fill="#A1A1AA">Vite 6 • Node.js • Tailwind v4</text>
+    </g>
+    <!-- Left HUD Connection Pin -->
+    <path d="M 188 167 L 206 167" stroke="#8B5CF6" stroke-width="1" stroke-dasharray="2 2" opacity="0.6" />
+    <circle cx="206" cy="167" r="2" fill="#8B5CF6" opacity="0.8" />
+
+    <!-- Right Floating HUD: Applied AI Engine -->
+    <g transform="translate(912, 140)" filter="url(#hudShadow)">
+      <rect width="170" height="54" rx="10" fill="#121628" fill-opacity="0.92" stroke="rgba(34, 211, 238, 0.55)" stroke-width="1.2" />
+      <path d="M 0 0 L 170 0" stroke="url(#tabActiveGrad)" stroke-width="2.5" rx="1" />
+      <circle cx="16" cy="22" r="4" fill="#22D3EE" />
+      <text x="28" y="25" class="f-mono" font-size="9" font-weight="700" fill="#22D3EE" letter-spacing="0.8">GOOGLE GEMINI 2.5</text>
+      <text x="16" y="42" class="f-mono" font-size="8" fill="#A1A1AA">RAG Pipeline • 12ms Latency</text>
+    </g>
+    <!-- Right HUD Connection Pin -->
+    <path d="M 894 167 L 912 167" stroke="#22D3EE" stroke-width="1" stroke-dasharray="2 2" opacity="0.6" />
+    <circle cx="894" cy="167" r="2" fill="#22D3EE" opacity="0.8" />
   </g>
 </svg>
