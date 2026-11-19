@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Atmospheric Lighting Gradients -->
+    <linearGradient id="sg2Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111624" />
+      <stop offset="50%" stop-color="#0E121E" />
+      <stop offset="100%" stop-color="#060910" />
+    </linearGradient>
+
+    <linearGradient id="sg2Accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE" />
+      <stop offset="50%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+
+    <radialGradient id="sg2RadarGlow" cx="25%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.22" />
+      <stop offset="60%" stop-color="#3B82F6" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#060910" stop-opacity="0" />
+    </radialGradient>
+
+    <pattern id="sg2Grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#22D3EE" stroke-width="0.5" stroke-opacity="0.1" />
+    </pattern>
+
+    <filter id="sg2Shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.55" />
+    </filter>
+
+    <style>
+      @keyframes pulseBeacon {
+        0%, 100% { transform: scale(1); opacity: 0.7; }
+        50% { transform: scale(1.4); opacity: 1; }
+      }
+      @keyframes shimmerBar {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -560; }
+      }
+      .f-code { font-family: "JetBrains Mono", "Fira Code", Monaco, monospace; }
+      .f-ui { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+      .shimmer-line {
+        stroke-dasharray: 120 440;
+        animation: shimmerBar 5s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- ==================== BASE CONTAINER ==================== -->
+  <rect width="560" height="360" rx="14" fill="url(#sg2Bg)" stroke="#222C42" stroke-width="1.2" />
+  <rect width="560" height="360" rx="14" fill="url(#sg2Grid)" />
+  <circle cx="140" cy="180" r="220" fill="url(#sg2RadarGlow)" />
+
+  <!-- Animated Top Accent Rim -->
+  <path d="M 0 0 L 560 0" stroke="url(#sg2Accent)" stroke-width="3" rx="1" />
+  <path d="M 0 0 L 560 0" stroke="#FFFFFF" stroke-width="2" opacity="0.6" class="shimmer-line" />
+
+  <!-- Window Chrome Strip -->
+  <rect x="0" y="0" width="560" height="34" rx="14" fill="#121828" />
+  <circle cx="20" cy="17" r="4.5" fill="#EF4444" />
+  <circle cx="35" cy="17" r="4.5" fill="#F59E0B" />
+  <circle cx="50" cy="17" r="4.5" fill="#10B981" />
+  <text x="72" y="21" class="f-code" font-size="9.5" font-weight="700" fill="#67E8F9">Sentinel Grid • Security SOC &amp; Geofenced Workforce Operations</text>
+  <rect x="466" y="8" width="80" height="18" rx="4" fill="#0C2533" stroke="#0891B2" stroke-width="0.8" />
+  <text x="506" y="20" class="f-code" font-size="8" font-weight="700" fill="#22D3EE" text-anchor="middle">LIVE RADAR</text>
+
+  <!-- ==================== LEFT: LIVE GPS RADAR & GEOFENCE CONSOLE ==================== -->
+  <g transform="translate(24, 48)" filter="url(#sg2Shadow)">
+    <rect width="210" height="294" rx="14" fill="#0A0D16" stroke="rgba(34, 211, 238, 0.35)" stroke-width="1.2" />
+    
+    <!-- Top Radar Tag -->
+    <g transform="translate(14, 16)">
+      <circle cx="4" cy="4" r="3" fill="#10B981" />
+      <text x="14" y="7" class="f-code" font-size="8" font-weight="700" fill="#E2E8F0">GPS GEOFENCE ACTIVE</text>
+      <text x="14" y="19" class="f-code" font-size="6.5" fill="#22D3EE">SOC TELEMETRY STREAM</text>
+    </g>
+
+    <!-- Concentric Radar Display -->
+    <g transform="translate(105, 130)">
+      <!-- Radar Rings -->
+      <circle cx="0" cy="0" r="75" fill="none" stroke="#22D3EE" stroke-width="0.8" stroke-dasharray="4 4" opacity="0.35" />
+      <circle cx="0" cy="0" r="52" fill="none" stroke="#3B82F6" stroke-width="0.8" opacity="0.45" />
+      <circle cx="0" cy="0" r="28" fill="none" stroke="#22D3EE" stroke-width="1" opacity="0.65" />
+      <circle cx="0" cy="0" r="3.5" fill="#22D3EE" />
+
+      <!-- Crosshairs -->
+      <line x1="-80" y1="0" x2="80" y2="0" stroke="#22D3EE" stroke-width="0.6" opacity="0.4" />
+      <line x1="0" y1="-80" x2="0" y2="80" stroke="#22D3EE" stroke-width="0.6" opacity="0.4" />
+
+      <!-- Rotating Scanner Beam -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="6s" repeatCount="indefinite" />
+        <line x1="0" y1="0" x2="75" y2="0" stroke="#22D3EE" stroke-width="2" opacity="0.8" />
+        <path d="M 0 0 L 75 -25 A 75 75 0 0 1 75 0 Z" fill="#22D3EE" opacity="0.15" />
+      </g>
+
+      <!-- Verified Guard Beacons -->
+      <g transform="translate(32, -26)">
+        <circle cx="0" cy="0" r="5" fill="#10B981" />
+        <circle cx="0" cy="0" r="9" fill="none" stroke="#10B981" stroke-width="1" opacity="0.6" />
+        <rect x="8" y="-7" width="56" height="14" rx="2.5" fill="#0C2418" stroke="#059669" stroke-width="0.6" />
+        <text x="12" y="3" class="f-code" font-size="6.5" font-weight="700" fill="#34D399">GUARD_04 ✓</text>
+      </g>
+
+      <g transform="translate(-40, 36)">
+        <circle cx="0" cy="0" r="4.5" fill="#22D3EE" />
+        <rect x="-62" y="-7" width="56" height="14" rx="2.5" fill="#0A222C" stroke="#0891B2" stroke-width="0.6" />
+        <text x="-58" y="3" class="f-code" font-size="6.5" font-weight="700" fill="#67E8F9">POST_B 08:30</text>
+      </g>
+
+      <g transform="translate(-25, -45)">
+        <circle cx="0" cy="0" r="3.5" fill="#60A5FA" />
+        <text x="6" y="2" class="f-code" font-size="6" fill="#93C5FD">HQ_NODE</text>
+      </g>
+    </g>
+
+    <!-- Radar Footer Readout -->
+    <g transform="translate(12, 230)">
+      <rect width="186" height="50" rx="6" fill="#101424" stroke="#1E283E" stroke-width="0.8" />
+      <text x="10" y="16" class="f-code" font-size="7" fill="#64748B">GEOFENCE COORDINATES</text>
+      <text x="10" y="30" class="f-code" font-size="8.5" font-weight="700" fill="#22D3EE">15.298° N, 74.124° E</text>
+      <text x="10" y="42" class="f-code" font-size="7" fill="#10B981">● TAMPER-PROOF GPS LOCK (±2M)</text>
+    </g>
+  </g>
+
+  <!-- ==================== RIGHT: VERIFICATION SUITE & DASHBOARD METRICS ==================== -->
+  <g transform="translate(254, 52)">
+    <!-- Card 1: Biometric Verification Engine -->
+    <g transform="translate(0, 0)">
+      <rect width="282" height="74" rx="8" fill="#101524" stroke="#222B42" stroke-width="0.8" />
+      <line x1="0" y1="4" x2="0" y2="70" stroke="#22D3EE" stroke-width="3" stroke-linecap="round" />
+      <text x="14" y="20" class="f-code" font-size="8" font-weight="700" fill="#22D3EE" letter-spacing="1">SELFIE CHECK-IN VERIFICATION</text>
+      <text x="14" y="38" class="f-ui" font-size="11.5" font-weight="800" fill="#FFFFFF">Cloudinary Image Pipeline</text>
+      <text x="14" y="52" class="f-code" font-size="7.5" fill="#94A3B8">Encrypted face match + EXIF coordinate validation</text>
+      <g transform="translate(14, 58)">
+        <rect width="90" height="12" rx="2" fill="#0E232B" />
+        <text x="4" y="9" class="f-code" font-size="6.5" fill="#22D3EE">ANTI-SPOOF: PASS ✓</text>
+      </g>
+    </g>
+
+    <!-- Card 2: Operations Command Status -->
+    <g transform="translate(0, 84)">
+      <rect width="282" height="102" rx="8" fill="#0C0F1A" stroke="#222B42" stroke-width="0.8" />
+      <rect width="282" height="20" rx="8" fill="#13192B" />
+      <text x="12" y="14" class="f-code" font-size="7.5" font-weight="700" fill="#67E8F9">ADMIN COMMAND CONSOLE • LIVE ROSTER</text>
+      
+      <g transform="translate(14, 30)">
+        <text x="0" y="12" class="f-ui" font-size="10" font-weight="700" fill="#F8FAFC">Shift A Duty Allocation</text>
+        <text x="254" y="12" class="f-code" font-size="8" font-weight="700" fill="#10B981" text-anchor="end">12/12 ACTIVE</text>
+        
+        <rect x="0" y="22" width="254" height="6" rx="3" fill="#161B2E" />
+        <rect x="0" y="22" width="250" height="6" rx="3" fill="#22D3EE" />
+
+        <text x="0" y="44" class="f-ui" font-size="10" font-weight="700" fill="#F8FAFC">On-Time Attendance Metric</text>
+        <text x="254" y="44" class="f-code" font-size="8" font-weight="700" fill="#60A5FA" text-anchor="end">98.4% RATE</text>
+        
+        <rect x="0" y="52" width="254" height="6" rx="3" fill="#161B2E" />
+        <rect x="0" y="52" width="242" height="6" rx="3" fill="#60A5FA" />
+      </g>
+    </g>
+
+    <!-- Card 3: Enterprise Auth Architecture -->
+    <g transform="translate(0, 196)">
+      <rect width="282" height="52" rx="8" fill="#101524" stroke="#222B42" stroke-width="0.8" />
+      <g transform="translate(14, 14)">
+        <text x="0" y="10" class="f-code" font-size="7" fill="#64748B">SECURITY_AUTH</text>
+        <text x="0" y="26" class="f-ui" font-size="11" font-weight="800" fill="#22D3EE">JWT / RBAC</text>
+      </g>
+      <line x1="88" y1="10" x2="88" y2="42" stroke="#1C2438" stroke-width="1" />
+      <g transform="translate(98, 14)">
+        <text x="0" y="10" class="f-code" font-size="7" fill="#64748B">DATABASE</text>
+        <text x="0" y="26" class="f-ui" font-size="11" font-weight="800" fill="#34D399">MongoDB Atlas</text>
+      </g>
+      <line x1="194" y1="10" x2="194" y2="42" stroke="#1C2438" stroke-width="1" />
+      <g transform="translate(204, 14)">
+        <text x="0" y="10" class="f-code" font-size="7" fill="#64748B">ROLE_ACCESS</text>
+        <text x="0" y="26" class="f-ui" font-size="11" font-weight="800" fill="#60A5FA">Admin/Guard</text>
+      </g>
+    </g>
+
+    <!-- Bottom Architecture Seal -->
+    <g transform="translate(0, 258)">
+      <rect width="282" height="26" rx="5" fill="#0C1D26" stroke="#155E75" stroke-width="0.8" />
+      <circle cx="12" cy="13" r="3" fill="#22D3EE" />
+      <text x="22" y="16.5" class="f-code" font-size="7.5" font-weight="700" fill="#67E8F9">REACT.JS • NODE.JS • EXPRESS • MONGODB • CLOUDINARY</text>
+    </g>
+  </g>
+</svg>
