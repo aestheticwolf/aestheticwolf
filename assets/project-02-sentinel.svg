@@ -71,7 +71,7 @@
     <g transform="translate(14, 16)">
       <circle cx="4" cy="4" r="3" fill="#10B981" />
       <text x="14" y="7" class="f-code" font-size="8" font-weight="700" fill="#F5F5F7">GPS GEOFENCE ACTIVE</text>
-      <text x="14" y="19" class="f-code" font-size="6.5" fill="#22D3EE">SOC TELEMETRY STREAM</text>
+      <text x="14" y="19" class="f-code" font-size="6.5" fill="#22D3EE">ATTENDANCE ACTIVITY STREAM</text>
     </g>
 
     <!-- Concentric Radar Display -->

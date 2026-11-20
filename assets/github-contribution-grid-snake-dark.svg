@@ -125,7 +125,7 @@
     <!-- Header Titles -->
     <text x="22" y="10" class="mono" font-size="11" font-weight="700" fill="#22D3EE">CONTRIBUTION TRAJECTORY</text>
     <text x="200" y="10" class="sans" font-size="11" fill="#4B5563">•</text>
-    <text x="214" y="10" class="mono" font-size="10.5" font-weight="600" fill="#A1A1AA">52-WEEK VELOCITY ENGINE</text>
+    <text x="214" y="10" class="mono" font-size="10.5" font-weight="600" fill="#A1A1AA">52-WEEK COMMIT HISTORY</text>
 
     <!-- Right Header Telemetry Badge -->
     <g transform="translate(928, 0)">
@@ -159,7 +159,7 @@
     <!-- Left: Progression Status -->
     <g transform="translate(0, 0)">
       <circle cx="4" cy="-3.5" r="3" fill="#10B981" />
-      <text x="14" y="0" class="mono" font-size="9.5" font-weight="600" fill="#64748B">HARVEST VELOCITY // 52-WEEK REPOSITORY CADENCE</text>
+      <text x="14" y="0" class="mono" font-size="9.5" font-weight="600" fill="#64748B">CONTRIBUTION TIMELINE // 52-WEEK REPOSITORY ACTIVITY</text>
     </g>
 
     <!-- Right: 5-Tier Contribution Intensity Legend -->

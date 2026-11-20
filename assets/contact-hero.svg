@@ -68,14 +68,14 @@
   <!-- 02. Main Editorial Heading -->
   <g transform="translate(36, 68)">
     <text x="0" y="0" class="sans" font-size="26" font-weight="800" fill="#F5F5F7" letter-spacing="-0.5">
-      LET'S BUILD SOMETHING <tspan fill="url(#extraordinaryGrad)" filter="url(#textGlow)">EXTRAORDINARY.</tspan>
+      CONNECT &amp; <tspan fill="url(#extraordinaryGrad)" filter="url(#textGlow)">COLLABORATE.</tspan>
     </text>
   </g>
 
   <!-- 03. Supporting Introduction with Highlighted Phrases -->
   <g transform="translate(36, 96)">
     <text x="0" y="0" class="sans" font-size="13" fill="#A1A1AA">
-      Have an idea, a project, or an interesting engineering challenge? Reach out &#8212; let's create something exceptional.
+      Have an inquiry, project, or open engineering opportunity? Feel free to reach out.
     </text>
   </g>
 

@@ -28,7 +28,7 @@
   </g>
 
   <!-- Main Section Heading -->
-  <text x="4" y="48" class="f-sans" font-size="22" font-weight="800" fill="#F5F5F7" letter-spacing="1.4">TECHNOLOGY ECOSYSTEM</text>
+  <text x="4" y="48" class="f-sans" font-size="22" font-weight="800" fill="#F5F5F7" letter-spacing="1.4">TECHNICAL STACK</text>
 
   <!-- Decorative Gradient Laser Trace -->
   <line x1="4" y1="56" x2="420" y2="56" stroke="url(#lineGrad_04)" stroke-width="1.5" />

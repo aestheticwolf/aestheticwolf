@@ -21,7 +21,7 @@
 
 <br/><br/>
 
-<!-- Action Bar & Telemetry Links -->
+<!-- Action Bar & Profile Links -->
 <p align="center">
   <a href="https://komarev.com/ghpvc/?username=aestheticwolf">
     <img src="https://komarev.com/ghpvc/?username=aestheticwolf&label=PROFILE+VIEWS&color=8B5CF6&style=for-the-badge&logo=eye&logoColor=white" alt="Profile Views" />
@@ -99,13 +99,13 @@
 </div>
 
 <!-- ========================================== -->
-<!-- 04. TECHNOLOGY ECOSYSTEM                   -->
+<!-- 04. TECHNICAL STACK                        -->
 <!-- ========================================== -->
 
 <div align="left">
   <img
     src="./assets/section-04-tech-header.svg"
-    alt="Technology Ecosystem - Languages, Frontend, Mobile, Backend, Databases, and Tools"
+    alt="Technical Stack - Languages, Frontend, Mobile, Backend, Databases, and Tools"
     width="100%"
   />
 </div>
@@ -115,7 +115,7 @@
 <div align="center">
   <img
     src="./assets/technology-logos.svg"
-    alt="Technology Ecosystem - Richard D'Souza"
+    alt="Technical Stack - Richard D'Souza"
     width="100%"
   />
 </div>
@@ -231,7 +231,7 @@
 <div align="left">
   <img
     src="./assets/section-06-analytics-header.svg"
-    alt="GitHub Analytics - Activity Telemetry &amp; Metrics"
+    alt="GitHub Analytics - Activity &amp; Metrics"
     width="100%"
   />
 </div>
@@ -269,7 +269,7 @@
   <a href="https://github.com/aestheticwolf">
     <img
       src="./assets/github-analytics.svg"
-      alt="Contribution Streak &amp; Activity Telemetry - Richard D'Souza"
+      alt="Contribution Streak &amp; Activity - Richard D'Souza"
       width="100%"
     />
   </a>
@@ -286,7 +286,7 @@
 <div align="left">
   <img
     src="./assets/section-07-trajectory-header.svg"
-    alt="Contribution Trajectory - 52-Week Commit Stream"
+    alt="Contribution Timeline - 52-Week Commit History"
     width="100%"
   />
 </div>
@@ -305,7 +305,7 @@
     />
     <img
       src="./assets/github-contribution-grid-snake-dark.svg"
-      alt="GitHub Contribution Trajectory Snake - Richard D'Souza"
+      alt="GitHub Contribution Snake - Richard D'Souza"
       width="100%"
     />
   </picture>

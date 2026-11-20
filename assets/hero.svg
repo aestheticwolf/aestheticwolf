@@ -242,10 +242,10 @@
       </g>
     </g>
 
-    <!-- Short Powerful Professional Introduction (Balanced 2-Line Flow) -->
+    <!-- Short Professional Introduction (Balanced 2-Line Flow) -->
     <text x="0" y="190" class="f-sans" font-size="15.5" fill="#CBD5E1" letter-spacing="0.2">
-      <tspan x="0" dy="0">Architecting <tspan fill="#F5F5F7" font-weight="600">high-performance</tspan> web applications,</tspan>
-      <tspan x="0" dy="23">mobile platforms and intelligent software solutions.</tspan>
+      <tspan x="0" dy="0">Building <tspan fill="#F5F5F7" font-weight="600">full-stack</tspan> web applications,</tspan>
+      <tspan x="0" dy="23">mobile platforms, and backend services.</tspan>
     </text>
   </g>
 

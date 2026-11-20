@@ -65,7 +65,7 @@
     <rect x="0" y="0" width="195" height="26" rx="6" fill="#111522" stroke="#292E40" stroke-width="1" />
     <circle cx="14" cy="13" r="3.5" fill="#10B981" class="beacon-dot" />
     <circle cx="14" cy="13" r="1.8" fill="#F5F5F7" />
-    <text x="26" y="17" class="f-mono" font-size="8.5" font-weight="700" fill="#F5F5F7" letter-spacing="1">TECHNOLOGY ECOSYSTEM</text>
+    <text x="26" y="17" class="f-mono" font-size="8.5" font-weight="700" fill="#F5F5F7" letter-spacing="1">TECHNICAL STACK</text>
     
     <text x="952" y="17" class="f-mono" font-size="8.5" fill="#64748B" text-anchor="end" letter-spacing="0.5">CORE TECHNOLOGIES &amp; PRODUCTION TOOLING</text>
   </g>
@@ -404,7 +404,7 @@
     <g transform="translate(930, 26)">
       <rect x="-142" y="0" width="142" height="22" rx="4" fill="#151A29" stroke="rgba(255,255,255,0.06)" stroke-width="0.8" />
       <circle cx="-130" cy="11" r="2.5" fill="#34D399" />
-      <text x="-120" y="14.5" class="f-mono" font-size="7.5" font-weight="700" fill="#34D399" letter-spacing="0.8">3 DATA ENGINES</text>
+      <text x="-120" y="14.5" class="f-mono" font-size="7.5" font-weight="700" fill="#34D399" letter-spacing="0.8">3 DATABASES</text>
     </g>
   </g>
 
