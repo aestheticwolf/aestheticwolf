@@ -63,7 +63,7 @@
       <use href="#i-star" x="76" y="121" width="16" height="16" stroke="#fbbf24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
       <text class="sans" x="108" y="126" font-size="14.5" font-weight="700" fill="#f8fafc">Natively-AI-assistant/natively-cluely-ai-assistant</text>
       <text class="mono" x="108" y="143" font-size="11.5"><tspan fill="#fbbf24">starred</tspan><tspan fill="#64748b">  ·  </tspan><tspan fill="#cbd5e1">Natively-AI-assistant/natively-cl…</tspan></text>
-      <text class="mono" x="778" y="134" text-anchor="end" font-size="12" fill="#94a3b8">10h ago</text>
+      <text class="mono" x="778" y="134" text-anchor="end" font-size="12" fill="#94a3b8">11h ago</text>
     </g>
     <g class="up" style="animation-delay:0.37s">
       <rect x="56" y="160" width="738" height="46" rx="12" fill="#fff" fill-opacity=".045" stroke="#fff" stroke-opacity=".09"/>
@@ -109,17 +109,17 @@
       <rect class="bar" x="858.0" y="340" width="13" height="4" rx="4" fill="url(#bar)" style="animation-delay:0.40s"/>
       <rect class="bar" x="878.5" y="340" width="13" height="4" rx="4" fill="url(#bar)" style="animation-delay:0.45s"/>
       <rect class="bar" x="899.0" y="340" width="13" height="4" rx="4" fill="url(#bar)" style="animation-delay:0.50s"/>
-      <rect class="bar" x="919.5" y="325" width="13" height="19" rx="4" fill="url(#bar)" style="animation-delay:0.55s"/>
+      <rect class="bar" x="919.5" y="312" width="13" height="32" rx="4" fill="url(#bar)" style="animation-delay:0.55s"/>
       <rect class="bar" x="940.0" y="340" width="13" height="4" rx="4" fill="url(#bar)" style="animation-delay:0.60s"/>
       <rect class="bar" x="960.5" y="340" width="13" height="4" rx="4" fill="url(#bar)" style="animation-delay:0.65s"/>
-      <rect class="bar" x="981.0" y="306" width="13" height="38" rx="4" fill="url(#bar)" style="animation-delay:0.70s"/>
-      <rect class="bar" x="1001.5" y="306" width="13" height="38" rx="4" fill="url(#bar)" style="animation-delay:0.75s"/>
+      <rect class="bar" x="981.0" y="280" width="13" height="64" rx="4" fill="url(#bar)" style="animation-delay:0.70s"/>
+      <rect class="bar" x="1001.5" y="280" width="13" height="64" rx="4" fill="url(#bar)" style="animation-delay:0.75s"/>
       <rect class="bar" x="1022.0" y="340" width="13" height="4" rx="4" fill="url(#bar)" style="animation-delay:0.80s"/>
       <rect class="bar" x="1042.5" y="340" width="13" height="4" rx="4" fill="url(#bar)" style="animation-delay:0.85s"/>
       <rect class="bar" x="1063.0" y="340" width="13" height="4" rx="4" fill="url(#bar)" style="animation-delay:0.90s"/>
-      <rect class="bar" x="1083.5" y="340" width="13" height="4" rx="4" fill="url(#bar)" style="animation-delay:0.95s"/>
-      <rect class="bar" x="1104.0" y="248" width="13" height="96" rx="4" fill="url(#bar)" style="animation-delay:1.00s"/>
-      <rect class="bar" x="1124.5" y="325" width="13" height="19" rx="4" fill="url(#hot)" style="animation-delay:1.05s"/>
+      <rect class="bar" x="1083.5" y="248" width="13" height="96" rx="4" fill="url(#bar)" style="animation-delay:0.95s"/>
+      <rect class="bar" x="1104.0" y="280" width="13" height="64" rx="4" fill="url(#bar)" style="animation-delay:1.00s"/>
+      <rect class="bar" x="1124.5" y="312" width="13" height="32" rx="4" fill="url(#hot)" style="animation-delay:1.05s"/>
   </g>
   <line x1="850" y1="346" x2="1140" y2="346" stroke="#2a3566"/>
   <text class="mono" x="854" y="366" font-size="10.5" fill="#64748b">14d ago</text>
