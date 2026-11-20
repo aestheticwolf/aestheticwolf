@@ -47,13 +47,13 @@
 </div>
 
 <!-- ========================================== -->
-<!-- 02. DEVELOPER WORKSPACE                    -->
+<!-- 02. BEHIND THE CODE                        -->
 <!-- ========================================== -->
 
 <div align="left">
   <img
-    src="./assets/section-02-workspace-header.svg"
-    alt="Developer Workspace - Connected Technology Network"
+    src="./assets/section-02-behind-the-code-header.svg"
+    alt="Behind The Code - Personal Developer Environment"
     width="100%"
   />
 </div>
@@ -62,11 +62,11 @@
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/workspace-network.gif" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/workspace-network.gif" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/behind-the-code.gif" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/behind-the-code.gif" />
     <img
-      src="./assets/workspace-network.gif"
-      alt="Developer Workspace - Digital Core &amp; Connected Technology Network"
+      src="./assets/behind-the-code.gif"
+      alt="Behind The Code - Richard D'Souza Personal Coding Environment"
       width="100%"
     />
   </picture>

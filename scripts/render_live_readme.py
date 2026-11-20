@@ -92,7 +92,7 @@ cmd = [
     edge_exe,
     '--headless',
     '--disable-gpu',
-    '--window-size=1200,900',
+    '--window-size=1200,1600',
     '--screenshot=' + screenshot_file,
     'file:///' + preview_file.replace('\\', '/')
 ]

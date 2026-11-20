@@ -1,40 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 84" width="100%" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 96" width="100%" fill="none">
   <defs>
-    <linearGradient id="lineGrad_02" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Gradient for "CODE" text -->
+    <linearGradient id="codeTitleGrad_02" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+
+    <!-- Laser trace gradient -->
+    <linearGradient id="laserGrad_02" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.9" />
-      <stop offset="40%" stop-color="#22D3EE" stop-opacity="0.4" />
+      <stop offset="35%" stop-color="#8B5CF6" stop-opacity="0.7" />
+      <stop offset="70%" stop-color="#3B82F6" stop-opacity="0.3" />
       <stop offset="100%" stop-color="#22D3EE" stop-opacity="0" />
     </linearGradient>
+
+    <!-- Subtle beacon glow filter -->
+    <filter id="beaconGlow_02" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
   </defs>
 
   <style>
     .f-mono { font-family: "JetBrains Mono", "SF Mono", Consolas, Menlo, monospace; }
     .f-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-    @keyframes pulse_02 {
-      0%, 100% { transform: scale(1); opacity: 0.6; }
-      50% { transform: scale(1.4); opacity: 1; }
+    
+    @keyframes beaconPulse_02 {
+      0%, 100% { transform: scale(1); opacity: 0.7; }
+      50% { transform: scale(1.6); opacity: 1; }
     }
-    .beacon_02 {
-      transform-origin: 8px 16px;
-      animation: pulse_02 2.5s infinite ease-in-out;
+    .beacon-ring_02 {
+      transform-origin: 12px 18px;
+      animation: beaconPulse_02 2.8s infinite ease-in-out;
+    }
+    
+    @keyframes traceShimmer_02 {
+      0% { opacity: 0.6; }
+      50% { opacity: 1; }
+      100% { opacity: 0.6; }
+    }
+    .trace-line_02 {
+      animation: traceShimmer_02 3.2s infinite ease-in-out;
     }
   </style>
 
-  <!-- Section Marker: Small Uppercase Label with Glowing Indicator -->
+  <!-- Technical Section Tag -->
   <g transform="translate(4, 0)">
-    <circle cx="8" cy="16" r="3" fill="#22D3EE" />
-    <circle cx="8" cy="16" r="5.5" fill="none" stroke="#22D3EE" stroke-width="1.2" class="beacon_02" />
-    <text x="24" y="20" class="f-mono" font-size="11" font-weight="700" fill="#22D3EE" letter-spacing="2.2">02 // ARCHITECTURE • CONNECTED TECHNOLOGY NETWORK</text>
+    <circle cx="12" cy="18" r="3.5" fill="#22D3EE" filter="url(#beaconGlow_02)" />
+    <circle cx="12" cy="18" r="6.5" fill="none" stroke="#22D3EE" stroke-width="1.2" class="beacon-ring_02" opacity="0.8" />
+    <text x="30" y="22" class="f-mono" font-size="11" font-weight="700" fill="#22D3EE" letter-spacing="2.2">03 // PERSONAL ENVIRONMENT</text>
   </g>
 
-  <!-- Main Section Heading -->
-  <text x="4" y="48" class="f-sans" font-size="22" font-weight="800" fill="#F5F5F7" letter-spacing="1.4">DEVELOPER WORKSPACE</text>
+  <!-- Optional Sub-label on right side -->
+  <g transform="translate(996, 22)">
+    <text text-anchor="end" class="f-mono" font-size="10" font-weight="600" fill="#64748B" letter-spacing="2.5">BUILD • CREATE • DEBUG • REPEAT</text>
+  </g>
 
-  <!-- Decorative Gradient Laser Trace -->
-  <line x1="4" y1="56" x2="420" y2="56" stroke="url(#lineGrad_02)" stroke-width="1.5" />
+  <!-- Main Section Heading: BEHIND THE (white) CODE (cyan-to-violet gradient) -->
+  <text x="4" y="56" class="f-sans" font-size="24" font-weight="800" letter-spacing="1.6">
+    <tspan fill="#F8FAFC">BEHIND THE </tspan>
+    <tspan fill="url(#codeTitleGrad_02)">CODE</tspan>
+  </text>
+
+  <!-- Laser trace divider -->
+  <line x1="4" y1="66" x2="480" y2="66" stroke="url(#laserGrad_02)" stroke-width="1.8" class="trace-line_02" />
 
   <!-- Subtitle -->
-  <text x="4" y="74" class="f-sans" font-size="13" fill="#94A3B8">
-    Interconnected software architecture, development runtimes, and distributed service nodes.
+  <text x="4" y="86" class="f-sans" font-size="13" font-style="italic" fill="#94A3B8" letter-spacing="0.3">
+    Where ideas become applications.
   </text>
 </svg>
