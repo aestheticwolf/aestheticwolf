@@ -120,18 +120,6 @@
   />
 </div>
 
-<br/>
-
-<!-- Categorized Technical Breakdown -->
-| Category | Core Technologies |
-| :--- | :--- |
-| **Languages** | TypeScript, JavaScript, Python, Dart, C/C++ |
-| **Frontend** | React, Next.js, HTML5, CSS3, Tailwind CSS |
-| **Mobile** | React Native, Flutter, Expo |
-| **Backend** | Node.js, Express.js, FastAPI, REST APIs |
-| **Databases &amp; Cloud** | PostgreSQL, MongoDB, Firebase, Cloud Firestore, Cloudinary |
-| **Tools** | Git, GitHub, VS Code, Postman, Linux |
-
 <div align="center">
   <img src="./assets/divider.svg" width="100%" height="24" alt="" />
 </div>

@@ -51,7 +51,7 @@
   <g transform="translate(4, 0)">
     <circle cx="12" cy="18" r="3.5" fill="#22D3EE" filter="url(#beaconGlow)" />
     <circle cx="12" cy="18" r="6.5" fill="none" stroke="#22D3EE" stroke-width="1.2" class="beacon-ring" opacity="0.8" />
-    <text x="30" y="22" class="f-mono" font-size="11" font-weight="700" fill="#22D3EE" letter-spacing="2.2">03 // PERSONAL ENVIRONMENT</text>
+    <text x="30" y="22" class="f-mono" font-size="11" font-weight="700" fill="#22D3EE" letter-spacing="2.2">02 // PERSONAL ENVIRONMENT</text>
   </g>
 
   <!-- Optional Sub-label on right side -->
