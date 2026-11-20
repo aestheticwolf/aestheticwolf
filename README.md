@@ -61,15 +61,23 @@
 <br/>
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/behind-the-code.gif" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/behind-the-code.gif" />
-    <img
-      src="./assets/behind-the-code.gif"
-      alt="Behind The Code - Richard D'Souza Personal Coding Environment"
-      width="100%"
-    />
-  </picture>
+  <img
+    src="./assets/behind-the-code-live.svg"
+    alt="Behind The Code - live developer terminal and status"
+    width="100%"
+  />
+  <br/><br/>
+  <img
+    src="./assets/focus-roadmap.svg"
+    alt="Current focus: now, next and exploring"
+    width="100%"
+  />
+  <br/><br/>
+  <img
+    src="./assets/latest-activity.svg"
+    alt="Latest GitHub activity"
+    width="100%"
+  />
 </div>
 
 <div align="center">

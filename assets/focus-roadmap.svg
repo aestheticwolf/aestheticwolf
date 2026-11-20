@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1200 450" width="1200" height="450" role="img" aria-label="Current focus roadmap for Richard D'Souza: Now, Next and Exploring tracks" xmlns:c2pa="http://c2pa.org/manifest">
+  <defs>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+    <linearGradient id="hot" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#f472b6"/></linearGradient>
+    <linearGradient id="mint" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#34d399"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#243055" stroke-width="1" opacity=".5"/></pattern>
+    <radialGradient id="fade" cx=".5" cy=".5" r=".65"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#000"/></radialGradient>
+    <mask id="gm"><rect width="1200" height="450" fill="url(#fade)"/></mask>
+    <filter id="blur60" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="60"/></filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <style>
+    .mono{font-family:'JetBrains Mono','Fira Code',ui-monospace,'SFMono-Regular',Consolas,'Courier New',monospace}
+    .sans{font-family:Inter,'Segoe UI',system-ui,-apple-system,Helvetica,Arial,sans-serif}
+    text{white-space:pre}
+    .lbl{font-size:11px;letter-spacing:3px;font-weight:700}
+    .up{animation:up .8s cubic-bezier(.2,.8,.2,1) both}
+    .a1{animation:drift 14s ease-in-out infinite alternate}
+    .a2{animation:drift 19s ease-in-out infinite alternate-reverse}
+    .ring{transform-box:fill-box;transform-origin:center;animation:ring 2.4s ease-out infinite}
+    .sweep{animation:sweep 10s linear infinite}
+    .shim{animation:shim 5s ease-in-out infinite}
+    .chev{animation:chev 1.8s ease-in-out infinite}
+    .pk{animation:pk 9s linear infinite}
+    .dash{animation:dash 3s linear infinite}
+    .tw{animation:tw 3s ease-in-out infinite}
+    @keyframes up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes drift{from{transform:translate(0,0)}to{transform:translate(70px,36px)}}
+    @keyframes ring{0%{transform:scale(1);opacity:.9}100%{transform:scale(3);opacity:0}}
+    @keyframes sweep{from{stroke-dashoffset:0}to{stroke-dashoffset:-1000}}
+    @keyframes shim{0%,35%{transform:translateX(-140px)}75%,100%{transform:translateX(420px)}}
+    @keyframes chev{0%,100%{opacity:.25}50%{opacity:1}}
+    @keyframes pk{0%{transform:translateX(0);opacity:0}6%{opacity:1}94%{opacity:1}100%{transform:translateX(1120px);opacity:0}}
+    @keyframes dash{to{stroke-dashoffset:-28}}
+    @keyframes tw{0%,100%{opacity:.25}50%{opacity:1}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+
+  <!-- background -->
+  <rect width="1200" height="450" fill="#070b18"/>
+  <g filter="url(#blur60)">
+    <circle class="a1" cx="220" cy="90" r="170" fill="#7c3aed" opacity=".45"/>
+    <circle class="a2" cx="1000" cy="400" r="190" fill="#0891b2" opacity=".38"/>
+    <circle class="a1" cx="700" cy="40" r="110" fill="#db2777" opacity=".22"/>
+  </g>
+  <rect width="1200" height="450" fill="url(#grid)" mask="url(#gm)"/>
+  <g stroke="#22d3ee" stroke-width="2" fill="none" opacity=".6" stroke-linecap="round">
+    <path d="M14 38V14H38"/><path d="M1162 14H1186V38"/><path d="M14 412V436H38"/><path d="M1162 436H1186V412"/>
+  </g>
+  <g fill="#fbbf24"><circle class="tw" cx="760" cy="40" r="2.5"/><circle class="tw" cx="1180" cy="230" r="2.5" style="animation-delay:1.3s"/><circle class="tw" cx="20" cy="230" r="2.5" style="animation-delay:2.1s"/></g>
+
+  <!-- header -->
+  <circle cx="46" cy="48" r="6" fill="#34d399" filter="url(#glow)"/>
+  <circle class="ring" cx="46" cy="48" r="6" fill="none" stroke="#34d399" stroke-width="2"/>
+  <text class="mono lbl" x="64" y="52" fill="#22d3ee">// CURRENT FOCUS</text>
+  <text class="sans" x="40" y="100" font-size="40" font-weight="800" fill="#f8fafc">Where I'm <tspan fill="url(#neon)">headed</tspan></text>
+  <text class="sans" x="40" y="128" font-size="16" fill="#94a3b8">Shipping real products now, deepening the fundamentals next, exploring what's emerging.</text>
+  <rect x="936" y="34" width="224" height="30" rx="15" fill="#121936" stroke="#2a3566"/>
+  <text class="mono" x="1048" y="53" text-anchor="middle" font-size="12" font-weight="700" fill="#c4b5fd">NOV 2026  →  2027</text>
+
+  <!-- ===== COLUMN 1 : NOW ===== -->
+  <g class="up" style="animation-delay:.2s">
+    <rect x="40" y="152" width="357" height="262" rx="20" fill="#0f1530" fill-opacity=".93" stroke="#2a3566" stroke-width="1.5"/>
+    <circle cx="64" cy="180" r="6" fill="#34d399" filter="url(#glow)"/>
+    <text class="mono lbl" x="80" y="184" fill="#34d399">NOW</text>
+    <rect x="270" y="168" width="112" height="24" rx="12" fill="#34d399" fill-opacity=".14" stroke="#34d399" stroke-opacity=".5"/>
+    <text class="mono" x="326" y="184" text-anchor="middle" font-size="11" font-weight="700" fill="#6ee7b7">IN PROGRESS</text>
+
+    <g class="up" style="animation-delay:.45s">
+      <rect x="56" y="206" width="325" height="54" rx="12" fill="#fff" fill-opacity=".045" stroke="#fff" stroke-opacity=".09"/>
+      <circle cx="82" cy="233" r="13" fill="none" stroke="#34d399" stroke-width="2"/><text class="mono" x="82" y="237" text-anchor="middle" font-size="11" font-weight="700" fill="#34d399">01</text>
+      <text class="sans" x="106" y="229" font-size="14.5" font-weight="700" fill="#f8fafc">Polish SkillPath &amp; Sentinel Grid</text>
+      <text class="mono" x="106" y="247" font-size="11.5" fill="#6ee7b7">mobile · geofencing · Firebase</text>
+    </g>
+    <g class="up" style="animation-delay:.6s">
+      <rect x="56" y="268" width="325" height="54" rx="12" fill="#fff" fill-opacity=".045" stroke="#fff" stroke-opacity=".09"/>
+      <circle cx="82" cy="295" r="13" fill="none" stroke="#34d399" stroke-width="2"/><text class="mono" x="82" y="299" text-anchor="middle" font-size="11" font-weight="700" fill="#34d399">02</text>
+      <text class="sans" x="106" y="291" font-size="14.5" font-weight="700" fill="#f8fafc">Production-grade React Native</text>
+      <text class="mono" x="106" y="309" font-size="11.5" fill="#6ee7b7">performance · offline-first · Expo</text>
+    </g>
+    <g class="up" style="animation-delay:.75s">
+      <rect x="56" y="330" width="325" height="54" rx="12" fill="#fff" fill-opacity=".045" stroke="#fff" stroke-opacity=".09"/>
+      <circle cx="82" cy="357" r="13" fill="none" stroke="#34d399" stroke-width="2"/><text class="mono" x="82" y="361" text-anchor="middle" font-size="11" font-weight="700" fill="#34d399">03</text>
+      <text class="sans" x="106" y="353" font-size="14.5" font-weight="700" fill="#f8fafc">TypeScript across every stack</text>
+      <text class="mono" x="106" y="371" font-size="11.5" fill="#6ee7b7">types · tooling · DX</text>
+    </g>
+    <rect x="40" y="152" width="357" height="262" rx="20" fill="none" stroke="url(#mint)" stroke-width="2" pathLength="1000" stroke-dasharray="80 920" class="sweep"/>
+  </g>
+
+  <!-- connector 1 -->
+  <g class="chev" fill="none" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M404 283L412 283M409 277L415 283L409 289"/></g>
+
+  <!-- ===== COLUMN 2 : NEXT ===== -->
+  <g class="up" style="animation-delay:.45s">
+    <rect x="421" y="152" width="357" height="262" rx="20" fill="#0f1530" fill-opacity=".93" stroke="#2a3566" stroke-width="1.5"/>
+    <circle cx="445" cy="180" r="6" fill="#22d3ee" filter="url(#glow)"/>
+    <text class="mono lbl" x="461" y="184" fill="#22d3ee">NEXT</text>
+    <rect x="651" y="168" width="112" height="24" rx="12" fill="#22d3ee" fill-opacity=".12" stroke="#22d3ee" stroke-opacity=".5"/>
+    <text class="mono" x="707" y="184" text-anchor="middle" font-size="11" font-weight="700" fill="#67e8f9">UP NEXT</text>
+
+    <g class="up" style="animation-delay:.7s">
+      <rect x="437" y="206" width="325" height="54" rx="12" fill="#fff" fill-opacity=".045" stroke="#fff" stroke-opacity=".09"/>
+      <circle cx="463" cy="233" r="13" fill="none" stroke="#22d3ee" stroke-width="2"/><text class="mono" x="463" y="237" text-anchor="middle" font-size="11" font-weight="700" fill="#22d3ee">01</text>
+      <text class="sans" x="487" y="229" font-size="14.5" font-weight="700" fill="#f8fafc">System design &amp; scalable APIs</text>
+      <text class="mono" x="487" y="247" font-size="11.5" fill="#67e8f9">Node · Express · caching · queues</text>
+    </g>
+    <g class="up" style="animation-delay:.85s">
+      <rect x="437" y="268" width="325" height="54" rx="12" fill="#fff" fill-opacity=".045" stroke="#fff" stroke-opacity=".09"/>
+      <circle cx="463" cy="295" r="13" fill="none" stroke="#22d3ee" stroke-width="2"/><text class="mono" x="463" y="299" text-anchor="middle" font-size="11" font-weight="700" fill="#22d3ee">02</text>
+      <text class="sans" x="487" y="291" font-size="14.5" font-weight="700" fill="#f8fafc">Testing, CI/CD &amp; monitoring</text>
+      <text class="mono" x="487" y="309" font-size="11.5" fill="#67e8f9">Jest · GitHub Actions · observability</text>
+    </g>
+    <g class="up" style="animation-delay:1s">
+      <rect x="437" y="330" width="325" height="54" rx="12" fill="#fff" fill-opacity=".045" stroke="#fff" stroke-opacity=".09"/>
+      <circle cx="463" cy="357" r="13" fill="none" stroke="#22d3ee" stroke-width="2"/><text class="mono" x="463" y="361" text-anchor="middle" font-size="11" font-weight="700" fill="#22d3ee">03</text>
+      <text class="sans" x="487" y="353" font-size="14.5" font-weight="700" fill="#f8fafc">Next.js full-stack patterns</text>
+      <text class="mono" x="487" y="371" font-size="11.5" fill="#67e8f9">server components · auth · edge</text>
+    </g>
+    <rect x="421" y="152" width="357" height="262" rx="20" fill="none" stroke="url(#neon)" stroke-width="2" pathLength="1000" stroke-dasharray="80 920" class="sweep" style="animation-delay:-3.3s"/>
+  </g>
+
+  <!-- connector 2 -->
+  <g class="chev" fill="none" stroke="#a78bfa" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:.6s"><path d="M785 283L793 283M790 277L796 283L790 289"/></g>
+
+  <!-- ===== COLUMN 3 : EXPLORING ===== -->
+  <g class="up" style="animation-delay:.7s">
+    <rect x="802" y="152" width="357" height="262" rx="20" fill="#0f1530" fill-opacity=".93" stroke="#2a3566" stroke-width="1.5"/>
+    <circle cx="826" cy="180" r="6" fill="#a78bfa" filter="url(#glow)"/>
+    <text class="mono lbl" x="842" y="184" fill="#a78bfa">EXPLORING</text>
+    <rect x="1032" y="168" width="112" height="24" rx="12" fill="#a78bfa" fill-opacity=".14" stroke="#a78bfa" stroke-opacity=".5"/>
+    <text class="mono" x="1088" y="184" text-anchor="middle" font-size="11" font-weight="700" fill="#c4b5fd">CURIOUS</text>
+
+    <g class="up" style="animation-delay:.95s">
+      <rect x="818" y="206" width="325" height="54" rx="12" fill="#fff" fill-opacity=".045" stroke="#fff" stroke-opacity=".09"/>
+      <circle cx="844" cy="233" r="13" fill="none" stroke="#a78bfa" stroke-width="2"/><text class="mono" x="844" y="237" text-anchor="middle" font-size="11" font-weight="700" fill="#a78bfa">01</text>
+      <text class="sans" x="868" y="229" font-size="14.5" font-weight="700" fill="#f8fafc">AI-assisted dev workflows</text>
+      <text class="mono" x="868" y="247" font-size="11.5" fill="#c4b5fd">agents · code review · automation</text>
+    </g>
+    <g class="up" style="animation-delay:1.1s">
+      <rect x="818" y="268" width="325" height="54" rx="12" fill="#fff" fill-opacity=".045" stroke="#fff" stroke-opacity=".09"/>
+      <circle cx="844" cy="295" r="13" fill="none" stroke="#a78bfa" stroke-width="2"/><text class="mono" x="844" y="299" text-anchor="middle" font-size="11" font-weight="700" fill="#a78bfa">02</text>
+      <text class="sans" x="868" y="291" font-size="14.5" font-weight="700" fill="#f8fafc">LLM-powered app features</text>
+      <text class="mono" x="868" y="309" font-size="11.5" fill="#c4b5fd">RAG · tool use · evals</text>
+    </g>
+    <g class="up" style="animation-delay:1.25s">
+      <rect x="818" y="330" width="325" height="54" rx="12" fill="#fff" fill-opacity=".045" stroke="#fff" stroke-opacity=".09"/>
+      <circle cx="844" cy="357" r="13" fill="none" stroke="#a78bfa" stroke-width="2"/><text class="mono" x="844" y="361" text-anchor="middle" font-size="11" font-weight="700" fill="#a78bfa">03</text>
+      <text class="sans" x="868" y="353" font-size="14.5" font-weight="700" fill="#f8fafc">Open-source contributions</text>
+      <text class="mono" x="868" y="371" font-size="11.5" fill="#c4b5fd">docs · fixes · community</text>
+    </g>
+    <rect x="802" y="152" width="357" height="262" rx="20" fill="none" stroke="url(#hot)" stroke-width="2" pathLength="1000" stroke-dasharray="80 920" class="sweep" style="animation-delay:-6.6s"/>
+  </g>
+
+  <!-- flow line -->
+  <line class="dash" x1="40" y1="434" x2="1160" y2="434" stroke="#475a94" stroke-width="2" stroke-dasharray="6 8"/>
+  <g class="pk"><circle cx="40" cy="434" r="5" fill="#fff" filter="url(#glow)"/></g>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo0ZmI2OTJlMi04ODNiLTRlMjYtODBiZS05MGIxZTFiYzQ4NDYAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaO6ooEwzkYLpzouzESC+VCwAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDplMTkzYWRmYS02N2YwLTQwN2YtOGIxMi05ZmZlODE4MTFmYjVscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNo9bJujHrxpQoqU3Q+Cm/jAwAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggKUohJLksrapFXyjV6Z3rZ66pPFDE00w8dryZtBij1LekZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaFiKvIEk+LCsW6CdjqKCdvYAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIOWND1gzZrgGVrZaf3TFfgjp9La+mUkjDI/1kBdkcckWZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GTWAZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjRmYjY5MmUyLTg4M2ItNGUyNi04MGJlLTkwYjFlMWJjNDg0Ni9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmE3ZmM1ZGY5LWRjOTUtNDczZS04YWEwLTk4N2I4OTE2YTc5M3JjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCApSiEkuSytqkVfKNXpnetnrqk8UMTTTDx2vJm0GKPUt6JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggFyYSCj8IDhb8Pz2hResC6s5ggmq8NlciQ+/UbczJj9yiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggoe9G16dKf4VHzzQDdVsc5Z8EhmYUitTlnD666RR1Esl0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQAjDt3ntXeJE6VhZsrwsqOiHzQAP79AGPsV3yKqZww08HScv5rHG/jmvEncSnfyqZhb7+W2KR2Zp2HlCCPQK8G0=</c2pa:manifest></metadata></svg>
