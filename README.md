@@ -66,18 +66,6 @@
     alt="Behind The Code - live developer terminal and status"
     width="100%"
   />
-  <br/><br/>
-  <img
-    src="./assets/focus-roadmap.svg"
-    alt="Current focus: now, next and exploring"
-    width="100%"
-  />
-  <br/><br/>
-  <img
-    src="./assets/latest-activity.svg"
-    alt="Latest GitHub activity"
-    width="100%"
-  />
 </div>
 
 <div align="center">
