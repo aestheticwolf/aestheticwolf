@@ -5,9 +5,6 @@
       <stop offset="40%" stop-color="#38BDF8" stop-opacity="0.4" />
       <stop offset="100%" stop-color="#38BDF8" stop-opacity="0" />
     </linearGradient>
-    <filter id="glow_06" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="2.5" result="blur" />
-    </filter>
   </defs>
 
   <style>
@@ -25,10 +22,9 @@
 
   <!-- Section Marker: Small Uppercase Label with Glowing Indicator -->
   <g transform="translate(4, 0)">
-    <!-- Pulsing Beacon -->
     <circle cx="8" cy="16" r="3" fill="#38BDF8" />
     <circle cx="8" cy="16" r="5.5" fill="none" stroke="#38BDF8" stroke-width="1.2" class="beacon_06" />
-    <text x="24" y="20" class="f-mono" font-size="11" font-weight="700" fill="#38BDF8" letter-spacing="2.2">06 // TELEMETRY • GITHUB ACTIVITY &amp; METRICS</text>
+    <text x="24" y="20" class="f-mono" font-size="11" font-weight="700" fill="#38BDF8" letter-spacing="2.2">06 // METRICS • REPOSITORY &amp; CONTRIBUTION TELEMETRY</text>
   </g>
 
   <!-- Main Section Heading -->
@@ -37,8 +33,8 @@
   <!-- Decorative Gradient Laser Trace -->
   <line x1="4" y1="56" x2="420" y2="56" stroke="url(#lineGrad_06)" stroke-width="1.5" />
 
-  <!-- Subtitle with Selective Colored Phrases -->
-  <text x="4" y="74" class="f-sans" font-size="13" fill="#94A3B8" font-style="italic">
-    "An overview of my <tspan fill="#38BDF8" font-weight="600">development activity</tspan>, repositories, and <tspan fill="#38BDF8" font-weight="600">contribution history</tspan>."
+  <!-- Subtitle -->
+  <text x="4" y="74" class="f-sans" font-size="13" fill="#94A3B8">
+    Weekly commit cadence, language distributions, and repository statistics.
   </text>
 </svg>

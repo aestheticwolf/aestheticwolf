@@ -4,7 +4,7 @@
 <div align="center">
 
 <!-- ========================================== -->
-<!-- 01. PREMIUM HERO SECTION                   -->
+<!-- 01. HERO BANNER                            -->
 <!-- ========================================== -->
 
 <a href="https://github.com/aestheticwolf">
@@ -21,7 +21,7 @@
 
 <br/><br/>
 
-<!-- Editorial Action Bar & Telemetry -->
+<!-- Action Bar & Telemetry Links -->
 <p align="center">
   <a href="https://komarev.com/ghpvc/?username=aestheticwolf">
     <img src="https://komarev.com/ghpvc/?username=aestheticwolf&label=PROFILE+VIEWS&color=8B5CF6&style=for-the-badge&logo=eye&logoColor=white" alt="Profile Views" />
@@ -42,7 +42,6 @@
 
 </div>
 
-
 <div align="center">
   <img src="./assets/divider.svg" width="100%" height="24" alt="" />
 </div>
@@ -54,7 +53,7 @@
 <div align="left">
   <img
     src="./assets/section-02-workspace-header.svg"
-    alt="Developer Workspace - A high-performance engineering environment tailored for speed, precision, and modern full-stack workflows."
+    alt="Developer Workspace - Connected Technology Network"
     width="100%"
   />
 </div>
@@ -62,13 +61,16 @@
 <br/>
 
 <div align="center">
-  <img
-    src="./assets/laptop.svg"
-    alt="Cinematic 3D Developer Workstation - Richard D'Souza"
-    width="100%"
-  />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/workspace-network.gif" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/workspace-network.gif" />
+    <img
+      src="./assets/workspace-network.gif"
+      alt="Developer Workspace - Digital Core &amp; Connected Technology Network"
+      width="100%"
+    />
+  </picture>
 </div>
-
 
 <div align="center">
   <img src="./assets/divider.svg" width="100%" height="24" alt="" />
@@ -81,7 +83,7 @@
 <div align="left">
   <img
     src="./assets/section-03-about-header.svg"
-    alt="About &amp; Professional Background - Merging academic computer science rigor with production full-stack engineering."
+    alt="About &amp; Professional Background - Richard D'Souza"
     width="100%"
   />
 </div>
@@ -96,7 +98,6 @@
   />
 </div>
 
-
 <div align="center">
   <img src="./assets/divider.svg" width="100%" height="24" alt="" />
 </div>
@@ -108,7 +109,7 @@
 <div align="left">
   <img
     src="./assets/section-04-tech-header.svg"
-    alt="Technology Ecosystem - Official production technology stack across core languages, frontend, backend, databases, and tooling."
+    alt="Technology Ecosystem - Languages, Frontend, Mobile, Backend, Databases, and Tools"
     width="100%"
   />
 </div>
@@ -123,53 +124,56 @@
   />
 </div>
 
+<br/>
+
+<!-- Categorized Technical Breakdown -->
+| Category | Core Technologies |
+| :--- | :--- |
+| **Languages** | TypeScript, JavaScript, Python, Dart, C/C++ |
+| **Frontend** | React, Next.js, HTML5, CSS3, Tailwind CSS |
+| **Mobile** | React Native, Flutter, Expo |
+| **Backend** | Node.js, Express.js, FastAPI, REST APIs |
+| **Databases &amp; Cloud** | PostgreSQL, MongoDB, Firebase, Cloud Firestore, Cloudinary |
+| **Tools** | Git, GitHub, VS Code, Postman, Linux |
 
 <div align="center">
   <img src="./assets/divider.svg" width="100%" height="24" alt="" />
 </div>
 
 <!-- ========================================== -->
-<!-- 05. SELECTED PROJECTS SHOWCASE             -->
+<!-- 05. SELECTED PROJECTS                      -->
 <!-- ========================================== -->
 
 <div align="left">
   <img
     src="./assets/section-05-projects-header.svg"
-    alt="Selected Projects - Engineering ideas into robust, user-centric, and scalable digital realities."
+    alt="Selected Projects - Featured Repositories"
     width="100%"
   />
 </div>
 
 <br/>
 
-<!-- PROJECT 01: SKILLPATH (Visual Left, Content Right) -->
+<!-- PROJECT 01: SKILLPATH -->
 <table>
   <tr>
     <td width="48%" align="center" valign="middle">
       <a href="https://github.com/aestheticwolf/SkillCompanionApp" target="_blank">
-        <img src="./assets/project-01-skillpath.svg" width="100%" alt="SkillPath Companion App" />
+        <img src="./assets/project-01-skillpath.svg" width="100%" alt="SkillPath Companion App Preview" />
       </a>
     </td>
     <td width="52%" valign="middle">
-      <a href="https://github.com/aestheticwolf/SkillCompanionApp" target="_blank">
-        <img src="https://img.shields.io/badge/01%20//%20MOBILE%20COMPANION-LEARNING%20SYSTEM-A78BFA?style=for-the-badge&labelColor=101B32" alt="SkillPath Category" />
-      </a>
       <h3><a href="https://github.com/aestheticwolf/SkillCompanionApp" target="_blank">01 &bull; SkillPath</a></h3>
-      <p>A cross-platform mobile companion engineered with <code>React Native</code> and <code>Expo</code> to manage structured learning goals, track active streaks, and synchronize user state via <code>Firebase</code>.</p>
-      <p>
-        <img src="https://img.shields.io/badge/React_Native-101B32?style=for-the-badge&logo=react&logoColor=60A5FA" alt="React Native" />
-        <img src="https://img.shields.io/badge/Expo-101B32?style=for-the-badge&logo=expo&logoColor=A78BFA" alt="Expo" />
-        <img src="https://img.shields.io/badge/TypeScript-101B32?style=for-the-badge&logo=typescript&logoColor=60A5FA" alt="TypeScript" />
-        <img src="https://img.shields.io/badge/Firebase-101B32?style=for-the-badge&logo=firebase&logoColor=A78BFA" alt="Firebase" />
-      </p>
+      <p>A mobile companion application built with <code>React Native</code> and <code>Expo</code> designed to track structured learning goals, record active daily streaks, and synchronize user progress via <code>Firebase</code>.</p>
+      <p><strong>Stack:</strong> <code>React Native</code> &bull; <code>Expo</code> &bull; <code>TypeScript</code> &bull; <code>Cloud Firestore</code></p>
       <ul>
-        <li><strong>Goal Progression:</strong> Modular milestone decomposition with dynamic daily streak tracking.</li>
-        <li><strong>Cloud Synchronization:</strong> Instant cross-device state persistence powered by Cloud Firestore.</li>
-        <li><strong>Habit Retention:</strong> Proactive push notification workflows sustaining daily learner engagement.</li>
+        <li><strong>Milestone Tracking:</strong> Structured goal progression with automated daily streak calculation.</li>
+        <li><strong>State Synchronization:</strong> Cross-device state persistence powered by Cloud Firestore.</li>
+        <li><strong>Reminders:</strong> Local and push notification scheduling to sustain regular study routines.</li>
       </ul>
       <p>
         <a href="https://github.com/aestheticwolf/SkillCompanionApp" target="_blank">
-          <img src="https://img.shields.io/badge/EXPLORE_REPOSITORY-A78BFA?style=for-the-badge&logo=github&logoColor=white&labelColor=101B32" alt="Explore Repository" />
+          <img src="https://img.shields.io/badge/VIEW_REPOSITORY-A78BFA?style=for-the-badge&logo=github&logoColor=white&labelColor=101B32" alt="View SkillPath Repository" />
         </a>
       </p>
     </td>
@@ -178,37 +182,27 @@
 
 <br/>
 
-<!-- PROJECT 02: SENTINEL GRID (Content Left, Visual Right) -->
+<!-- PROJECT 02: SENTINEL GRID -->
 <table>
   <tr>
     <td width="52%" valign="middle">
-      <a href="https://github.com/aestheticwolf/security-guard-tracking-system" target="_blank">
-        <img src="https://img.shields.io/badge/02%20//%20WORKFORCE%20OPERATIONS-FULL--STACK%20SECURITY-22D3EE?style=for-the-badge&labelColor=101B32" alt="Sentinel Grid Category" />
-      </a>
       <h3><a href="https://github.com/aestheticwolf/security-guard-tracking-system" target="_blank">02 &bull; Sentinel Grid</a></h3>
-      <p>A workforce management platform engineered with <code>React.js</code>, <code>Node.js</code>, and <code>MongoDB</code> to streamline on-site security deployments via geofenced GPS verification and biometric check-ins.</p>
-      <p>
-        <img src="https://img.shields.io/badge/React.js-101B32?style=for-the-badge&logo=react&logoColor=22D3EE" alt="React.js" />
-        <img src="https://img.shields.io/badge/Node.js-101B32?style=for-the-badge&logo=node.js&logoColor=3B82F6" alt="Node.js" />
-        <img src="https://img.shields.io/badge/Express.js-101B32?style=for-the-badge&logo=express&logoColor=22D3EE" alt="Express.js" />
-        <img src="https://img.shields.io/badge/MongoDB-101B32?style=for-the-badge&logo=mongodb&logoColor=3B82F6" alt="MongoDB" />
-        <img src="https://img.shields.io/badge/JWT-101B32?style=for-the-badge&logo=jsonwebtokens&logoColor=22D3EE" alt="JWT" />
-        <img src="https://img.shields.io/badge/Cloudinary-101B32?style=for-the-badge&logo=cloudinary&logoColor=3B82F6" alt="Cloudinary" />
-      </p>
+      <p>An on-site workforce operations platform built with <code>React.js</code>, <code>Node.js</code>, <code>Express.js</code>, and <code>MongoDB</code> to coordinate guard deployments, verify site presence, and manage shift rosters.</p>
+      <p><strong>Stack:</strong> <code>React.js</code> &bull; <code>Node.js</code> &bull; <code>Express.js</code> &bull; <code>MongoDB</code> &bull; <code>JWT</code> &bull; <code>Cloudinary</code></p>
       <ul>
-        <li><strong>GPS Geofenced Tracking:</strong> Real-time coordinates verification at designated security checkpoints.</li>
-        <li><strong>Selfie Verification:</strong> Tamper-resistant on-site photo check-ins via Cloudinary image pipelines.</li>
-        <li><strong>Admin Command Center:</strong> Multi-site roster scheduling with JWT-based role separation.</li>
+        <li><strong>Geofenced Check-Ins:</strong> Real-time GPS coordinate validation at designated patrol locations.</li>
+        <li><strong>Photo Verification:</strong> On-site selfie capture uploaded directly via Cloudinary media pipelines.</li>
+        <li><strong>Admin Dashboard:</strong> Shift scheduling, active guard monitoring, and JWT-authenticated access.</li>
       </ul>
       <p>
         <a href="https://github.com/aestheticwolf/security-guard-tracking-system" target="_blank">
-          <img src="https://img.shields.io/badge/EXPLORE_REPOSITORY-22D3EE?style=for-the-badge&logo=github&logoColor=101B32&labelColor=101B32" alt="Explore Repository" />
+          <img src="https://img.shields.io/badge/VIEW_REPOSITORY-22D3EE?style=for-the-badge&logo=github&logoColor=101B32&labelColor=101B32" alt="View Sentinel Grid Repository" />
         </a>
       </p>
     </td>
     <td width="48%" align="center" valign="middle">
       <a href="https://github.com/aestheticwolf/security-guard-tracking-system" target="_blank">
-        <img src="./assets/project-02-sentinel.svg" width="100%" alt="Sentinel Grid" />
+        <img src="./assets/project-02-sentinel.svg" width="100%" alt="Sentinel Grid Preview" />
       </a>
     </td>
   </tr>
@@ -216,41 +210,31 @@
 
 <br/>
 
-<!-- PROJECT 03: ART BY HEAVEN (Visual Left, Content Right) -->
+<!-- PROJECT 03: ART BY HEAVEN -->
 <table>
   <tr>
     <td width="48%" align="center" valign="middle">
       <a href="https://github.com/aestheticwolf/art-of" target="_blank">
-        <img src="./assets/project-03-artbyheaven.svg" width="100%" alt="Art by Heaven Mobile Store" />
+        <img src="./assets/project-03-artbyheaven.svg" width="100%" alt="Art by Heaven Mobile Store Preview" />
       </a>
     </td>
     <td width="52%" valign="middle">
-      <a href="https://github.com/aestheticwolf/art-of" target="_blank">
-        <img src="https://img.shields.io/badge/03%20//%20MOBILE%20COMMERCE-FINTECH%20INTEGRATION-FB923C?style=for-the-badge&labelColor=101B32" alt="Art by Heaven Category" />
-      </a>
       <h3><a href="https://github.com/aestheticwolf/art-of" target="_blank">03 &bull; Art by Heaven</a></h3>
-      <p>A mobile e-commerce platform built with <code>Flutter</code> and <code>Cloud Firestore</code> delivering smooth art catalog exploration, cart management, and secure payments via <code>Razorpay</code>.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Flutter-101B32?style=for-the-badge&logo=flutter&logoColor=FB923C" alt="Flutter" />
-        <img src="https://img.shields.io/badge/Firebase-101B32?style=for-the-badge&logo=firebase&logoColor=F472B6" alt="Firebase" />
-        <img src="https://img.shields.io/badge/Cloud_Firestore-101B32?style=for-the-badge&logo=firebase&logoColor=FB923C" alt="Cloud Firestore" />
-        <img src="https://img.shields.io/badge/Cloud_Functions-101B32?style=for-the-badge&logo=googlecloud&logoColor=F472B6" alt="Cloud Functions" />
-        <img src="https://img.shields.io/badge/Razorpay-101B32?style=for-the-badge&logo=razorpay&logoColor=FB923C" alt="Razorpay" />
-      </p>
+      <p>A mobile e-commerce application built with <code>Flutter</code> and <code>Cloud Firestore</code> offering live art catalog discovery, persistent shopping cart management, and online payment processing.</p>
+      <p><strong>Stack:</strong> <code>Flutter</code> &bull; <code>Firebase</code> &bull; <code>Cloud Firestore</code> &bull; <code>Cloud Functions</code> &bull; <code>Razorpay</code></p>
       <ul>
-        <li><strong>Real-time Catalog:</strong> Live inventory hydration and category discovery via Cloud Firestore.</li>
-        <li><strong>Cart Management:</strong> In-app subtotal calculation, quantity controls, and client persistence.</li>
-        <li><strong>Razorpay Integration:</strong> End-to-end encrypted checkout supporting UPI, cards, and webhooks.</li>
+        <li><strong>Live Catalog:</strong> Real-time artwork listings, category filtering, and image asset hydration.</li>
+        <li><strong>Cart Management:</strong> Local state persistence with dynamic subtotal and quantity calculation.</li>
+        <li><strong>Payment Integration:</strong> Checkout workflow supporting UPI, cards, and webhooks via Razorpay.</li>
       </ul>
       <p>
         <a href="https://github.com/aestheticwolf/art-of" target="_blank">
-          <img src="https://img.shields.io/badge/EXPLORE_REPOSITORY-FB923C?style=for-the-badge&logo=github&logoColor=101B32&labelColor=101B32" alt="Explore Repository" />
+          <img src="https://img.shields.io/badge/VIEW_REPOSITORY-FB923C?style=for-the-badge&logo=github&logoColor=101B32&labelColor=101B32" alt="View Art by Heaven Repository" />
         </a>
       </p>
     </td>
   </tr>
 </table>
-
 
 <div align="center">
   <img src="./assets/divider.svg" width="100%" height="24" alt="" />
@@ -263,7 +247,7 @@
 <div align="left">
   <img
     src="./assets/section-06-analytics-header.svg"
-    alt="GitHub Analytics - An overview of my development activity, repositories, and contribution history."
+    alt="GitHub Analytics - Activity Telemetry &amp; Metrics"
     width="100%"
   />
 </div>
@@ -297,7 +281,7 @@
 
   <br/>
 
-  <!-- ROW 2: CONTRIBUTION STREAK SHOWCASE (Total Contributions | Current Streak | Longest Streak) -->
+  <!-- ROW 2: CONTRIBUTION STREAK SHOWCASE -->
   <a href="https://github.com/aestheticwolf">
     <img
       src="./assets/github-analytics.svg"
@@ -306,7 +290,6 @@
     />
   </a>
 </div>
-
 
 <div align="center">
   <img src="./assets/divider.svg" width="100%" height="24" alt="" />
@@ -319,7 +302,7 @@
 <div align="left">
   <img
     src="./assets/section-07-trajectory-header.svg"
-    alt="Contribution Trajectory - Every contribution represents another step in my development journey."
+    alt="Contribution Trajectory - 52-Week Commit Stream"
     width="100%"
   />
 </div>
@@ -344,27 +327,14 @@
   </picture>
 </div>
 
-
 <div align="center">
   <img src="./assets/divider.svg" width="100%" height="24" alt="" />
 </div>
 
 <!-- ========================================== -->
-<!-- 08. CONTACT & SIGNATURE FOOTER             -->
+<!-- 08. CONNECT WITH ME                        -->
 <!-- ========================================== -->
 
-<div align="center">
-  <!-- CONTACT HERO BANNER -->
-  <img
-    src="./assets/contact-hero.svg"
-    alt="Let's Build Something Extraordinary - Richard D'Souza"
-    width="100%"
-  />
-</div>
-
-<br/>
-
-<!-- THREE INTERACTIVE SOCIAL CARDS -->
 <table border="0" cellpadding="0" cellspacing="8" width="100%">
   <tr>
     <td width="33.3%" align="center">
@@ -403,7 +373,7 @@
 <div align="center">
   <img
     src="./assets/footer.svg"
-    alt="Engineered with Passion &amp; Precision // Richard D'Souza"
+    alt="Richard D'Souza - Full-Stack Software Engineer &amp; Mobile Developer"
     width="100%"
   />
   <br/><br/>

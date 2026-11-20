@@ -66,10 +66,10 @@
     </polygon>
   </g>
 
-  <!-- Signature Statement -->
+  <!-- Professional Metadata Line -->
   <g transform="translate(500, 48)" text-anchor="middle">
-    <text y="0" class="mono" font-size="10.5" font-weight="700" fill="#A1A1AA" letter-spacing="3.2">
-      ENGINEERED WITH PASSION &amp; PRECISION
+    <text y="0" class="mono" font-size="10" font-weight="700" fill="#A1A1AA" letter-spacing="2.5">
+      FULL-STACK SOFTWARE ENGINEER &amp; MOBILE DEVELOPER
     </text>
   </g>
 
@@ -80,10 +80,10 @@
     </text>
   </g>
 
-  <!-- Professional Metadata Line -->
+  <!-- Footer Coordinates -->
   <g transform="translate(500, 93)" text-anchor="middle">
     <text y="0" class="mono" font-size="9.5" font-weight="600" fill="#8B949E" letter-spacing="1.4">
-      2026 DIGITAL WORKSPACE • GOA, INDIA • @AESTHETICWOLF • ALL SYSTEMS OPERATIONAL
+      GOA, INDIA • GITHUB: @AESTHETICWOLF
     </text>
   </g>
 </svg>

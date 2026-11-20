@@ -5,9 +5,6 @@
       <stop offset="40%" stop-color="#A78BFA" stop-opacity="0.4" />
       <stop offset="100%" stop-color="#A78BFA" stop-opacity="0" />
     </linearGradient>
-    <filter id="glow_03" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="2.5" result="blur" />
-    </filter>
   </defs>
 
   <style>
@@ -25,10 +22,9 @@
 
   <!-- Section Marker: Small Uppercase Label with Glowing Indicator -->
   <g transform="translate(4, 0)">
-    <!-- Pulsing Beacon -->
     <circle cx="8" cy="16" r="3" fill="#A78BFA" />
     <circle cx="8" cy="16" r="5.5" fill="none" stroke="#A78BFA" stroke-width="1.2" class="beacon_03" />
-    <text x="24" y="20" class="f-mono" font-size="11" font-weight="700" fill="#A78BFA" letter-spacing="2.2">03 // IDENTITY • ACADEMIC RIGOR &amp; PRODUCTION ENGINEERING</text>
+    <text x="24" y="20" class="f-mono" font-size="11" font-weight="700" fill="#A78BFA" letter-spacing="2.2">03 // PROFILE • BACKGROUND &amp; CORE FOCUS</text>
   </g>
 
   <!-- Main Section Heading -->
@@ -37,8 +33,8 @@
   <!-- Decorative Gradient Laser Trace -->
   <line x1="4" y1="56" x2="420" y2="56" stroke="url(#lineGrad_03)" stroke-width="1.5" />
 
-  <!-- Subtitle with Selective Colored Phrases -->
-  <text x="4" y="74" class="f-sans" font-size="13" fill="#94A3B8" font-style="italic">
-    "Merging <tspan fill="#A78BFA" font-weight="600">academic computer science rigor</tspan> with <tspan fill="#A78BFA" font-weight="600">production full-stack engineering</tspan>."
+  <!-- Subtitle -->
+  <text x="4" y="74" class="f-sans" font-size="13" fill="#94A3B8">
+    Full-stack engineering, cross-platform mobile systems, and database architecture.
   </text>
 </svg>

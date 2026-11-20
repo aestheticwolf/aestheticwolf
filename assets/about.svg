@@ -117,7 +117,7 @@
     <text x="26" y="17" class="f-mono" font-size="8.5" font-weight="700" fill="#F5F5F7" letter-spacing="1">PROFILE MATRIX // 2026</text>
 
     <!-- Right Breadcrumb Info -->
-    <text x="952" y="17" class="f-mono" font-size="8.5" fill="#8B949E" text-anchor="end" letter-spacing="0.5">ACADEMIC FOUNDATION • CAREER TIMELINE • CORE FOCUS</text>
+    <text x="952" y="17" class="f-mono" font-size="8.5" fill="#8B949E" text-anchor="end" letter-spacing="0.5">EDUCATION • EXPERIENCE • TECHNICAL DOMAINS</text>
   </g>
 
   <!-- ==================== SECTION 1: FULL-WIDTH INTRODUCTION PANEL ==================== -->
@@ -137,26 +137,26 @@
 
       <!-- Right Meta Info -->
       <text x="912" y="14" class="f-mono" font-size="8.5" fill="#8B949E" text-anchor="end">
-        <tspan fill="#A78BFA">RICHARD D'SOUZA</tspan> • GOA, INDIA • OPEN TO HIGH-IMPACT ROLES ⚡
+        <tspan fill="#A78BFA">RICHARD D'SOUZA</tspan> • SOFTWARE ENGINEER • GOA, INDIA
       </text>
     </g>
 
-    <!-- Primary Introduction Paragraphs (Exact Prompt Text) -->
+    <!-- Primary Introduction Paragraphs -->
     <g transform="translate(20, 56)">
-      <!-- Paragraph 1: Headline Passion Statement -->
+      <!-- Paragraph 1 -->
       <text x="0" y="0" class="f-sans" font-size="12.5" font-weight="600" fill="#F5F5F7">
-        I'm a <tspan fill="#A78BFA" font-weight="700">Software Engineer</tspan> and <tspan fill="#60A5FA" font-weight="700">Full-Stack Developer</tspan> passionate about building practical software solutions and turning ideas into real-world applications.
+        I am a <tspan fill="#A78BFA" font-weight="700">Software Engineer</tspan> and <tspan fill="#60A5FA" font-weight="700">Full-Stack Developer</tspan> focused on building reliable web platforms, mobile applications, and backend services.
       </text>
 
       <!-- Decorative Fine Divider Line -->
       <line x1="0" y1="16" x2="912" y2="16" stroke="#292E40" stroke-width="0.8" stroke-dasharray="4 4" />
 
-      <!-- Paragraph 2: Technical Scope & Continuous Learning -->
+      <!-- Paragraph 2 -->
       <text x="0" y="38" class="f-sans" font-size="11.5" fill="#A1A1AA">
-        My experience spans <tspan fill="#22D3EE" font-weight="600">web and mobile application development</tspan>, backend systems, API integration, database management, and <tspan fill="#34D399" font-weight="600">AI-powered applications</tspan>.
+        Core focus areas include <tspan fill="#22D3EE" font-weight="600">React, React Native, and Node.js</tspan>, REST API architecture, database modeling with PostgreSQL and MongoDB, and <tspan fill="#34D399" font-weight="600">practical AI integrations</tspan>.
       </text>
       <text x="0" y="58" class="f-sans" font-size="11.5" fill="#A1A1AA">
-        I enjoy exploring modern technologies, solving engineering challenges, and continuously improving my development skills.
+        I prioritize maintainable code structure, responsive user interfaces, and direct technical problem-solving.
       </text>
     </g>
 
@@ -428,8 +428,8 @@
     <!-- Bottom Focus Metric Pill -->
     <g transform="translate(18, 350)">
       <rect width="268" height="34" rx="6" fill="#0F242C" stroke="#155E75" stroke-width="0.8" />
-      <text x="134" y="16" class="f-mono" font-size="8" font-weight="700" fill="#67E8F9" text-anchor="middle" letter-spacing="1">FULL-CYCLE CAPABILITY</text>
-      <text x="134" y="27" class="f-sans" font-size="8" fill="#A1A1AA" text-anchor="middle">Scalable Web, Mobile, Data &amp; AI Systems</text>
+      <text x="134" y="16" class="f-mono" font-size="8" font-weight="700" fill="#67E8F9" text-anchor="middle" letter-spacing="1">TECHNICAL SCOPE</text>
+      <text x="134" y="27" class="f-sans" font-size="8" fill="#A1A1AA" text-anchor="middle">Web, Mobile, APIs, Databases &amp; AI Integration</text>
     </g>
   </g>
 </svg>

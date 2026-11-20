@@ -67,7 +67,7 @@
     <circle cx="14" cy="13" r="1.8" fill="#F5F5F7" />
     <text x="26" y="17" class="f-mono" font-size="8.5" font-weight="700" fill="#F5F5F7" letter-spacing="1">TECHNOLOGY ECOSYSTEM</text>
     
-    <text x="952" y="17" class="f-mono" font-size="8.5" fill="#64748B" text-anchor="end" letter-spacing="0.5">5 ARCHITECTURAL TIERS • 19 CORE PRODUCTION ASSETS</text>
+    <text x="952" y="17" class="f-mono" font-size="8.5" fill="#64748B" text-anchor="end" letter-spacing="0.5">CORE TECHNOLOGIES &amp; PRODUCTION TOOLING</text>
   </g>
 
   <!-- ==================== ROW 1: PROGRAMMING LANGUAGES ==================== -->
