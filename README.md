@@ -47,38 +47,12 @@
 </div>
 
 <!-- ========================================== -->
-<!-- 02. BEHIND THE CODE                        -->
+<!-- 02. ABOUT & PROFESSIONAL BACKGROUND        -->
 <!-- ========================================== -->
 
 <div align="left">
   <img
-    src="./assets/section-02-behind-the-code-header.svg"
-    alt="Behind The Code - Personal Developer Environment"
-    width="100%"
-  />
-</div>
-
-<br/>
-
-<div align="center">
-  <img
-    src="./assets/behind-the-code-live.svg"
-    alt="Behind The Code - live developer terminal and status"
-    width="100%"
-  />
-</div>
-
-<div align="center">
-  <img src="./assets/divider.svg" width="100%" height="24" alt="" />
-</div>
-
-<!-- ========================================== -->
-<!-- 03. ABOUT & PROFESSIONAL BACKGROUND        -->
-<!-- ========================================== -->
-
-<div align="left">
-  <img
-    src="./assets/section-03-about-header.svg"
+    src="./assets/section-02-about-header.svg"
     alt="About &amp; Professional Background - Richard D'Souza"
     width="100%"
   />
@@ -99,12 +73,12 @@
 </div>
 
 <!-- ========================================== -->
-<!-- 04. TECHNICAL STACK                        -->
+<!-- 03. TECHNICAL STACK                        -->
 <!-- ========================================== -->
 
 <div align="left">
   <img
-    src="./assets/section-04-tech-header.svg"
+    src="./assets/section-03-tech-header.svg"
     alt="Technical Stack - Languages, Frontend, Mobile, Backend, Databases, and Tools"
     width="100%"
   />
@@ -125,12 +99,12 @@
 </div>
 
 <!-- ========================================== -->
-<!-- 05. SELECTED PROJECTS                      -->
+<!-- 04. SELECTED PROJECTS                      -->
 <!-- ========================================== -->
 
 <div align="left">
   <img
-    src="./assets/section-05-projects-header.svg"
+    src="./assets/section-04-projects-header.svg"
     alt="Selected Projects - Featured Repositories"
     width="100%"
   />
@@ -225,12 +199,12 @@
 </div>
 
 <!-- ========================================== -->
-<!-- 06. GITHUB ANALYTICS DASHBOARD             -->
+<!-- 05. GITHUB ANALYTICS DASHBOARD             -->
 <!-- ========================================== -->
 
 <div align="left">
   <img
-    src="./assets/section-06-analytics-header.svg"
+    src="./assets/section-05-analytics-header.svg"
     alt="GitHub Analytics - Activity &amp; Metrics"
     width="100%"
   />
@@ -280,12 +254,12 @@
 </div>
 
 <!-- ========================================== -->
-<!-- 07. CONTRIBUTION TRAJECTORY                -->
+<!-- 06. CONTRIBUTION TRAJECTORY                -->
 <!-- ========================================== -->
 
 <div align="left">
   <img
-    src="./assets/section-07-trajectory-header.svg"
+    src="./assets/section-06-trajectory-header.svg"
     alt="Contribution Timeline - 52-Week Commit History"
     width="100%"
   />
@@ -316,7 +290,7 @@
 </div>
 
 <!-- ========================================== -->
-<!-- 08. CONNECT WITH ME                        -->
+<!-- 07. CONNECT WITH ME                        -->
 <!-- ========================================== -->
 
 <table border="0" cellpadding="0" cellspacing="8" width="100%">
